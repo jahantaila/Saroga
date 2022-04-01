@@ -18,5 +18,6 @@ from django.urls import path
 from yoga_main import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name='home')
+    path('', views.home, name='home'),
+    path('panels/', views.superpanel, name='superpanel'),
 ]
