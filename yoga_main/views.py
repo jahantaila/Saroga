@@ -1,4 +1,3 @@
-from http.client import HTTPResponse
 from django.shortcuts import render
 
 # Create your views here.
@@ -6,5 +5,5 @@ from django.shortcuts import render
 def home(request):
   return render(request, 'home.html')
 
-def superpanel(request):
-  return render(request, 'superpanel.html')
+def teachpanel(request):
+  return render(request, 'teachpanel.html')
