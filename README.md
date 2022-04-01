@@ -1,6 +1,6 @@
 # Aroga
 
-![Logo]("https://i.ibb.co/MBCZ5N6/image-removebg-preview-4.png")
+![image-removebg-preview (4)](https://user-images.githubusercontent.com/75226884/161325956-6475a99b-4b1a-4603-a7a6-ff91c90b9615.png)
 
 
 
