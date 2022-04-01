@@ -19,5 +19,7 @@ from yoga_main import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
+    path('home/', views.home, name='home'),
     path('panels/', views.superpanel, name='superpanel'),
+    path('register/', views.signUp, name='signUp'),
 ]

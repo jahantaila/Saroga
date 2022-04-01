@@ -8,3 +8,6 @@ def home(request):
 
 def superpanel(request):
   return render(request, 'superpanel.html')
+
+def signUp(request):
+  return render(request, 'signup.html')
