@@ -35,9 +35,9 @@ __________
    - [ ] Login backend
    - [ ] Register Backend
 
-- [] Dashboard 
-   - [] User Dashboard (when they login)
-   - [] Graphs and info abt sessions
+- [ ] Dashboard 
+   - [ ] User Dashboard (when they login)
+   - [ ] Graphs and info abt sessions
 
 - [ ] Admin Pages 
   - [x] Make the sidebar
