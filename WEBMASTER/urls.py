@@ -25,5 +25,5 @@ urlpatterns = [
     path('login/', views.login, name='login'),
     path('signup/', views.signup, name='signup'),
     path('classes/', views.classes, name='classes'),
-    path('resources/', views.resources, name='resources')
+    path('resources/', views.resources, name='resources') # prasit is working on this 
 ]
