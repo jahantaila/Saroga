@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from yoga_main import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
@@ -24,4 +25,5 @@ urlpatterns = [
     path('login/', views.login, name='login'),
     path('signup/', views.signup, name='signup'),
     path('classes/', views.classes, name='classes'),
+    path('resources/', views.resources, name='resources')
 ]
