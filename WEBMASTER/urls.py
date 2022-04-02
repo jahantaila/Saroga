@@ -22,6 +22,6 @@ urlpatterns = [
     path('home/', views.home, name='home'),
     path('panels/', views.superpanel, name='superpanel'),
     path('login/', views.login, name='login'),
-    path('signup/', views.signup, name='signup')
+    path('signup/', views.signup, name='signup'),
     path('classes/', views.classes, name='classes'),
 ]
