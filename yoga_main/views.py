@@ -6,7 +6,7 @@ def home(request):
   return render(request, 'home.html')
 
 def superpanel(request):
-  return render(request, 'superpanel.html')
+  return render(request, 'teachpanel.html')
 
 def login(request):
   return render(request, 'login.html')
@@ -15,3 +15,6 @@ def signup(request):
   form = UserCreationForm()
   context = {'form': form}
   return render(request, 'signup.html', context)
+  
+def classes(request):
+  return render(request, 'classes.html')
