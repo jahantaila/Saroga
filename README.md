@@ -29,7 +29,7 @@ __________
    - [ ] Testimonials
    - [ ] Our Mission
   
-- [] Account System
+- [ ] Account System
    - [x] Login Frontend **/login**
    - [ ] Register Frontend (similar to login)
    - [ ] Login backend
