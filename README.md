@@ -1,6 +1,6 @@
-# Aroga
+# Saroga
 
-![image-removebg-preview (4)](https://user-images.githubusercontent.com/75226884/161325956-6475a99b-4b1a-4603-a7a6-ff91c90b9615.png)
+![Screenshot_2022-04-03_140946-removebg-preview](https://user-images.githubusercontent.com/75226884 161442075-9813c1b1-d4a2-4b7a-a7d1-0b6ec23b3e72.png)
 
 
 
