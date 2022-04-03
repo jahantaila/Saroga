@@ -10,7 +10,7 @@
 
 </head>
 
-<body class="overflow-hidden">
+<body>
   <div class="" id="content">
 
     <section class="relative bg-white overflow-hidden">
@@ -58,63 +58,80 @@
 
         </nav>
 
-  <section class="relative pt-16 pb-0 md:py-32 bg-coolGray-900"
-    style="background-image: url('https://shuffle.dev/flex-ui-assets/elements/pattern-dark2.svg'); background-position: center;">
-    <div class="container px-4 mx-auto mb-16">
-      <div class="w-full md:w-3/5 lg:w-1/2">
-        <div class="max-w-sm mx-auto" style="transform: scale(1.1)">
-          <div class="mb-5 text-center" style="margin-top: -10%;">
-            <a class="inline-block mb-6" href="#">
-
-            </a>
-            <img class="h-16" src="https://i.ibb.co/HTRbjNn/Screenshot-2022-04-01-174301-removebg-preview.png" alt=""
-              style="padding-left: 35.5%; transform: scale(1.4); margin-top: -12%; margin-bottom: 5%">
-
-            <h3 class="mb-4 text-2xl md:text-3xl font-bold text-white">Sign in to your account</h3>
-            <p class="text-lg text-slate-400 font-medium">Join a yoga session today!</p>
-          </div>
-          <form action="">
-            <div class="mb-6">
-              <label class="block mb-2 text-white font-medium" for="">Username</label>
-              <input
-                class="appearance-none block w-full p-3 leading-5 text-coolGray-900 border border-coolGray-200 rounded-lg shadow-md placeholder-coolGray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
-                type="text" placeholder="Please enter your username">
-            </div>
-            <div class="mb-4">
-              <label class="block mb-2 text-white font-medium" for="">Password</label>
-              <input
-                class="appearance-none block w-full p-3 leading-5 text-coolGray-900 border border-coolGray-200 rounded-lg shadow-md placeholder-coolGray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
-                type="password" placeholder="Please enter your password">
-            </div>
-            <div class="flex flex-wrap items-center justify-between mb-6">
-              <div class="w-full md:w-1/2">
-                <label class="relative inline-flex items-center">
-                  <input class="form-checkbox appearance-none" type="checkbox">
-                  <img class="absolute top-1/2 transform -translate-y-1/2 left-0"
-                    src="flex-ui-assets/elements/sign-up/checkbox-icon.svg" alt="">
-                  <input type="checkbox" style="padding-left: 10px"> <span
-                    class="ml-2 text-xs text-white font-medium">Remember me</span>
-                </label>
+        <section class="bg-slate-900">
+          <div class="flex flex-wrap">
+            <div class="pt-6 lg:pt-16 pb-6 w-full lg:w-1/2" >
+              <div class="max-w-md mx-auto">
+               
+                <div>
+                  <div class="mb-7 px-3">
+                    <span class="text-gray-500 pb-3">Join a yoga session today!</span>
+                    <h3 class="text-2xl font-bold text-white">Login to your account</h3>
+                  </div>
+                  <form action="">
+                    <div class="flex flex-wrap">
+                    </div>
+                    <div class="mb-3 flex p-4 mx-2 bg-gray-800 rounded">
+                      <input class="w-full text-xs text-gray-50 bg-gray-800 outline-none" id = "username" type="text" placeholder="username">
+                      <svg class="h-6 w-6 ml-4 my-auto text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"></path>
+                      </svg>
+                    </div>
+                    <div class="mb-6 flex p-4 mx-2 bg-gray-800 rounded">
+                      <input class="w-full text-xs text-gray-50 bg-gray-800 outline-none" type="password" placeholder="Enter your password">
+                      <button>
+                        <svg class="h-6 w-6 ml-4 my-auto text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="px-3 text-center">
+                      <button class="mb-2 w-full py-4 bg-green-600 hover:bg-green-700 rounded text-sm font-bold text-gray-50 transition duration-200">Sign Up</button>
+                      <span class="text-gray-400 text-xs">
+                        <span>Don't have an account?</span>
+                        <a class="text-green-600 hover:underline" href="#">Create One Today!</a>
+                      </span>
+                      <p class="mt-16 text-xs text-gray-400"><a class="underline hover:text-gray-500" href="#">Policy privacy</a> and <a class="underline hover:text-gray-500" href="#">Terms of Use</a></p>
+                    </div>
+                  </form>
+                </div>
               </div>
-              <div class="w-full md:w-auto mt-1"><a
-                  class="inline-block text-xs font-medium text-green-500 hover:text-green-600" href="#">Forgot your
-                  password?</a></div>
             </div>
-            <a class="inline-block py-3 px-7 mb-6 w-full text-base text-green-50 font-medium text-center leading-6 bg-green-500 hover:bg-green-600 focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded-md shadow-sm"
-              href="#">Sign In</a>
-            <p class="text-center">
-              <span class="text-medium text-white font-medium">Don’t have an account?</span>
-              <a class="inline-block text-large font-medium text-green-500 hover:text-green-600 hover:underline"
-                href="#">Sign up</a>
-            </p>
-          </form>
-        </div>
-      </div>
-    </div>
-    <img class="md:absolute md:top-0 md:right-0 mx-auto md:h-full md:w-2/5 lg:w-1/2 md:object-cover"
-      src="https://images.unsplash.com/photo-1602192509154-0b900ee1f851?ixlib=rb1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwyMTI1MjE1fHxlbnwwfHx8fA%3D%3D&w=1000&q=80"
-      style="padding-bottom: 10%; padding-right: 10%; padding-top: 5%">
-  </section>
+            <div class="hidden lg:block relative w-full lg:w-1/2 bg-green-600">
+              <div class="absolute bottom-0 inset-x-0 mx-auto mb-12 max-w-xl text-center" style="z-index: 10;">
+                <img class="lg:max-w-xl mx-auto" src="atis-assets/illustrations/pablo-coming-soon-dark-mono.png" alt="">
+                <h2 class="mb-2 text-2xl text-white font-bold">So much more than a business analytics tool</h2>
+                <div class="max-w-lg mx-auto">
+                  <p class="mb-6 text-gray-50 leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur nisl sodales egestas lobortis.</p>
+                </div>
+                <a class="inline-block py-2 px-6 leading-loose rounded-t-xl rounded-l-xl bg-white hover:bg-gray-500 text-gray-900 hover:text-white transition duration-200 font-bold" href="#">Get Started</a>
+                <div class="mt-12 flex justify-center space-x-3">
+                  <button class="p-1 bg-green-500 rounded-full"></button>
+                  <button class="p-1 bg-green-500 rounded-full"></button>
+                  <button class="p-1 bg-white rounded-full"></button>
+                  <button class="p-1 bg-green-500 rounded-full"></button>
+                </div>
+              </div>
+            </div>
+            <div class="lg:hidden bg-green-600 w-full">
+              <div class="relative w-full">
+                <img class="relative mx-auto max-w-sm mt-4 mb-4 block" src="atis-assets/illustrations/pablo-coming-soon-dark-mono.png" alt="">
+                <div class="flex justify-center space-x-3">
+                  <button class="p-1 bg-green-500 rounded-full"></button>
+                  <button class="p-1 bg-green-500 rounded-full"></button>
+                  <button class="p-1 bg-white rounded-full"></button>
+                  <button class="p-1 bg-green-500 rounded-full"></button>
+                </div>
+              </div>
+              <div class="py-10 px-3 text-center" style="z-index: 10;">
+                <h2 class="mb-2 text-2xl text-white font-bold">So much more than a business analytics tool</h2>
+                <p class="mb-6 text-gray-50 leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur nisl sodales egestas lobortis.</p>
+                <a class="py-2 px-6 rounded-t-xl rounded-l-xl rounded-l-xl bg-white hover:bg-gray-500 text-gray-600 hover:text-white transition duration-200 font-bold" href="#">Get Started</a>
+              </div>
+            </div>
+          </div>
+        </section>
 
   <script>
     for (var i = 0; i < links.length; i += 1) {

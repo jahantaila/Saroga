@@ -66,7 +66,33 @@
                 fill="currentColor"></path>
             </svg></button>
 
-        </nav>
+        </nav> <!--NAVBAR ENDING-->
+    
+
+<!--Navbar script & styles-->
+  <script>
+    for (var i = 0; i < links.length; i += 1) {
+      links[i].addEventListener('click', function (e) {
+        e.preventDefault();
+      });
+    }
+
+    var forms = document.getElementsByTagName('form');
+    for (var i = 0; i < forms.length; i += 1) {
+      forms[i].addEventListener('submit', function (e) {
+        e.preventDefault();
+      }, true);
+    }
+  </script>
+  
+  <style> 
+    @media screen and (min-width: 0px) and (max-width: 1272px) {
+      .mr-12 { display: none; }  
+      #responsivehide { display: none; }  
+    }
+    
+  </style> 
+
         <div class="navbar-menu hidden fixed top-0 z-50 left-0 w-full h-full bg-coolGray-900 bg-opacity-50">
           <div class="fixed top-0 left-0 bottom-0 w-full w-4/6 max-w-xs bg-coolGray-900"
             data-config-id="toggle-mobile-2" data-config-target=".navbar-menu" data-config-class="hidden">
@@ -118,7 +144,9 @@
           src="flex-ui-assets/elements/dashboard.png" data-config-id="auto-img-10-2" data-removed="true">
       </div>
   </div>
-  <!-- NAVBAR END -->
+
+
+  
   <div class="wave-bottom w-full text-coolGray-900">
     <svg viewbox="0 0 1440 116" fill="none" xmlns="http://www.w3.org/2000/svg" data-config-id="auto-svg-3-2">
       <path
@@ -134,58 +162,14 @@
       <path d="M1440 64.5909H1090.08C833.336 64.5909 580.229 -7.62939e-06 360 -7.62939e-06C139.771 -7.62939e-06 0 64.5909 0 64.5909V116H1440V64.5909Z" fill="#2A3342"></path>
     </svg>
   </div>
-  <!--section that talks about the meaning of the name, the responsive navbar is also here-->
+
+
+
+
+  <!--section that talks about the meaning of the name-->
   <section class="relative overflow-hidden">
-    <img class="hidden lg:block absolute inset-0 w-full" src="atis-assets/background/lines.svg" alt="">
-    <nav class="relative px-6 py-6 flex justify-between items-center bg-gray-50" data-removed="true">
-      <a class="text-3xl font-bold leading-none" href="#">
-        <img class="h-12" src="https://i.ibb.co/LRCrLTF/Screenshot-2022-04-03-140946-removebg-preview.png" alt="" width="auto" data-removed="true">
-      </a>
-      <div class="lg:hidden" >
-        <button class="navbar-burger flex items-center text-gray-400 p-3">
-          <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <title>Mobile menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-          </svg>
-        </button>
-      </div>
-      <ul
-        class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
-        <li class="text-gray-800">
-          <svg class="w-4 h-4 current-fill" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z">
-            </path>
-          </svg>
-        </li>
-        <li class="text-gray-800">
-          <svg class="w-4 h-4 current-fill" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z">
-            </path>
-          </svg>
-        </li>
-        <li class="text-gray-800">
-          <svg class="w-4 h-4 current-fill" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z">
-            </path>
-          </svg>
-        </li>
-        <li class="text-gray-800">
-          <svg class="w-4 h-4 current-fill" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z">
-            </path>
-          </svg>
-        </li>
-      </ul>
-      
-    </nav>
+    
+    
     <div class="relative bg-gray-50 pt-12 lg:pt-20 pb-12 md:pb-24" style="background-image: url('https://shuffle.dev/flex-ui-assets/elements/pattern-dark2.svg');">
       <div class="container mx-auto px-4" style="margin-top: -6%">
         <div class="flex flex-wrap -mx-4">
@@ -224,6 +208,7 @@
         </div>
       </div>
     </div>
+    <!--Hidden navbar-->
     <div class="hidden navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50">
       <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
       <nav class="relative flex flex-col py-6 px-6 h-full w-full bg-white border-r overflow-y-auto" style="background-color: #2A3342;">
@@ -261,9 +246,9 @@
         </div>
         <div class="mt-auto">
           <div class="pt-6"><a
-              class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-l-xl rounded-t-xl"
+              class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-slate-400 hover:bg-gray-100 rounded-l-xl rounded-t-xl transition ease-in-out delay-150 text-white bg-slate-700 hover:bg-slate-400 focus:ring-4 focus:outline-none focus:ring-slate-300 font-medium rounded-lg text-base px-6 py-3.5 text-center dark:bg-slate-600 dark:hover:bg-slate-700 dark:focus:ring-slate-800"
               href="{% url 'login' %}">Sign In</a><a
-              class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-green-600 hover:bg-green-700 rounded-l-xl rounded-t-xl"
+              class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-green-400 hover:bg-green-100 rounded-l-xl rounded-t-xl transition ease-in-out delay-150 text-white bg-green-700 hover:bg-green-400 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-base px-6 py-3.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
               href="#">Sign Up</a></div>
           <p class="my-4 text-xs text-center text-gray-400">
             <span>© 2022 All rights reserved.</span>
@@ -273,29 +258,6 @@
       </nav>
     </div>
   </section>
-  <script>
-    for (var i = 0; i < links.length; i += 1) {
-      links[i].addEventListener('click', function (e) {
-        e.preventDefault();
-      });
-    }
-
-    var forms = document.getElementsByTagName('form');
-    for (var i = 0; i < forms.length; i += 1) {
-      forms[i].addEventListener('submit', function (e) {
-        e.preventDefault();
-      }, true);
-    }
-  </script>
-  
-  <style> 
-    @media screen and (min-width: 0px) and (max-width: 1272px) {
-      .mr-12 { display: none; }  
-      #responsivehide { display: none; }  
-    }
-    
-   
-  </style> 
 
 </body>
 
