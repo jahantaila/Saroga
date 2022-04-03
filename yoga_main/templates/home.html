@@ -20,6 +20,7 @@
 </head>
 
 <body id="page" class="antialiased font-body bg-body text-body ">
+  <!-- NAVBAR -->
   <div class="" id="content">
 
     <section class="relative bg-white overflow-hidden">
@@ -38,12 +39,12 @@
                     class="text-slate-400 font-medium hover:text-white transition ease-in-out delay-150" href="#"
                     data-config-id="auto-txt-1-2" style=" font-size: 18px">About</a></li>
                 <li class="mr-12"><a
-                    class=" text-slate-400   font-medium hover:text-white transition ease-in-out delay-150" 
-                    href="{% url 'classes' %}"
-                    data-config-id="auto-txt-2-2" style=" font-size: 18px" >Classes</a></li>
+                    class=" text-slate-400   font-medium hover:text-white transition ease-in-out delay-150"
+                    href="{% url 'classes' %}" data-config-id="auto-txt-2-2" style=" font-size: 18px">Classes</a></li>
                 <li class="mr-12"><a
-                    class=" hover:text-white font-medium text-slate-400 transition ease-in-out delay-150" href="{% url 'resources' %}"
-                    data-config-id="auto-txt-3-2" style=" font-size: 18px">Resources</a></li>
+                    class=" hover:text-white font-medium text-slate-400 transition ease-in-out delay-150"
+                    href="{% url 'resources' %}" data-config-id="auto-txt-3-2" style=" font-size: 18px">Resources</a>
+                </li>
                 <li><a class=" hover:text-white  font-medium text-slate-400 transition ease-in-out delay-150" href="#"
                     data-config-id="auto-txt-4-2" style=" font-size: 18px">Upcoming</a></li>
               </ul>
@@ -69,7 +70,7 @@
         <div class="navbar-menu hidden fixed top-0 z-50 left-0 w-full h-full bg-coolGray-900 bg-opacity-50">
           <div class="fixed top-0 left-0 bottom-0 w-full w-4/6 max-w-xs bg-coolGray-900"
             data-config-id="toggle-mobile-2" data-config-target=".navbar-menu" data-config-class="hidden">
-              
+
           </div>
         </div>
       </div>
@@ -92,7 +93,7 @@
                   </button></div>
                 <div class="w-full md:w-auto py-1 md:py-0"><button type="button"
                     class="transition ease-in-out delay-150 text-white bg-slate-700 hover:bg-slate-400 focus:ring-4 focus:outline-none focus:ring-slate-300 font-medium rounded-lg text-base px-6 py-3.5 text-center dark:bg-slate-600 dark:hover:bg-slate-700 dark:focus:ring-slate-800"
-                    style="font-size: 20px; font-weight: bold;">Learn More!</button></div>
+                    style="font-size: 20px; font-weight: bold;">Learn More</button></div>
               </div>
 
             </div>
@@ -117,6 +118,7 @@
           src="flex-ui-assets/elements/dashboard.png" data-config-id="auto-img-10-2" data-removed="true">
       </div>
   </div>
+  <!-- NAVBAR END -->
   <div class="wave-bottom w-full text-coolGray-900">
     <svg viewbox="0 0 1440 116" fill="none" xmlns="http://www.w3.org/2000/svg" data-config-id="auto-svg-3-2">
       <path
@@ -129,7 +131,8 @@
 
 
   <!--section that talks about the meaning of the name, the responsive navbar is also here-->
-  <section class="relative overflow-hidden" style="background-image: url('https://shuffle.dev/flex-ui-assets/elements/pattern-dark2.svg');" >
+  <section class="relative overflow-hidden"
+    style="background-image: url('https://shuffle.dev/flex-ui-assets/elements/pattern-dark2.svg');">
     <img class="hidden lg:block absolute inset-0 w-full" src="atis-assets/background/lines.svg" alt="">
     <nav class="relative px-6 py-6 flex justify-between items-center bg-gray-50" data-removed="true">
       <a class="text-3xl font-bold leading-none" href="#">
@@ -143,34 +146,48 @@
           </svg>
         </button>
       </div>
-      <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+      <ul
+        class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
         <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Start</a></li>
         <li class="text-gray-800">
-          <svg class="w-4 h-4 current-fill" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
+          <svg class="w-4 h-4 current-fill" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z">
+            </path>
           </svg>
         </li>
         <li><a class="text-sm text-green-600 font-bold" href="#">About Us</a></li>
         <li class="text-gray-800">
-          <svg class="w-4 h-4 current-fill" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
+          <svg class="w-4 h-4 current-fill" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z">
+            </path>
           </svg>
         </li>
         <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Services</a></li>
         <li class="text-gray-800">
-          <svg class="w-4 h-4 current-fill" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
+          <svg class="w-4 h-4 current-fill" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z">
+            </path>
           </svg>
         </li>
         <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Platform</a></li>
         <li class="text-gray-800">
-          <svg class="w-4 h-4 current-fill" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
+          <svg class="w-4 h-4 current-fill" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z">
+            </path>
           </svg>
         </li>
         <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Testimonials</a></li>
       </ul>
-      <a class="hidden lg:inline-block py-2 px-6 bg-white hover:bg-gray-50 text-sm text-green-600 font-bold rounded-l-xl rounded-t-xl transition duration-200" href="#">Contact Us</a>
+      <a class="hidden lg:inline-block py-2 px-6 bg-white hover:bg-gray-50 text-sm text-green-600 font-bold rounded-l-xl rounded-t-xl transition duration-200"
+        href="#">Contact Us</a>
     </nav>
     <div class="relative bg-gray-50 pt-12 lg:pt-20 pb-12 md:pb-24">
       <div class="container mx-auto px-4">
@@ -184,20 +201,31 @@
                 </h2>
               </div>
               <div class="max-w-sm mx-auto lg:mx-0">
-                <p class="mb-6 text-gray-400 leading-loose">Here at Aroga, your health is our top priority. lorem loremloremloremloremloremloremloremloremlorem
+                <p class="mb-6 text-gray-400 leading-loose">Here at Aroga, your health is our top priority. lorem
+                  loremloremloremloremloremloremloremloremlorem
                   loremloremloremloremloremloremloremloremlorem
                 </p>
-                <div><a class="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-2 px-6 leading-loose bg-green-600 hover:bg-green-700 text-white font-semibold rounded-l-xl rounded-t-xl transition duration-200" href="#">Get Started</a><a class="inline-block w-full lg:w-auto py-2 px-6 leading-loose font-semibold bg-white hover:bg-gray-50 rounded-l-xl rounded-t-xl transition duration-200" href="#">How it works</a></div>
+                <div><a
+                    class="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-2 px-6 leading-loose bg-green-600 hover:bg-green-700 text-white font-semibold rounded-l-xl rounded-t-xl transition duration-200"
+                    href="#">Get Started</a><a
+                    class="inline-block w-full lg:w-auto py-2 px-6 leading-loose font-semibold bg-white hover:bg-gray-50 rounded-l-xl rounded-t-xl transition duration-200"
+                    href="#">How it works</a></div>
               </div>
             </div>
           </div>
           <div class="w-full lg:w-1/2 px-4 flex items-center justify-center">
             <div class="relative" style="z-index: 0;">
-              <img class="h-128 w-full max-w-lg object-cover rounded-3xl md:rounded-br-none" src="https://images.unsplash.com/photo-1462826303086-329426d1aef5?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80" alt="">
-              <img class="hidden md:block absolute" style="top:-2rem; right: 3rem; z-index: -1;" src="atis-assets/elements/green-dark-up.svg" alt="">
-              <img class="hidden md:block absolute" style="bottom:-2rem; right: -2rem; z-index: -1;" src="atis-assets/elements/wing-green-down.svg" alt="">
-              <img class="hidden md:block absolute" style="top:3rem; right: -3rem; z-index: -1;" src="https://shuffle.dev/atis-assets/elements/bullets-gray-right.svg" alt="">
-              <img class="hidden md:block absolute" style="bottom:2.5rem; left: -4.5rem; z-index: -1;" src="https://shuffle.dev/atis-assets/elements/bullets-gray-left.svg" alt="">
+              <img class="h-128 w-full max-w-lg object-cover rounded-3xl md:rounded-br-none"
+                src="https://images.unsplash.com/photo-1462826303086-329426d1aef5?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80"
+                alt="">
+              <img class="hidden md:block absolute" style="top:-2rem; right: 3rem; z-index: -1;"
+                src="atis-assets/elements/green-dark-up.svg" alt="">
+              <img class="hidden md:block absolute" style="bottom:-2rem; right: -2rem; z-index: -1;"
+                src="atis-assets/elements/wing-green-down.svg" alt="">
+              <img class="hidden md:block absolute" style="top:3rem; right: -3rem; z-index: -1;"
+                src="https://shuffle.dev/atis-assets/elements/bullets-gray-right.svg" alt="">
+              <img class="hidden md:block absolute" style="bottom:2.5rem; left: -4.5rem; z-index: -1;"
+                src="https://shuffle.dev/atis-assets/elements/bullets-gray-left.svg" alt="">
             </div>
           </div>
         </div>
@@ -211,22 +239,37 @@
             <img class="h-10" src="atis-assets/logo/atis/atis-mono-black.svg" alt="" width="auto">
           </a>
           <button class="navbar-close">
-            <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
             </svg>
           </button>
         </div>
         <div>
           <ul>
-            <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded" href="#">Start</a></li>
-            <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded" href="#">About Us</a></li>
-            <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded" href="#">Services</a></li>
-            <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded" href="#">Platform</a></li>
-            <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded" href="#">Testimonials</a></li>
+            <li class="mb-1"><a
+                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
+                href="#">Start</a></li>
+            <li class="mb-1"><a
+                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
+                href="#">About Us</a></li>
+            <li class="mb-1"><a
+                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
+                href="#">Services</a></li>
+            <li class="mb-1"><a
+                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
+                href="#">Platform</a></li>
+            <li class="mb-1"><a
+                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
+                href="#">Testimonials</a></li>
           </ul>
         </div>
         <div class="mt-auto">
-          <div class="pt-6"><a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-l-xl rounded-t-xl" href="#">Sign In</a><a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-green-600 hover:bg-green-700 rounded-l-xl rounded-t-xl" href="#">Sign Up</a></div>
+          <div class="pt-6"><a
+              class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-l-xl rounded-t-xl"
+              href="#">Sign In</a><a
+              class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-green-600 hover:bg-green-700 rounded-l-xl rounded-t-xl"
+              href="#">Sign Up</a></div>
           <p class="my-4 text-xs text-center text-gray-400">
             <span>© 2020 All rights reserved.</span>
           </p>
