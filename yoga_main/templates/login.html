@@ -67,7 +67,8 @@
           <h3 class="mb-4 text-2xl md:text-3xl font-bold text-white">Sign in to your account</h3>
           <p class="text-lg text-slate-400 font-medium">Join a yoga session today!</p>
         </div>
-        <form action="">
+        <form action="" method="POST">
+          {% csrf_token %}
           <div class="mb-6">
             <label class="block mb-2 text-white font-medium" for="">Username</label>
             <input class="appearance-none block w-full p-3 leading-5 text-coolGray-900 border border-coolGray-200 rounded-lg shadow-md placeholder-coolGray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50" type="text" placeholder="Please enter your username">
@@ -86,7 +87,7 @@
             </div>
             <div class="w-full md:w-auto mt-1"><a class="inline-block text-xs font-medium text-green-500 hover:text-green-600" href="#">Forgot your password?</a></div>
           </div>
-          <a class="inline-block py-3 px-7 mb-6 w-full text-base text-green-50 font-medium text-center leading-6 bg-green-500 hover:bg-green-600 focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded-md shadow-sm" href="#">Sign In</a>
+          <input class="inline-block py-3 px-7 mb-6 w-full text-base text-green-50 font-medium text-center leading-6 bg-green-500 hover:bg-green-600 focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded-md shadow-sm" type="submit" placeholder="Sign In">
           <p class="text-center">
             <span class="text-medium text-white font-medium">Don’t have an account?</span>
             <a class="inline-block text-large font-medium text-green-500 hover:text-green-600 hover:underline" href="#">Sign up</a>
