@@ -28,6 +28,7 @@ __________
    - [ ] Footer
    - [ ] Testimonials
    - [ ] Our Mission
+   - [ ] Update picture on laptop landing to dashboard
   
 - [ ] Account System
    - [x] Login Frontend **/login**
