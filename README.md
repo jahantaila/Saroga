@@ -1,7 +1,8 @@
-# Aroga
+# Saroga
 
-![image-removebg-preview (4)](https://user-images.githubusercontent.com/75226884/161325956-6475a99b-4b1a-4603-a7a6-ff91c90b9615.png)
 
+
+![Screenshot_2022-04-03_140946-removebg-preview](https://user-images.githubusercontent.com/75226884/161442075-9813c1b1-d4a2-4b7a-a7d1-0b6ec23b3e72.png)
 
 
 TSA project for webmaster - yoga website
@@ -19,7 +20,7 @@ __________
 
 - [x] COME UP WITH A NAME!!!
 - [x] LOGO
-- [ ] Home Screen **/home**
+- [ ] Home Screen (**/home**)
    - [x] Basic Navbar
    - [ ] Make Navbar responsive
    - [x] Landing Page
@@ -28,8 +29,9 @@ __________
    - [ ] Footer
    - [ ] Testimonials
    - [ ] Our Mission
+   - [ ] Update picture on laptop landing to dashboard
   
-- [] Account System
+- [ ] Account System
    - [x] Login Frontend **/login**
    - [ ] Register Frontend (similar to login)
    - [ ] Login backend
@@ -39,20 +41,48 @@ __________
    - [ ] User Dashboard (when they login)
    - [ ] Graphs and info abt sessions
 
-- [ ] Admin Pages 
+- [ ] Admin Page 
   - [x] Make the sidebar
   - [ ] Similar to dashboard, but for admin
   - [ ] Make sure only people with **teacher** role can view
   - [ ] Option for them to upload videos/start a session
-  - [ ] Line up the 
+  - [ ] Teachers can assign roles to users
+  - [ ] Teachers can start sessions 
+  - [ ] Teachers can see stats abt users  
+  
 - [ ] Classes Screen
-- [ ] About Us Screen (team, goal/purpose, how it has helped b/c of covid)
-- [ ] Live Classes (possibly use zoom api)
-- [ ] Instructor System (instructors can hold sessions, need to be verified)
-- [ ] Simple Login/Registration System (django models, tailwind.css for styling?)
-- [ ] Add different yoga workouts
-- [ ] AND MOST IMPORTANTLY... DO GOOD AT STATE! 
+  - [ ] Classes fronend
+  - [ ] Classes backend
+  - [ ] When a teacher creates a class, new modal box is displayed on the screen
+  - [ ] List of all classes user can join
+  - [ ] Update classes stats in database
 
+- [ ] About Us Screen 
+    - [ ] About our team
+    - [ ] Why we choose to create this (we are very passionate about yoga :)
+    - [ ] Make up sum shit abt us meeting at a yoga meet
+    - [ ] How our website has improved user health 
+    - [ ] How it has helped bc of covid 
+
+- [ ] Live Classes 
+   - [ ] Possibly use Zoom API
+   - [ ] Users can join, regardless of their role
+   - [ ] Shows up on classes screen
+   - [ ] Teachers can create live classes
+   - [ ] Should automate everything
+   - [ ] Video
+   - [ ] Chat System
+
+- [ ] Recourses Screen
+  - [ ] Doc style
+  - [ ] Users learn about history of yoga, origons, founder
+  - [ ] Ppl learn about the benefits of yoga 
+  - [ ] Yoga videos (created by us)
+  - [ ] Doc style where they learn about new moves and poses
+  - [ ] Learn about how to lead a healthy lifestyle
+
+- [ ] AND MOST IMPORTANTLY... DO GOOD AT STATE! 
+- [ ] NATS???
 
 *list not in any specific order* 
 BTW - *more features to come, that's just the basic stuff*

@@ -1,0 +1,151 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Resources</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://shuffle.dev/vendor/icons/css/fontello.css?v=h7b" id="bs-base-css">
+  <style type="text/css" href="https://shuffle.dev/vendor/tailwind-flex/css/tailwind.min.css?v=bd4"></style>
+  <style type="text/css" href="https://shuffle.dev/vendor/tailwind-flex/css/tailwind.min.css?v=bd4"></style>
+  <style type="text/css" href="css2?family=Poppins:wght@400;500;600;700&display=swap"></style>
+  <link rel="stylesheet" href="https://shuffle.dev/static/build/css/shuffle-preview.3a553ecf.css">
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" />
+  <link rel="stylesheet" href="{% static 'css/resources.css' %}">
+  <script src="https://shuffle.dev/vendor/tailwind-flex/js/main.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <nav class="flex justify-between p-6 px-4" data-config-id="toggle-mobile" data-config-target=".navbar-menu"
+    data-config-class="hidden" style="background-color: #2A3342 !important;">
+    <div class="flex justify-between items-center w-full">
+      <div class="w-1/2 xl:w-1/3">
+        <a class="block max-w-max" href="{% url 'home' %}">
+          <img class="h-8" src="https://i.ibb.co/LRCrLTF/Screenshot-2022-04-03-140946-removebg-preview.png" alt="LOGO"
+            data-config-id="auto-img-1-2" style="transform: scale(2); padding-left: 30px"> </a>
+      </div>
+      <div class="w-1/2 xl:w-1/3">
+        <ul class="text-slate-400hidden xl:flex xl:justify-center">
+          <li class="mr-12"><a
+              class="text-slate-400 font-medium hover:text-white transition ease-in-out delay-150" href="#"
+              data-config-id="auto-txt-1-2" style=" font-size: 18px">About</a></li>
+          <li class="mr-12"><a
+              class=" text-slate-400   font-medium hover:text-white transition ease-in-out delay-150" 
+              href="{% url 'classes' %}"
+              data-config-id="auto-txt-2-2" style=" font-size: 18px" >Classes</a></li>
+          <li class="mr-12"><a
+              class=" hover:text-white font-medium text-slate-400 transition ease-in-out delay-150" href="#"
+              data-config-id="auto-txt-3-2" style=" font-size: 18px">Resources</a></li>
+          <li><a class=" hover:text-white  font-medium text-slate-400 transition ease-in-out delay-150" href="#"
+              data-config-id="auto-txt-4-2" style=" font-size: 18px">Upcoming</a></li>
+        </ul>
+      </div>
+      <div class="w-1/2 xl:w-1/3">
+        <div class="hidden xl:flex items-center justify-end"><a
+            class="inline-block py-2 px-4 mr-2 leading-5 text-slate-400 hover:text-white bg-transparent font-medium rounded-md transition ease-in-out delay-150"
+            href="{% url 'home' %}" data-config-id="auto-txt-5-2" style="font-size: 18px">       </a> <!--DONT REMOVE THIS-->   <a 
+            class="inline-block py-2 px-4 text-sm leading-5 text-green-50 border-2 border-solid border-green-500 hover:bg-green-500 transition ease-in-out delay-200 font-medium focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded-md"
+            href="{% url 'home' %}" data-config-id="auto-txt-6-2" style="font-size: 15px">Back to Home</a></div>
+      </div>
+    </div>
+    <button class="navbar-burger self-center xl:hidden">
+      <svg width="35" height="35" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+        data-config-id="auto-svg-1-2">
+        <rect class="text-slate-400" width="32" height="32" rx="6" fill="currentColor"></rect>
+        <path class="text-coolGray-400"
+          d="M7 12H25C25.2652 12 25.5196 11.8946 25.7071 11.7071C25.8946 11.5196 26 11.2652 26 11C26 10.7348 25.8946 10.4804 25.7071 10.2929C25.5196 10.1054 25.2652 10 25 10H7C6.73478 10 6.48043 10.1054 6.29289 10.2929C6.10536 10.4804 6 10.7348 6 11C6 11.2652 6.10536 11.5196 6.29289 11.7071C6.48043 11.8946 6.73478 12 7 12ZM25 15H7C6.73478 15 6.48043 15.1054 6.29289 15.2929C6.10536 15.4804 6 15.7348 6 16C6 16.2652 6.10536 16.5196 6.29289 16.7071C6.48043 16.8946 6.73478 17 7 17H25C25.2652 17 25.5196 16.8946 25.7071 16.7071C25.8946 16.5196 26 16.2652 26 16C26 15.7348 25.8946 15.4804 25.7071 15.2929C25.5196 15.1054 25.2652 15 25 15ZM25 20H7C6.73478 20 6.48043 20.1054 6.29289 20.2929C6.10536 20.4804 6 20.7348 6 21C6 21.2652 6.10536 21.5196 6.29289 21.7071C6.48043 21.8946 6.73478 22 7 22H25C25.2652 22 25.5196 21.8946 25.7071 21.7071C25.8946 21.5196 26 21.2652 26 21C26 20.7348 25.8946 20.4804 25.7071 20.2929C25.5196 20.1054 25.2652 20 25 20Z"
+          fill="currentColor"></path>
+      </svg></button>
+  
+  </nav>
+
+  <div class="w-full flex flex-row min-h-screen resources" style="border-top: solid 1px white;">
+    <div class="w-1/5 bg-slate-700 bg-coolGray text-white py-6 px-[5%]">
+      <ul class="font-medium">
+        <li class="mb-12">
+            <h5 class="text-xl">Introduction</h5>
+            <ul class="ml-5">
+              <li class="mt-3 text-slate-400 font-medium hover:text-white transition ease-in-out delay-150"> <a class="block" href="#" style="" onclick="toggle(event)" aria-label="0" id="firsta">History</a></li>
+              <li class="mt-3 text-slate-400 font-medium hover:text-white transition ease-in-out delay-150"> <a class="block" href="#" style="" onclick="toggle(event)" aria-label="1">Purpose</a></li>
+              <li class="mt-3 text-slate-400 font-medium hover:text-white transition ease-in-out delay-150"> <a class="block" href="#" style="" onclick="toggle(event)" aria-label="2">Benefits</a></li>
+            </ul>
+        </li>
+
+        <li>
+          <h5 class="text-xl">Yoga Branches</h5>
+          <ul class="ml-5 ">
+            <li class="mt-3 text-slate-400 font-medium hover:text-white transition ease-in-out delay-150"> <a class="block" href="#" style="" onclick="toggle(event)" aria-label="3">Hatha</a> </li>
+            <li class="mt-3 text-slate-400 font-medium hover:text-white transition ease-in-out delay-150"> <a class="block" href="#" style="" onclick="toggle(event)" aria-label="4">Bhakti</a> </li>
+            <li class="mt-3 text-slate-400 font-medium hover:text-white transition ease-in-out delay-150"> <a class="block" href="#" style="" onclick="toggle(event)">Mantra</a> </li>
+            <li class="mt-3 text-slate-400 font-medium hover:text-white transition ease-in-out delay-150"> <a class="block" href="#" style="" onclick="toggle(event)">Karma</a> </li>
+          </ul>
+      </li>
+      </ul>
+    </div>
+
+    <div class="w-4/5 bg-slate-600 bg-coolGray text-white py-6 px-20">
+      <div class="right" aria-label="0" id="first">
+        <h2 class="text-slate-400 font-medium mb-2" >Introduction</h2>
+        <h1 class="block text-slate-100 font-bold text-3xl mb-2" >History</h1>
+        <p class="text-slate-300 font-normal" style="border-left: 2px solid white; border-radius:2px; padding-left:10px;">A brief summary on the history of yoga.</p>
+        
+      </div>
+      <div class="right" aria-label="1">
+        <h2 class="text-slate-400 font-medium mb-2" >Introduction</h2>
+        <h1 class="block text-slate-100 font-bold text-3xl mb-2" >Purpose</h1>
+        <p class="text-slate-300 font-normal" style="border-left: 2px solid white; border-radius:2px; padding-left:10px;">These are the goals of yoga.</p>
+        
+      </div>
+      <div class="right" aria-label="2">
+        <h2 class="text-slate-400 font-medium mb-2" >Introduction</h2>
+        <h1 class="block text-slate-100 font-bold text-3xl mb-2" >Benefits</h1>
+        <p class="text-slate-300 font-normal" style="border-left: 2px solid white; border-radius:2px; padding-left:10px;">These are the goals of yoga.</p>
+        
+      </div>
+      <div class="right" aria-label="3">
+        <h2 class="text-slate-400 font-medium mb-2" >Branches</h2>
+        <h1 class="block text-slate-100 font-bold text-3xl mb-2" >Purpose</h1>
+        <p class="text-slate-300 font-normal" style="border-left: 2px solid white; border-radius:2px; padding-left:10px;">These are the goals of yoga.</p>
+        
+      </div>
+          
+    </div>
+
+  </div>
+</body>
+  <script>
+    window.onload = function() {
+      document.getElementById('first').className = 'show';
+      document.getElementById('firsta').className = 'current';
+    };
+    let previous = document.getElementById("first");
+    function toggle(e){
+      
+      let elems = document.getElementsByClassName("current");
+      if (previous === document.getElementById("first")){
+        console.log("hello");
+        previous.classList.remove("show");
+        previous.classList.add("right");
+      } else {
+        let previousElem = document.querySelectorAll('[aria-label="'+previous+'"]')[1];
+        previousElem.classList.remove("show");
+      }
+      
+      let aria = document.querySelectorAll('[aria-label="'+e.target.getAttribute('aria-label')+'"]');
+      aria[1].classList.add("show");
+      
+      for (i=0;i<elems.length; i++){
+       
+          elems[i].classList.remove("current");
+
+        }
+        e.target.classList.add("current"); 
+        console.log(e.target.getAttribute('aria-label'));
+      previous=e.target.getAttribute('aria-label');
+    };
+  </script>
+</html>
