@@ -1,56 +1,151 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html class="screen-top">
 
-{% block title %}Saroga | Home{% endblock %}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Saroga | Home</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://shuffle.dev/vendor/icons/css/fontello.css?v=h7b" id="bs-base-css">
+  <style type="text/css" href="https://shuffle.dev/vendor/tailwind-flex/css/tailwind.min.css?v=bd4"></style>
+  <style type="text/css" href="https://shuffle.dev/vendor/tailwind-flex/css/tailwind.min.css?v=bd4"></style>
+  <style type="text/css" href="css2?family=Poppins:wght@400;500;600;700&display=swap"></style>
+  <link rel="stylesheet" href="https://shuffle.dev/static/build/css/shuffle-preview.3a553ecf.css">
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" />
 
-{% block content %}
-  <div class="navbar-menu hidden fixed top-0 z-50 left-0 w-full h-full bg-coolGray-900 bg-opacity-50">
-    <div class="fixed top-0 left-0 bottom-0 w-full w-4/6 max-w-xs bg-coolGray-900"
-    data-config-id="toggle-mobile-2" data-config-target=".navbar-menu" data-config-class="hidden">
-    </div>
-  </div>
-  <div class="relative pt-16 pb-20 md:pb-24 md:pt-32 " style="background-color: #2A3342 !important;">
-    <div class="container px-4 mx-auto">
-      <div class="flex flex-wrap -mx-4">
-        <div class="w-full md:w-1/2 px-4 mb-12 md:mb-0">
-          <span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-white bg-green-500 rounded-full"
-            data-config-id="auto-txt-13-2" style="font-weight: bold; transform: scale(1.2)">Welcome!</span>
-          <h1 class="mb-6 text-3xl md:text-5xl lg:text-6xl leading-tight text-white font-bold leading-loose"
-            data-config-id="auto-txt-14-2" style="line-height: 1.2">Online Yoga & Fitness Events</h1>
-          <p class="mb-8 text-lg md:text-xl text-slate-400 font-medium" data-config-id="auto-txt-15-2"
-            style="font-size: 21px; line-height: 2rem">We focus on improving our users' health, both mentally and
-            physically, by
-            offering free and interactive online yoga and fitness events.</p>
-          <div class="flex flex-wrap mb-8 md:mb-16">
-          <div class="w-full md:w-auto py-1 md:py-0 md:mr-4"><button type="button"
-            class="text-white transition ease-in-out delay-150 bg-green-500 hover:-translate-y-1 hover:scale-10 focus:ring-4 focus:outline-none focus:ring-green-300 font-large rounded-lg text-base px-6 py-3.5 text-center dark:bg-green-500 dark:hover:bg-green-600 dark:focus:ring-green-700"
-            style="font-size: 22px; font-weight: bold; width: 200px;">Get Started!
-          </button></div>
-          <div class="w-full md:w-auto py-1 md:py-0"><button type="button"
-            class="transition ease-in-out delay-150 text-white bg-slate-700 hover:bg-slate-400 focus:ring-4 focus:outline-none focus:ring-slate-300 font-medium rounded-lg text-base px-6 py-3.5 text-center dark:bg-slate-600 dark:hover:bg-slate-700 dark:focus:ring-slate-800"
-            style="font-size: 20px; font-weight: bold;">Learn More</button></div>
+  <script src="https://shuffle.dev/vendor/tailwind-flex/js/main.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body id="page" class="antialiased font-body bg-body text-body bg-green-500 ">
+  <!-- NAVBAR -->
+  <div class="" id="content">
+
+    <section class="relative bg-white overflow-hidden">
+      <div class=>
+        <nav class="flex justify-between p-6 px-4" data-config-id="toggle-mobile" data-config-target=".navbar-menu"
+          data-config-class="hidden" style="background-color: #2A3342 !important;">
+          <div class="flex justify-between items-center w-full">
+            <div class="w-1/2 xl:w-1/3">
+              <a class="block max-w-max" href="{% url 'home' %}">
+                <img class="h-8" src="https://i.ibb.co/LRCrLTF/Screenshot-2022-04-03-140946-removebg-preview.png" alt="LOGO"
+                  data-config-id="auto-img-1-2" style="transform: scale(2); padding-left: 30px"> </a>
+            </div>
+            <div class="w-1/2 xl:w-1/3">
+              <ul class="text-slate-400hidden xl:flex xl:justify-center">
+                <li class="mr-12"><a
+                    class="text-slate-400 font-medium hover:text-white transition ease-in-out delay-150" href="#"
+                    data-config-id="auto-txt-1-2" style=" font-size: 18px">About</a></li>
+                <li class="mr-12"><a
+                    class=" text-slate-400   font-medium hover:text-white transition ease-in-out delay-150"
+                    href="{% url 'classes' %}" data-config-id="auto-txt-2-2" style=" font-size: 18px">Classes</a></li>
+                <li class="mr-12"><a
+                    class=" hover:text-white font-medium text-slate-400 transition ease-in-out delay-150"
+                    href="{% url 'resources' %}" data-config-id="auto-txt-3-2" style=" font-size: 18px">Resources</a>
+                </li>
+                <li><a class=" hover:text-white  font-medium text-slate-400 transition ease-in-out delay-150" href="#"
+                    data-config-id="auto-txt-4-2" style=" font-size: 18px" id = "responsivehide">Upcoming</a></li>
+              </ul>
+            </div>
+            <div class="w-1/2 xl:w-1/3">
+              <div class="hidden xl:flex items-center justify-end"><a
+                  class="inline-block py-2 px-4 mr-2 leading-5 text-slate-400 hover:text-white bg-transparent font-medium rounded-md transition ease-in-out delay-150"
+                  href="{% url 'login' %}" data-config-id="auto-txt-5-2" style="font-size: 18px">Log In</a><a
+                  class="inline-block py-2 px-4 text-sm leading-5 text-green-50 border-2 border-solid border-green-500 hover:bg-green-500 transition ease-in-out delay-200 font-medium focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded-md"
+                  href="#" data-config-id="auto-txt-6-2" style="font-size: 15px">Sign Up</a></div>
+            </div>
           </div>
+          <button class="navbar-burger self-center xl:hidden">
+            <svg width="35" height="35" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+              data-config-id="auto-svg-1-2">
+              <rect class="text-slate-400" width="32" height="32" rx="6" fill="currentColor"></rect>
+              <path class="text-coolGray-400"
+                d="M7 12H25C25.2652 12 25.5196 11.8946 25.7071 11.7071C25.8946 11.5196 26 11.2652 26 11C26 10.7348 25.8946 10.4804 25.7071 10.2929C25.5196 10.1054 25.2652 10 25 10H7C6.73478 10 6.48043 10.1054 6.29289 10.2929C6.10536 10.4804 6 10.7348 6 11C6 11.2652 6.10536 11.5196 6.29289 11.7071C6.48043 11.8946 6.73478 12 7 12ZM25 15H7C6.73478 15 6.48043 15.1054 6.29289 15.2929C6.10536 15.4804 6 15.7348 6 16C6 16.2652 6.10536 16.5196 6.29289 16.7071C6.48043 16.8946 6.73478 17 7 17H25C25.2652 17 25.5196 16.8946 25.7071 16.7071C25.8946 16.5196 26 16.2652 26 16C26 15.7348 25.8946 15.4804 25.7071 15.2929C25.5196 15.1054 25.2652 15 25 15ZM25 20H7C6.73478 20 6.48043 20.1054 6.29289 20.2929C6.10536 20.4804 6 20.7348 6 21C6 21.2652 6.10536 21.5196 6.29289 21.7071C6.48043 21.8946 6.73478 22 7 22H25C25.2652 22 25.5196 21.8946 25.7071 21.7071C25.8946 21.5196 26 21.2652 26 21C26 20.7348 25.8946 20.4804 25.7071 20.2929C25.5196 20.1054 25.2652 20 25 20Z"
+                fill="currentColor"></path>
+            </svg></button>
 
+        </nav> <!--NAVBAR ENDING-->
+    
+
+<!--Navbar script & styles-->
+  <script>
+    for (var i = 0; i < links.length; i += 1) {
+      links[i].addEventListener('click', function (e) {
+        e.preventDefault();
+      });
+    }
+
+    var forms = document.getElementsByTagName('form');
+    for (var i = 0; i < forms.length; i += 1) {
+      forms[i].addEventListener('submit', function (e) {
+        e.preventDefault();
+      }, true);
+    }
+  </script>
+  
+  <style> 
+    @media screen and (min-width: 0px) and (max-width: 1272px) {
+      .mr-12 { display: none; }  
+      #responsivehide { display: none; }  
+    }
+    
+  </style> 
+
+        <div class="navbar-menu hidden fixed top-0 z-50 left-0 w-full h-full bg-coolGray-900 bg-opacity-50">
+          <div class="fixed top-0 left-0 bottom-0 w-full w-4/6 max-w-xs bg-coolGray-900"
+            data-config-id="toggle-mobile-2" data-config-target=".navbar-menu" data-config-class="hidden">
+
+          </div>
         </div>
       </div>
-      <div class="w-full md:hidden px-4">
-        <div class="relative w-58 mx-auto">
-          <img
-            class="absolute p-1 ml-2 sm:ml-4 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 w-10/12 object-cover rounded"
-            src="flex-ui-assets/elements/dashboard.png" data-config-id="auto-img-7-2"><img class="mx-auto"
-            src="flex-ui-assets/images/headers/mockup-dark1.png" alt="" data-config-id="auto-img-8-2">
+      <div class="relative pt-16 pb-20 md:pb-24 md:pt-32 " style="background-color: #2A3342 !important;">
+        <div class="container px-4 mx-auto">
+          <div class="flex flex-wrap -mx-4">
+            <div class="w-full md:w-1/2 px-4 mb-12 md:mb-0">
+              <span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-white bg-green-500 rounded-full"
+                data-config-id="auto-txt-13-2" style="font-weight: bold; transform: scale(1.2)">Welcome!</span>
+              <h1 class="mb-6 text-3xl md:text-5xl lg:text-6xl leading-tight text-white font-bold leading-loose"
+                data-config-id="auto-txt-14-2" style="line-height: 1.2">Online Yoga & Fitness Events</h1>
+              <p class="mb-8 text-lg md:text-xl text-slate-400 font-medium" data-config-id="auto-txt-15-2"
+                style="font-size: 21px; line-height: 2rem">We focus on improving our users' health, both mentally and
+                physically, by
+                offering free and interactive online yoga and fitness events.</p>
+              <div class="flex flex-wrap mb-8 md:mb-16">
+                <div class="w-full md:w-auto py-1 md:py-0 md:mr-4"><button type="button"
+                    class="text-white transition ease-in-out delay-150 bg-green-500 hover:-translate-y-1 hover:scale-10 focus:ring-4 focus:outline-none focus:ring-green-300 font-large rounded-lg text-base px-6 py-3.5 text-center dark:bg-green-500 dark:hover:bg-green-600 dark:focus:ring-green-700"
+                    style="font-size: 22px; font-weight: bold; width: 200px;">Get Started!
+                  </button></div>
+                <div class="w-full md:w-auto py-1 md:py-0"><button type="button"
+                    class="transition ease-in-out delay-150 text-white bg-slate-700 hover:bg-slate-400 focus:ring-4 focus:outline-none focus:ring-slate-300 font-medium rounded-lg text-base px-6 py-3.5 text-center dark:bg-slate-600 dark:hover:bg-slate-700 dark:focus:ring-slate-800"
+                    style="font-size: 20px; font-weight: bold;">Learn More</button></div>
+              </div>
+
+            </div>
+          </div>
+          <div class="w-full md:hidden px-4">
+            <div class="relative w-58 mx-auto">
+              <img
+                class="absolute p-1 ml-2 sm:ml-4 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 w-10/12 object-cover rounded"
+                src="flex-ui-assets/elements/dashboard.png" data-config-id="auto-img-7-2"><img class="mx-auto"
+                src="flex-ui-assets/images/headers/mockup-dark1.png" alt="" data-config-id="auto-img-8-2">
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+      <div
+        class="md:absolute md:-right-96 md:top-1/2 md:transform md:-translate-y-1/2 md:translate-x-64 lg:translate-x-32 xl:-translate-x-7 md:mt-24 hidden md:block">
+        <img class="absolute left-12 top-1/2 transform -translate-y-64"
+          src="https://shuffle.dev/flex-ui-assets/elements/circle4-yellow.svg" alt=""
+          data-config-id="auto-img-11-2"><img class="relative z-10"
+          src="https://shuffle.dev/flex-ui-assets/images/headers/mockup-dark2.png" alt=""
+          data-config-id="auto-img-9-2"><img class="absolute z-20 top-6 left-36 transform translate-x-4"
+          src="flex-ui-assets/elements/dashboard.png" data-config-id="auto-img-10-2" data-removed="true">
+      </div>
   </div>
-  <div
-    class="md:absolute md:-right-96 md:top-1/2 md:transform md:-translate-y-1/2 md:translate-x-64 lg:translate-x-32 xl:-translate-x-7 md:mt-24 hidden md:block">
-    <img class="absolute left-12 top-1/2 transform -translate-y-64"
-      src="https://shuffle.dev/flex-ui-assets/elements/circle4-yellow.svg" alt=""
-      data-config-id="auto-img-11-2"><img class="relative z-10"
-      src="https://shuffle.dev/flex-ui-assets/images/headers/mockup-dark2.png" alt=""
-      data-config-id="auto-img-9-2"><img class="absolute z-20 top-6 left-36 transform translate-x-4"
-      src="flex-ui-assets/elements/dashboard.png" data-config-id="auto-img-10-2" data-removed="true">
-  </div>
+
+
   
   <div class="wave-bottom w-full text-coolGray-900">
     <svg viewbox="0 0 1440 116" fill="none" xmlns="http://www.w3.org/2000/svg" data-config-id="auto-svg-3-2">
@@ -113,5 +208,57 @@
         </div>
       </div>
     </div>
+    <!--Hidden navbar-->
+    <div class="hidden navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50">
+      <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+      <nav class="relative flex flex-col py-6 px-6 h-full w-full bg-white border-r overflow-y-auto" style="background-color: #2A3342;">
+        <div class="flex items-center mb-8 ">
+          <img class="h-8" src="https://i.ibb.co/LRCrLTF/Screenshot-2022-04-03-140946-removebg-preview.png" alt="LOGO"
+            data-config-id="auto-img-1-2" style="transform: scale(2); padding-left: 30px"> </a>
+          <a class="mr-auto text-3xl font-bold leading-none" href="#">
+            <img class="h-10" src="atis-assets/logo/atis/atis-mono-black.svg" alt="" width="auto">
+          </a>
+          <button class="navbar-close">
+            <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        <div>
+          <ul>
+            <li class="mb-1"><a
+                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded" 
+                href="#">About</a></li>
+            <li class="mb-1"><a
+                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
+                href="#">Classes</a></li>
+            <li class="mb-1"><a
+                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
+                href="#">Recources</a></li>
+            <li class="mb-1"><a
+                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
+                href="#">Upcoming</a></li>
+            <li class="mb-1"><a
+                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
+                href="#">Contact Us!</a></li>
+          </ul>
+        </div>
+        <div class="mt-auto">
+          <div class="pt-6"><a
+              class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-slate-400 hover:bg-gray-100 rounded-l-xl rounded-t-xl transition ease-in-out delay-150 text-white bg-slate-700 hover:bg-slate-400 focus:ring-4 focus:outline-none focus:ring-slate-300 font-medium rounded-lg text-base px-6 py-3.5 text-center dark:bg-slate-600 dark:hover:bg-slate-700 dark:focus:ring-slate-800"
+              href="{% url 'login' %}">Sign In</a><a
+              class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-green-400 hover:bg-green-100 rounded-l-xl rounded-t-xl transition ease-in-out delay-150 text-white bg-green-700 hover:bg-green-400 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-base px-6 py-3.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+              href="#">Sign Up</a></div>
+          <p class="my-4 text-xs text-center text-gray-400">
+            <span>© 2022 All rights reserved.</span>
+          </p>
+         
+        </div>
+      </nav>
+    </div>
   </section>
-  {% endblock %}
+
+</body>
+
+</html>
