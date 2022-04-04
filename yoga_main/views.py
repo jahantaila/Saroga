@@ -1,11 +1,12 @@
 from pyexpat.errors import messages
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
-# Create your views here.
+from django.contrib.auth.decorators import login_required
 
 def home(request):
   return render(request, 'home.html')
 
+@login_required(login_url='/login/')
 def superpanel(request):
   return render(request, 'teachpanel.html')
 
@@ -21,6 +22,10 @@ def loginUser(request):
       return redirect('home')
   else: 
     return render(request, 'login.html')
+
+def logoutUser(request):
+  logout(request)
+  return redirect('home')
 
 def signup(request):
   return render(request, 'signup.html')
