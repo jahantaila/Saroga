@@ -1,5 +1,6 @@
-from django.shortcuts import render, HttpResponse
-from django.contrib.auth.forms import UserCreationForm
+from pyexpat.errors import messages
+from django.shortcuts import render, redirect
+from django.contrib.auth import authenticate, login, logout
 # Create your views here.
 
 def home(request):
@@ -8,13 +9,21 @@ def home(request):
 def superpanel(request):
   return render(request, 'teachpanel.html')
 
-def login(request):
-  return render(request, 'login.html')
+def loginUser(request):
+  if request.method == 'POST':
+    username = request.POST.get('username')
+    password = request.POST.get('password')
+    user = authenticate(request, username=username, password=password)
+    if user is not None:
+      login(request, user)
+      return redirect('superpanel')
+    else:
+      return redirect('home')
+  else: 
+    return render(request, 'login.html')
 
 def signup(request):
-  form = UserCreationForm()
-  context = {'form': form}
-  return render(request, 'signup.html', context)
+  return render(request, 'signup.html')
   
 def classes(request):
    return render(request, 'classes.html')
