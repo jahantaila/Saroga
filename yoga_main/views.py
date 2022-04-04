@@ -30,3 +30,9 @@ def classes(request):
 
 def resources(request):
    return render(request, 'resources.html')
+
+def privacyPolicy(request):
+   return render(request, 'privacypolicy.html')
+
+def termsOfUse(request):
+  return render(request, 'termsofuse.html')
