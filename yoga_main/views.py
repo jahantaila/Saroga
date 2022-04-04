@@ -9,23 +9,21 @@ def home(request):
 def superpanel(request):
   return render(request, 'teachpanel.html')
 
-def login(request):
+def loginUser(request):
   if request.method == 'POST':
     username = request.POST.get('username')
     password = request.POST.get('password')
     user = authenticate(request, username=username, password=password)
     if user is not None:
       login(request, user)
-      return redirect('teachpanel')
+      return redirect('superpanel')
     else:
       return redirect('home')
   else: 
     return render(request, 'login.html')
 
 def signup(request):
-  form = UserCreationForm()
-  context = {'form': form}
-  return render(request, 'signup.html', context)
+  return render(request, 'signup.html')
   
 def classes(request):
    return render(request, 'classes.html')
