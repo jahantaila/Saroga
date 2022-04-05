@@ -12,88 +12,74 @@
 
 <body>
   {% if user.is_authenticated %}
-  {% include 'teachpanel.html' %}
+    {% include 'teachpanel.html' %} 
   {% else %}
-  <div class="" id="content">
-    <section class="relative bg-white overflow-hidden">
-      <div class=>
-        <nav class="flex justify-between p-6 px-4" data-config-id="toggle-mobile" data-config-target=".navbar-menu"
-          data-config-class="hidden" style="background-color: #2A3342 !important;">
-          <div class="flex justify-between items-center w-full">
-            <div class="w-1/2 xl:w-1/3">
-              <a class="block max-w-max" href="{% url 'home' %}">
-                <img class="h-8" src="https://i.ibb.co/LRCrLTF/Screenshot-2022-04-03-140946-removebg-preview.png"
-                  alt="LOGO" data-config-id="auto-img-1-2" style="transform: scale(2); padding-left: 30px"> </a>
+    <div class="" id="content">
+      <section class="relative bg-white overflow-hidden">
+        <div class=>
+          <nav class="flex justify-between p-6 px-4" data-config-id="toggle-mobile" data-config-target=".navbar-menu"
+            data-config-class="hidden" style="background-color: #2A3342 !important;">
+            <div class="flex justify-between items-center w-full">
+              <div class="w-1/2 xl:w-1/3">
+                <a class="block max-w-max" href="{% url 'home' %}">
+                  <img class="h-8" src="https://i.ibb.co/LRCrLTF/Screenshot-2022-04-03-140946-removebg-preview.png" alt="LOGO"
+                    data-config-id="auto-img-1-2" style="transform: scale(2); padding-left: 30px"> </a>
+              </div>
+              <div class="w-1/2 xl:w-1/3">
+                <ul class="text-slate-400hidden xl:flex xl:justify-center">
+                  <li class="mr-12"><a
+                      class="text-slate-400 font-medium hover:text-white transition ease-in-out delay-150" href="#"
+                      data-config-id="auto-txt-1-2" style=" font-size: 18px">About</a></li>
+                  <li class="mr-12"><a
+                      class=" text-slate-400   font-medium hover:text-white transition ease-in-out delay-150"
+                      href="{% url 'classes' %}" data-config-id="auto-txt-2-2" style=" font-size: 18px">Classes</a></li>
+                  <li class="mr-12"><a
+                      class=" hover:text-white font-medium text-slate-400 transition ease-in-out delay-150"
+                      href="{% url 'resources' %}" data-config-id="auto-txt-3-2" style=" font-size: 18px">Resources</a>
+                  </li>
+                  <li><a class=" hover:text-white  font-medium text-slate-400 transition ease-in-out delay-150" href="#"
+                      data-config-id="auto-txt-4-2" style=" font-size: 18px" id = "responsivehide">Upcoming</a></li>
+                </ul>
+              </div>
+              <div class="w-1/2 xl:w-1/3">
+                <div class="hidden xl:flex items-center justify-end"><a
+                    class="inline-block py-2 px-4 mr-2 leading-5 text-slate-400 hover:text-white bg-transparent font-medium rounded-md transition ease-in-out delay-150"
+                    href="{% url 'login' %}" data-config-id="auto-txt-5-2" style="font-size: 18px">Log In</a><a
+                    class="inline-block py-2 px-4 text-sm leading-5 text-green-50 border-2 border-solid border-green-500 hover:bg-green-500 transition ease-in-out delay-200 font-medium focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded-md"
+                    href="#" data-config-id="auto-txt-6-2" style="font-size: 15px">Sign Up</a></div>
+              </div>
             </div>
-            <div class="w-1/2 xl:w-1/3">
-              <ul class="text-slate-400hidden xl:flex xl:justify-center">
-                <li class="mr-12"><a
-                    class="text-slate-400 font-medium hover:text-white transition ease-in-out delay-150" href="#"
-                    data-config-id="auto-txt-1-2" style=" font-size: 18px">About</a></li>
-                <li class="mr-12"><a
-                    class=" text-slate-400   font-medium hover:text-white transition ease-in-out delay-150"
-                    href="{% url 'classes' %}" data-config-id="auto-txt-2-2" style=" font-size: 18px">Classes</a></li>
-                <li class="mr-12"><a
-                    class=" hover:text-white font-medium text-slate-400 transition ease-in-out delay-150"
-                    href="{% url 'resources' %}" data-config-id="auto-txt-3-2" style=" font-size: 18px">Resources</a>
-                </li>
-                <li><a class=" hover:text-white  font-medium text-slate-400 transition ease-in-out delay-150" href="#"
-                    data-config-id="auto-txt-4-2" style=" font-size: 18px" id="responsivehide">Upcoming</a></li>
-              </ul>
-            </div>
-            <div class="w-1/2 xl:w-1/3">
-              <div class="hidden xl:flex items-center justify-end"><a
-                  class="inline-block py-2 px-4 mr-2 leading-5 text-slate-400 hover:text-white bg-transparent font-medium rounded-md transition ease-in-out delay-150"
-                  href="{% url 'login' %}" data-config-id="auto-txt-5-2" style="font-size: 18px">Log In</a><a
-                  class="inline-block py-2 px-4 text-sm leading-5 text-green-50 border-2 border-solid border-green-500 hover:bg-green-500 transition ease-in-out delay-200 font-medium focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded-md"
-                  href="#" data-config-id="auto-txt-6-2" style="font-size: 15px">Sign Up</a></div>
-            </div>
-          </div>
-          <button class="navbar-burger self-center xl:hidden">
-            <svg width="35" height="35" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
-              data-config-id="auto-svg-1-2">
-              <rect class="text-slate-400" width="32" height="32" rx="6" fill="currentColor"></rect>
-              <path class="text-coolGray-400"
-                d="M7 12H25C25.2652 12 25.5196 11.8946 25.7071 11.7071C25.8946 11.5196 26 11.2652 26 11C26 10.7348 25.8946 10.4804 25.7071 10.2929C25.5196 10.1054 25.2652 10 25 10H7C6.73478 10 6.48043 10.1054 6.29289 10.2929C6.10536 10.4804 6 10.7348 6 11C6 11.2652 6.10536 11.5196 6.29289 11.7071C6.48043 11.8946 6.73478 12 7 12ZM25 15H7C6.73478 15 6.48043 15.1054 6.29289 15.2929C6.10536 15.4804 6 15.7348 6 16C6 16.2652 6.10536 16.5196 6.29289 16.7071C6.48043 16.8946 6.73478 17 7 17H25C25.2652 17 25.5196 16.8946 25.7071 16.7071C25.8946 16.5196 26 16.2652 26 16C26 15.7348 25.8946 15.4804 25.7071 15.2929C25.5196 15.1054 25.2652 15 25 15ZM25 20H7C6.73478 20 6.48043 20.1054 6.29289 20.2929C6.10536 20.4804 6 20.7348 6 21C6 21.2652 6.10536 21.5196 6.29289 21.7071C6.48043 21.8946 6.73478 22 7 22H25C25.2652 22 25.5196 21.8946 25.7071 21.7071C25.8946 21.5196 26 21.2652 26 21C26 20.7348 25.8946 20.4804 25.7071 20.2929C25.5196 20.1054 25.2652 20 25 20Z"
-                fill="currentColor"></path>
-            </svg></button>
+            <button class="navbar-burger self-center xl:hidden">
+              <svg width="35" height="35" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+                data-config-id="auto-svg-1-2">
+                <rect class="text-slate-400" width="32" height="32" rx="6" fill="currentColor"></rect>
+                <path class="text-coolGray-400"
+                  d="M7 12H25C25.2652 12 25.5196 11.8946 25.7071 11.7071C25.8946 11.5196 26 11.2652 26 11C26 10.7348 25.8946 10.4804 25.7071 10.2929C25.5196 10.1054 25.2652 10 25 10H7C6.73478 10 6.48043 10.1054 6.29289 10.2929C6.10536 10.4804 6 10.7348 6 11C6 11.2652 6.10536 11.5196 6.29289 11.7071C6.48043 11.8946 6.73478 12 7 12ZM25 15H7C6.73478 15 6.48043 15.1054 6.29289 15.2929C6.10536 15.4804 6 15.7348 6 16C6 16.2652 6.10536 16.5196 6.29289 16.7071C6.48043 16.8946 6.73478 17 7 17H25C25.2652 17 25.5196 16.8946 25.7071 16.7071C25.8946 16.5196 26 16.2652 26 16C26 15.7348 25.8946 15.4804 25.7071 15.2929C25.5196 15.1054 25.2652 15 25 15ZM25 20H7C6.73478 20 6.48043 20.1054 6.29289 20.2929C6.10536 20.4804 6 20.7348 6 21C6 21.2652 6.10536 21.5196 6.29289 21.7071C6.48043 21.8946 6.73478 22 7 22H25C25.2652 22 25.5196 21.8946 25.7071 21.7071C25.8946 21.5196 26 21.2652 26 21C26 20.7348 25.8946 20.4804 25.7071 20.2929C25.5196 20.1054 25.2652 20 25 20Z"
+                  fill="currentColor"></path>
+              </svg></button>
 
-        </nav>
+          </nav>
 
-        <section class="bg-slate-900">
-          <div class="flex flex-wrap">
-            <div class="pt-7 lg:pt-16 pb-6 w-full lg:w-1/2">
-              <div class="max-w-md mx-auto">
-
-                <div>
-                  <div class="mb-7 px-3">
-                    <span class="text-gray-400 text-xl ">Join a yoga session today!</span>
-                    <h3 class="text-3xl font-bold text-white" style="padding-top: 3%">Login to your account</h3>
-                  </div>
-                  <form action="" method="POST">
-                    {% csrf_token %}
-                    <div class="flex flex-wrap">
+          <section class="bg-slate-900">
+            <div class="flex flex-wrap h-screen">
+              <div class="pt-7 lg:pt-16 pb-6 w-full lg:w-1/2" >
+                <div class="max-w-md mx-auto">
+                
+                  <div>
+                    <div class="mb-7 px-3">
+                      <span class="text-gray-400 text-xl ">Join a yoga session today!</span>
+                      <h3 class="text-3xl font-bold text-white" style="padding-top: 3%">Login to your account</h3>
                     </div>
-                    <label for="username" class="ml-2 text-green-500">Username:</label>
-                    <div class="mb-3 mt-1 flex p-4 mx-2 bg-gray-800 rounded">
-                      <input class="w-full text-medium text-gray-50 bg-gray-800 outline-none " id="username"
-                        name="username" type="text" placeholder="ex: username" <svg xmlns="http://www.w3.org/2000/svg"
-                        class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#d4d4dc" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                    </div>
-                    <label for="username" class="ml-2 text-green-500">Password:</label>
-                    <div class="mb-6 flex p-4 mx-2 bg-gray-800 rounded mt-1">
-                      <input class="w-full text-medium text-gray-50 bg-gray-800 outline-none" type="password"
-                        name="password" placeholder="**********">
-                      <button>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                          stroke="#d4d4dc" stroke-width="2">
-                          <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                    <form action="" method="POST">
+                      {% csrf_token %}
+                      <div class="flex flex-wrap">
+                      </div>
+                      <label for="username" class = "ml-2 text-green-500">Username:</label>
+                      <div class="mb-3 mt-1 flex p-4 mx-2 bg-gray-800 rounded">
+                        <input class="w-full text-medium text-gray-50 bg-gray-800 outline-none " id = "username" name="username" type="text" placeholder="ex: username"
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#d4d4dc" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
-<<<<<<< HEAD
                       </div>
                       <label for="username" class = "ml-2 text-green-500">Password:</label>
                       <div class="mb-6 flex p-4 mx-2 bg-gray-800 rounded mt-1">
@@ -125,102 +111,53 @@
                   </div>
                   <a class="inline-block py-2 px-6 leading-loose rounded-t-xl rounded-l-xl bg-white hover:bg-gray-500 text-gray-900 hover:text-white transition duration-200 font-bold" href="#">Learn More!</a>
                  
-=======
-                      </button>
-                    </div>
-                    <div class="px-3 text-center">
-                      <button
-                        class="mb-2 w-full py-4 bg-green-500 hover:bg-green-700 rounded text-sm font-extrabold text-base text-gray-50 transition duration-200 "
-                        style="margin-bottom: 7%">Log In!</button>
-                      <span class="text-gray-400 text-md ">
-                        <span>Don't have an account?</span>
-                        <a class="text-green-600 hover:underline" href="#">Create One Today!</a>
-                      </span>
-                      <p class="mt-16 text-md text-gray-400"><a class="text-green-600" href="#">Please read our</a> <a
-                          class="underline hover:text-gray-500" href="{% url 'privacyPolicy'%}">Privacy Policy</a> and
-                        <a class="underline hover:text-gray-500" href="{% url 'termsOfUse'%}">Terms of Use</a>
-                      </p>
-                    </div>
-                  </form>
->>>>>>> eb6fad79cd452461a07c94c5b248d56dafe719ff
                 </div>
               </div>
-            </div>
-            <div class="hidden lg:block relative w-full lg:w-1/2 bg-green-400">
-              <div class="absolute bottom-0 inset-x-0 mx-auto mb-12 max-w-xl text-center" style="z-index: 10;">
-                <img class="lg:max-w-xl mx-auto"
-                  src="https://shuffle.dev/atis-assets/illustrations/pablo-coming-soon-dark-mono.png" alt="">
-                <h2 class="mb-2 text-2xl text-white font-bold">Daily Yoga Quote</h2>
-                <div class="max-w-lg mx-auto">
-                  <p class="mb-6 text-gray-50 leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Pellentesque efficitur nisl sodales egestas lobortis.</p>
+              <div class="lg:hidden bg-green-600 w-full">
+                <div class="relative w-full">
+                  <img class="relative mx-auto max-w-sm mt-4 mb-4 block" src="atis-assets/illustrations/pablo-coming-soon-dark-mono.png" alt="">
+                  <div class="flex justify-center space-x-3">
+                    <button class="p-1 bg-green-500 rounded-full"></button>
+                    <button class="p-1 bg-green-500 rounded-full"></button>
+                    <button class="p-1 bg-white rounded-full"></button>
+                    <button class="p-1 bg-green-500 rounded-full"></button>
+                  </div>
                 </div>
-<<<<<<< HEAD
                 <div class="py-10 px-3 text-center" style="z-index: 10;">
                   <h2 class="mb-2 text-2xl text-white font-bold">"The daily Yoga quote: "</h2>
                   <p class="mb-6 text-gray-50 leading-loose">test.</p>
                   <a class="py-2 px-6 rounded-t-xl rounded-l-xl rounded-l-xl bg-white hover:bg-gray-500 text-gray-600 hover:text-white transition duration-200 font-bold" href="#">Learn More!</a>
-=======
-                <a class="inline-block py-2 px-6 leading-loose rounded-t-xl rounded-l-xl bg-white hover:bg-gray-500 text-gray-900 hover:text-white transition duration-200 font-bold"
-                  href="#">Get Started</a>
-                <div class="mt-12 flex justify-center space-x-3">
-                  <button class="p-1 bg-green-500 rounded-full"></button>
-                  <button class="p-1 bg-green-500 rounded-full"></button>
-                  <button class="p-1 bg-white rounded-full"></button>
-                  <button class="p-1 bg-green-500 rounded-full"></button>
->>>>>>> eb6fad79cd452461a07c94c5b248d56dafe719ff
                 </div>
-              </div>
+              </div>          
             </div>
-            <div class="lg:hidden bg-green-600 w-full">
-              <div class="relative w-full">
-                <img class="relative mx-auto max-w-sm mt-4 mb-4 block"
-                  src="atis-assets/illustrations/pablo-coming-soon-dark-mono.png" alt="">
-                <div class="flex justify-center space-x-3">
-                  <button class="p-1 bg-green-500 rounded-full"></button>
-                  <button class="p-1 bg-green-500 rounded-full"></button>
-                  <button class="p-1 bg-white rounded-full"></button>
-                  <button class="p-1 bg-green-500 rounded-full"></button>
-                </div>
-              </div>
-              <div class="py-10 px-3 text-center" style="z-index: 10;">
-                <h2 class="mb-2 text-2xl text-white font-bold">"The daily Yoga quote: "</h2>
-                <p class="mb-6 text-gray-50 leading-loose">test.</p>
-                <a class="py-2 px-6 rounded-t-xl rounded-l-xl rounded-l-xl bg-white hover:bg-gray-500 text-gray-600 hover:text-white transition duration-200 font-bold"
-                  href="#">Get Started</a>
-              </div>
-            </div>
-          </div>
-        </section>
+          </section>
 
-        <script>
-          for (var i = 0; i < links.length; i += 1) {
-            links[i].addEventListener('click', function (e) {
-              e.preventDefault();
-            });
-          }
+      <script>
+        for (var i = 0; i < links.length; i += 1) {
+          links[i].addEventListener('click', function (e) {
+            e.preventDefault();
+          });
+        }
 
-          var forms = document.getElementsByTagName('form');
-          for (var i = 0; i < forms.length; i += 1) {
-            forms[i].addEventListener('submit', function (e) {
-              e.preventDefault();
-            }, true);
-          }
-        </script>
-
-        <style>
-          @media screen and (min-width: 0px) and (max-width: 1272px) {
-            .mr-12 {
-              display: none;
-            }
-
-            #responsivehide {
-              display: none;
-            }
-          }
-        </style>
-      </div>
-      {% endif %}
+        var forms = document.getElementsByTagName('form');
+        for (var i = 0; i < forms.length; i += 1) {
+          forms[i].addEventListener('submit', function (e) {
+            e.preventDefault();
+          }, true);
+        }
+      </script>
+      
+      <style> 
+        @media screen and (min-width: 0px) and (max-width: 1272px) {
+          .mr-12 { display: none; }  
+          #responsivehide { display: none; }  
+        }
+        
+      
+      </style>
+    </div>
+  {% endif %}
 </body>
 
 </html>
+
