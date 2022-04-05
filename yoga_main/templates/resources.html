@@ -64,35 +64,37 @@
   </nav>
 
   <div class="w-full flex flex-row min-h-screen resources" style="border-top: solid 1px white;">
-    <div class="w-1/5 bg-slate-700 bg-coolGray text-white py-6 px-[5%]">
+    <div class="w-1/5 bg-slate-700 bg-coolGray text-white py-6 px-[4.5%] pt-6">
       <ul class="font-medium">
-        <li class="mb-12">
-            <h5 class="text-xl">Introduction</h5>
-            <ul class="ml-5">
-              <li class="mt-3 text-slate-400 font-medium hover:text-white transition ease-in-out delay-150"> <a class="block" href="#" style="" onclick="toggle(event)" aria-label="0" id="firsta">History</a></li>
-              <li class="mt-3 text-slate-400 font-medium hover:text-white transition ease-in-out delay-150"> <a class="block" href="#" style="" onclick="toggle(event)" aria-label="1">Purpose</a></li>
-              <li class="mt-3 text-slate-400 font-medium hover:text-white transition ease-in-out delay-150"> <a class="block" href="#" style="" onclick="toggle(event)" aria-label="2">Benefits</a></li>
+        <li class="mb-6">
+            <h5 class="text-base tracking-wide font-normal font-normal antialiased text-[1.25em]">Introduction</h5>
+            <ul class="ml-1 text-[1.2em] font-normal">
+              <li class="mt-3 text-slate-400 hover:text-white transition ease-in-out delay-150"> <a class="block " href="#" style="" onclick="toggle(event)" aria-label="0" id="firsta">History</a></li>
+              <li class=" text-slate-400 hover:text-white transition ease-in-out delay-150"> <a class="block" href="#" style="" onclick="toggle(event)" aria-label="1">Purpose</a></li>
+              <li class=" text-slate-400 hover:text-white transition ease-in-out delay-150"> <a class="block" href="#" style="" onclick="toggle(event)" aria-label="2">Benefits</a></li>
             </ul>
         </li>
 
         <li>
-          <h5 class="text-xl">Yoga Branches</h5>
-          <ul class="ml-5 ">
-            <li class="mt-3 text-slate-400 font-medium hover:text-white transition ease-in-out delay-150"> <a class="block" href="#" style="" onclick="toggle(event)" aria-label="3">Hatha</a> </li>
-            <li class="mt-3 text-slate-400 font-medium hover:text-white transition ease-in-out delay-150"> <a class="block" href="#" style="" onclick="toggle(event)" aria-label="4">Bhakti</a> </li>
-            <li class="mt-3 text-slate-400 font-medium hover:text-white transition ease-in-out delay-150"> <a class="block" href="#" style="" onclick="toggle(event)">Mantra</a> </li>
-            <li class="mt-3 text-slate-400 font-medium hover:text-white transition ease-in-out delay-150"> <a class="block" href="#" style="" onclick="toggle(event)">Karma</a> </li>
+          <h5 class="text-base tracking-wide font-normal antialiased text-[1.25em]">Yoga Branches</h5>
+          <ul class="ml-1 text-[1.2em] font-normal">
+            <li class="mt-3 text-slate-400 hover:text-white transition ease-in-out delay-150"> <a class="block" href="#" style="" onclick="toggle(event)" aria-label="3">Hatha</a> </li>
+            <li class="text-slate-400 hover:text-white transition ease-in-out delay-150"> <a class="block" href="#" style="" onclick="toggle(event)" aria-label="4">Bhakti</a> </li>
+            <li class="text-slate-400 hover:text-white transition ease-in-out delay-150"> <a class="block" href="#" style="" onclick="toggle(event)">Mantra</a> </li>
+            <li class="text-slate-400 hover:text-white transition ease-in-out delay-150"> <a class="block" href="#" style="" onclick="toggle(event)">Karma</a> </li>
           </ul>
       </li>
       </ul>
     </div>
 
-    <div class="w-4/5 bg-slate-600 bg-coolGray text-white py-6 px-20">
+    <div class="w-4/5 bg-slate-600 bg-white text-coolGray py-6 px-20">
       <div class="right" aria-label="0" id="first">
         <h2 class="text-slate-400 font-medium mb-2" >Introduction</h2>
-        <h1 class="block text-slate-100 font-bold text-3xl mb-2" >History</h1>
-        <p class="text-slate-300 font-normal" style="border-left: 2px solid white; border-radius:2px; padding-left:10px;">A brief summary on the history of yoga.</p>
-        
+        <h1 class="block text-slate-700 font-bold text-3xl mb-2" >History</h1>
+        <p class="text-slate-400 font-normal" style="border-left: 2px solid lightgray; border-radius:2px; padding-left:10px;">A brief summary on the history of yoga.</p>
+        <div class="mt-15">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at hendrerit erat. Nullam ac tellus molestie, tincidunt tellus sit amet, varius tortor. Pellentesque commodo mauris gravida felis aliquet, eget tincidunt nisi lobortis. Nullam blandit dignissim leo, eget ultricies dolor dictum vitae. Ut at turpis id erat fermentum condimentum. </p>
+        </div>
       </div>
       <div class="right" aria-label="1">
         <h2 class="text-slate-400 font-medium mb-2" >Introduction</h2>
@@ -112,6 +114,13 @@
         <p class="text-slate-300 font-normal" style="border-left: 2px solid white; border-radius:2px; padding-left:10px;">These are the goals of yoga.</p>
         
       </div>
+      <div class="right" aria-label="4">
+        <h2 class="text-slate-400 font-medium mb-2" >Branches</h2>
+        <h1 class="block text-slate-100 font-bold text-3xl mb-2" >Purpose</h1>
+        <p class="text-slate-300 font-normal" style="border-left: 2px solid white; border-radius:2px; padding-left:10px;">These are the goals of yoga.</p>
+        
+        
+      </div>
           
     </div>
 
@@ -120,7 +129,7 @@
   <script>
     window.onload = function() {
       document.getElementById('first').className = 'show';
-      document.getElementById('firsta').className = 'current';
+      document.getElementById('firsta').className = 'block current';
     };
     let previous = document.getElementById("first");
     function toggle(e){
