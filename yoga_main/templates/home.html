@@ -19,7 +19,7 @@
 
 </head>
 
-<body id="page" class="antialiased font-body bg-body text-body bg-green-500 ">
+<body id="page" class="antialiased font-body bg-body text-body bg-slate-100 ">
   <!-- NAVBAR -->
   <div class="" id="content">
 
@@ -30,8 +30,8 @@
           <div class="flex justify-between items-center w-full">
             <div class="w-1/2 xl:w-1/3">
               <a class="block max-w-max" href="{% url 'home' %}">
-                <img class="h-8" src="https://i.ibb.co/LRCrLTF/Screenshot-2022-04-03-140946-removebg-preview.png" alt="LOGO"
-                  data-config-id="auto-img-1-2" style="transform: scale(2); padding-left: 30px"> </a>
+                <img class="h-8" src="https://i.ibb.co/LRCrLTF/Screenshot-2022-04-03-140946-removebg-preview.png"
+                  alt="LOGO" data-config-id="auto-img-1-2" style="transform: scale(2); padding-left: 30px"> </a>
             </div>
             <div class="w-1/2 xl:w-1/3">
               <ul class="text-slate-400hidden xl:flex xl:justify-center">
@@ -46,7 +46,7 @@
                     href="{% url 'resources' %}" data-config-id="auto-txt-3-2" style=" font-size: 18px">Resources</a>
                 </li>
                 <li><a class=" hover:text-white  font-medium text-slate-400 transition ease-in-out delay-150" href="#"
-                    data-config-id="auto-txt-4-2" style=" font-size: 18px" id = "responsivehide">Upcoming</a></li>
+                    data-config-id="auto-txt-4-2" style=" font-size: 18px" id="responsivehide">Upcoming</a></li>
               </ul>
             </div>
             <div class="w-1/2 xl:w-1/3">
@@ -66,36 +66,42 @@
                 fill="currentColor"></path>
             </svg></button>
 
-        </nav> <!--NAVBAR ENDING-->
-    
+        </nav>
+        <!--NAVBAR ENDING-->
 
-<!--Navbar script & styles-->
-  <script>
-    for (var i = 0; i < links.length; i += 1) {
-      links[i].addEventListener('click', function (e) {
-        e.preventDefault();
-      });
-    }
 
-    var forms = document.getElementsByTagName('form');
-    for (var i = 0; i < forms.length; i += 1) {
-      forms[i].addEventListener('submit', function (e) {
-        e.preventDefault();
-      }, true);
-    }
-  </script>
-  
-  <style> 
-    @media screen and (min-width: 0px) and (max-width: 1272px) {
-      .mr-12 { display: none; }  
-      #responsivehide { display: none; }  
-    }
-    
-  </style> 
+        <!--Navbar script & styles-->
+        <script>
+          for (var i = 0; i < links.length; i += 1) {
+            links[i].addEventListener('click', function (e) {
+              e.preventDefault();
+            });
+          }
+
+          var forms = document.getElementsByTagName('form');
+          for (var i = 0; i < forms.length; i += 1) {
+            forms[i].addEventListener('submit', function (e) {
+              e.preventDefault();
+            }, true);
+          }
+        </script>
+
+        <style>
+          @media screen and (min-width: 0px) and (max-width: 1272px) {
+            .mr-12 {
+              display: none;
+            }
+
+            #responsivehide {
+              display: none;
+            }
+          }
+        </style>
 
         <div class="navbar-menu hidden fixed top-0 z-50 left-0 w-full h-full bg-coolGray-900 bg-opacity-50">
           <div class="fixed top-0 left-0 bottom-0 w-full w-4/6 max-w-xs bg-coolGray-900"
             data-config-id="toggle-mobile-2" data-config-target=".navbar-menu" data-config-class="hidden">
+
           </div>
         </div>
       </div>
@@ -145,45 +151,49 @@
   </div>
 
 
-  
-  <div class="wave-bottom w-full text-coolGray-900">
+
+
+  </div>
+
+  <!-- <div class="wave wave-top w-full text-coolGray-900">
+    <svg viewBox="0 0 1440 116" fill="none" xmlns="http://www.w3.org/2000/svg" data-config-id="auto-svg-1-1">
+      <path
+        d="M1440 64.5909H1090.08C833.336 64.5909 580.229 -7.62939e-06 360 -7.62939e-06C139.771 -7.62939e-06 0 64.5909 0 64.5909V116H1440V64.5909Z"
+        fill="#2A3342"></path>
+    </svg>
+  </div> -->
+
+
+
+  <div class="wave-bottom w-full">
     <svg viewbox="0 0 1440 116" fill="none" xmlns="http://www.w3.org/2000/svg" data-config-id="auto-svg-3-2">
       <path
         d="M1440 51.4091H1090.08C833.336 51.4091 580.229 116 360 116C139.771 116 0 51.4091 0 51.4091V0H1440V51.4091Z"
         fill="#2A3342 "></path>
     </svg>
   </div>
+
+
   </section>
-  </div>
-
-  <div class="wave wave-top w-full text-coolGray-900">
-    <svg viewBox="0 0 1440 116" fill="none" xmlns="http://www.w3.org/2000/svg" data-config-id="auto-svg-1-1">
-      <path d="M1440 64.5909H1090.08C833.336 64.5909 580.229 -7.62939e-06 360 -7.62939e-06C139.771 -7.62939e-06 0 64.5909 0 64.5909V116H1440V64.5909Z" fill="#2A3342"></path>
-    </svg>
-  </div>
-
-
-
 
   <!--section that talks about the meaning of the name-->
   <section class="relative overflow-hidden">
-    
-    
-    <div class="relative bg-gray-50 pt-12 lg:pt-20 pb-12 md:pb-24" style="background-image: url('https://shuffle.dev/flex-ui-assets/elements/pattern-dark2.svg');">
-      <div class="container mx-auto px-4" style="margin-top: -6%">
+    <div class="relative  pt-12 lg:pt-20 pb-12 md:pb-24" style="">
+      <div class="container mx-auto px-4" style="margin-top: -1%">
         <div class="flex flex-wrap -mx-4">
           <div class="w-full lg:w-1/2 px-4 mb-12 md:mb-20 lg:mb-0 flex items-center">
             <div class="w-full text-center lg:text-left">
               <div class="max-w-md mx-auto lg:mx-0">
                 <h2 class="mb-3 text-4xl lg:text-5xl font-bold font-heading ">
-                  <span class = "leading-relaxed text-white">Saroga is Gujrati for</span>
+                  <span class="leading-relaxed text-[#2A3342]">Saroga is Gujrati for</span>
                   <span class="text-green-500">good health</span>
                 </h2>
               </div>
               <div class="max-w-sm mx-auto lg:mx-0">
-                <p class="mb-6 text-gray-400 leading-loose">Here at Saroga, your health is our top priority. lorem
-                  loremloremloremloremloremloremloremloremlorem
-                  loremloremloremloremloremloremloremloremlorem
+                <p class="mb-6 text-gray-400 text-md leading-loose">Here at Saroga, your health is our top priority.
+                  lorem
+                  lorem loremlorem loremlore mloremloremlor emlorem
+                  loremlor emlore mloremloremlor emloremlor emlorem
                 </p>
                 <div></div>
               </div>
@@ -194,13 +204,10 @@
               <img class="h-128 w-full max-w-lg object-cover rounded-3xl md:rounded-br-none"
                 src="https://aeliawellness.com.cy/wp-content/uploads/2019/11/1200-478618627-family-meditating-together-1024x683.jpg"
                 alt="">
-              <img class="hidden md:block absolute" style="top:-2rem; right: 3rem; z-index: -1;"
-                src="atis-assets/elements/green-dark-up.svg" alt="">
-              <img class="hidden md:block absolute" style="bottom:-2rem; right: -2rem; z-index: -1;"
-                src="atis-assets/elements/wing-green-down.svg" alt="">
-              <img class="hidden md:block absolute" style="top:3rem; right: -3rem; z-index: -1;"
+              
+              <img class="hidden md:block absolute" style="top:3rem; right: -3rem; z-index: -1; filter: invert(45%) sepia(69%) saturate(479%) hue-rotate(89deg) brightness(94%) contrast(97%);"
                 src="https://shuffle.dev/atis-assets/elements/bullets-gray-right.svg" alt="">
-              <img class="hidden md:block absolute" style="bottom:2.5rem; left: -4.5rem; z-index: -1;"
+              <img class="hidden md:block absolute" style="bottom:2.5rem; left: -4.5rem; z-index: -1; filter: invert(45%) sepia(69%) saturate(479%) hue-rotate(89deg) brightness(94%) contrast(97%);"
                 src="https://shuffle.dev/atis-assets/elements/bullets-gray-left.svg" alt="">
             </div>
           </div>
@@ -210,7 +217,8 @@
     <!--Hidden navbar-->
     <div class="hidden navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50">
       <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
-      <nav class="relative flex flex-col py-6 px-6 h-full w-full bg-white border-r overflow-y-auto" style="background-color: #2A3342;">
+      <nav class="relative flex flex-col py-6 px-6 h-full w-full bg-white border-r overflow-y-auto"
+        style="background-color: #2A3342;">
         <div class="flex items-center mb-8 ">
           <img class="h-8" src="https://i.ibb.co/LRCrLTF/Screenshot-2022-04-03-140946-removebg-preview.png" alt="LOGO"
             data-config-id="auto-img-1-2" style="transform: scale(2); padding-left: 30px"> </a>
@@ -227,7 +235,7 @@
         <div>
           <ul>
             <li class="mb-1"><a
-                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded" 
+                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
                 href="#">About</a></li>
             <li class="mb-1"><a
                 class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
@@ -252,12 +260,12 @@
           <p class="my-4 text-xs text-center text-gray-400">
             <span>© 2022 All rights reserved.</span>
           </p>
-         
+
         </div>
       </nav>
     </div>
   </section>
-
+  <img class="hidden md:block fixed bottom-0 left-0" src="../static/images/greentrans.png">
 </body>
 
 </html>
