@@ -4,67 +4,138 @@
 {% block title %}Saroga | Classes {% endblock %}
 
 {% block content %}
-    <section class="md:container md:mx-auto relative">
-        <!-- Header -->
-        <div class="flex flex-row justify-self-center justify-between mt-10 border-b-2">
-            <h1 class="mb-2 text-3xl font-bold text-[#2A3342] tracking-wide">Recent Classes</h1>
-            <div>
-                <button
-                    class="text-slate-500 hover:text-slate-400 font-medium text-md px-4 py-1 mb-1 text-center inline-flex items-center"
-                    type="button" data-dropdown-toggle="dropdown">Sort By <svg class="w-4 h-4 ml-2" fill="none"
-                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                    </svg></button>
-                <!-- Dropdown menu -->
-                <div class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4"
-                    id="dropdown">
-                    <ul class="py-1" aria-labelledby="dropdown">
-                        <li>
-                            <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Recent</a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Popular</a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Best Rated</a>
-                        </li>
+<section class="md:container md:mx-auto relative py-10">
+    <!-- Header -->
+    <div class="flex flex-row justify-self-center justify-between mt-10 border-b-2">
+        <h1 class="mb-2 text-3xl font-bold text-[#2A3342] tracking-wide">Our Classes</h1>
+        <div>
+            <button
+                class="text-slate-500 hover:text-slate-400 font-medium text-md px-4 py-1 mb-1 text-center inline-flex items-center"
+                type="button" data-dropdown-toggle="dropdown">Sort By <svg class="w-4 h-4 ml-2" fill="none"
+                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg></button>
+            <!-- Dropdown menu -->
+            <div class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4"
+                id="dropdown">
+                <ul class="py-1" aria-labelledby="dropdown">
+                    <li>
+                        <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Recent</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Popular</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Best Rated</a>
+                    </li>
 
-                    </ul>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- CARDS WITH CLASSES SECTION -->
+    <div class="grid grid-cols-4 gap-6 justify-self-center mt-10">
+        <div class="hover:-translate-y-3 hover:shadow-2xl rounded-xl transition ease-in-out delay-150">
+            <img class="rounded-t-xl" src=" ../static/images/yoga-card-image1.avif" alt="Avatar" style="width:100%">
+            <div class="container rounded-xl shadow-md  p-3">
+                <div class="profile flex justify-between">
+                    <div class="left-profile flex">
+                        <div class="profile-image"><img style="width: 3.5em; height: 3.5em; border-radius: 50%;"
+                                src="../static/images/profile.png" alt="profile image">
+                        </div>
+                        <div class="flex flex-col ml-3">
+                            <h4 class=""><b>Prasit Jahan</b></h4>
+                            <div class="text-md rating text-amber-300">&#9733; <b>5.0 </b><span class="text-slate-400">
+                                    (133)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="date flex mr-3 mt-3">
+                        <img src="../static/images/calendaricon.png" style="width: 1.5em; height: 1.5em;"
+                            alt="calendar">
+                        <span>Apr 5</span>
+                    </div>
                 </div>
 
+                <p class="mt-5 ml-5">Join us for a calming river side meditation session, focusing on mindfulness. </p>
             </div>
         </div>
-        <!-- CARDS WITH CLASSES SECTION -->
-        <div class="grid grid-cols-4 gap-6 justify-self-center mt-10">
-            <div class="border-2">01</div>
-            <div class="border-2">02</div>
-            <div class="border-2">03</div>
-            <div class="border-2">03</div>
-            <div class="border-2">03</div>
+        <div class="hover:-translate-y-3 hover:shadow-2xl rounded-xl transition ease-in-out delay-150">
+            <img class="rounded-t-xl" src=" ../static/images/yoga-card-image1.avif" alt="Avatar" style="width:100%">
+            <div class="container rounded-xl shadow-md  p-3">
+                <div class="profile flex justify-between">
+                    <div class="left-profile flex">
+                        <div class="profile-image"><img style="width: 3.5em; height: 3.5em; border-radius: 50%;"
+                                src="../static/images/profile.png" alt="profile image">
+                        </div>
+                        <div class="flex flex-col ml-3">
+                            <h4 class=""><b>Prasit Jahan</b></h4>
+                            <div class="text-md rating text-amber-300">&#9733; <b>5.0 </b><span class="text-slate-400">
+                                    (133)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="date flex mr-3 mt-3">
+                        <img src="../static/images/calendaricon.png" style="width: 1.5em; height: 1.5em;"
+                            alt="calendar">
+                        <span>Apr 5</span>
+                    </div>
+                </div>
+
+                <p class="mt-5 ml-5">Join us for a calming river side meditation session, focusing on mindfulness. </p>
+            </div>
         </div>
-    </section>
+        <div class="hover:-translate-y-3 hover:shadow-2xl rounded-xl transition ease-in-out delay-150">
+            <img class="rounded-t-xl" src=" ../static/images/yoga-card-image1.avif" alt="Avatar" style="width:100%">
+            <div class="container rounded-b-xl shadow-md  p-3">
+                <div class="profile flex justify-between">
+                    <div class="left-profile flex">
+                        <div class="profile-image"><img style="width: 3.5em; height: 3.5em; border-radius: 50%;"
+                                src="../static/images/profile.png" alt="profile image">
+                        </div>
+                        <div class="flex flex-col ml-3">
+                            <h4 class=""><b>Prasit Jahan</b></h4>
+                            <div class="text-md rating text-amber-300">&#9733; <b>5.0 </b><span class="text-slate-400">
+                                    (133)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="date flex mr-3 mt-3">
+                        <img src="../static/images/calendaricon.png" style="width: 1.5em; height: 1.5em;"
+                            alt="calendar">
+                        <span>Apr 5</span>
+                    </div>
+                </div>
+
+                <p class="mt-5 ml-5">Join us for a calming river side meditation session, focusing on mindfulness. </p>
+            </div>
+        </div>
+
+    </div>
+</section>
 {% endblock %}
 
 {% block js %}
-    <script>
-        for (var i = 0; i < links.length; i += 1) {
-            links[i].addEventListener('click', function (e) {
-                e.preventDefault();
-            });
-        }
+<script>
+    for (var i = 0; i < links.length; i += 1) {
+        links[i].addEventListener('click', function (e) {
+            e.preventDefault();
+        });
+    }
 
-        var forms = document.getElementsByTagName('form');
-        for (var i = 0; i < forms.length; i += 1) {
-            forms[i].addEventListener('submit', function (e) {
-                e.preventDefault();
-            }, true);
-        }
-        // set the dropdown menu element
-        const targetEl = document.getElementById('dropdownMenu');
+    var forms = document.getElementsByTagName('form');
+    for (var i = 0; i < forms.length; i += 1) {
+        forms[i].addEventListener('submit', function (e) {
+            e.preventDefault();
+        }, true);
+    }
+    // set the dropdown menu element
+    const targetEl = document.getElementById('dropdownMenu');
 
-        function buttonPressed() {
-            targetEl.classList.toggle("hidden");
-        }
-    </script>
-    <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
+    function buttonPressed() {
+        targetEl.classList.toggle("hidden");
+    }
+</script>
+<script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
 {% endblock %}
