@@ -23,8 +23,6 @@
 
 <body id="page" class="antialiased font-body bg-body text-body bg-[rgb(248,250,251)]">
   <!-- NAVBAR -->
-  <img class="hidden md:block absolute top-0 right-0" src="../static/images/greenoutlined2.svg">
-  <img class="hidden md:block fixed bottom-0 left-0" src="../static/images/greenoutlined.svg">
   <div class="" id="content">
 
     <section class="relative overflow-hidden">
@@ -154,13 +152,15 @@
           </div>
         </nav>
       </div>
-    </section>
 
     {% block content %}
     {% endblock %}
 
     {% block js %}
     {% endblock %}
+
+    </section>
+    </div>
 
 </body>
 
