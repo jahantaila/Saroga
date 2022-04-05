@@ -47,8 +47,17 @@
         <h2 class="text-slate-400 font-medium mb-2" >Introduction</h2>
         <h1 class="block text-slate-700 font-bold text-3xl mb-2" >History</h1>
         <p class="text-slate-400 font-normal" style="border-left: 2px solid lightgray; border-radius:2px; padding-left:10px;">A brief summary on the history of yoga.</p>
-        <div class="mt-15">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at hendrerit erat. Nullam ac tellus molestie, tincidunt tellus sit amet, varius tortor. Pellentesque commodo mauris gravida felis aliquet, eget tincidunt nisi lobortis. Nullam blandit dignissim leo, eget ultricies dolor dictum vitae. Ut at turpis id erat fermentum condimentum. </p>
+        <div class="mt-10 w-4/5">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at hendrerit erat. Nullam ac tellus molestie, 
+            tincidunt tellus sit amet, varius tortor. Pellentesque commodo mauris gravida felis aliquet, eget tincidunt nisi 
+            lobortis. Nullam blandit dignissim leo, eget ultricies dolor dictum vitae. Ut at turpis id erat fermentum 
+            condimentum. 
+          </p>
+          <p class="mt-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at hendrerit erat. Nullam ac tellus molestie, 
+            tincidunt tellus sit amet, varius tortor. Pellentesque commodo mauris gravida felis aliquet, eget tincidunt nisi 
+            lobortis. Nullam blandit dignissim leo, eget ultricies dolor dictum vitae. Ut at turpis id erat fermentum 
+            condimentum. 
+          </p>
         </div>
       </div>
       <div class="right" aria-label="1">
@@ -94,7 +103,6 @@
       
       let elems = document.getElementsByClassName("current");
       if (previous === document.getElementById("first")){
-        console.log("hello");
         previous.classList.remove("show");
         previous.classList.add("right");
       } else {
@@ -111,7 +119,7 @@
 
         }
         e.target.classList.add("current"); 
-        console.log(e.target.getAttribute('aria-label'));
+     
       previous=e.target.getAttribute('aria-label');
     };
   </script>
