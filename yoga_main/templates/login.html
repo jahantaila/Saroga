@@ -3,9 +3,6 @@
 {% block title %}Saroga | Login {% endblock %}
 
 {% block content %}
-  {% if user.is_authenticated %}
-    {% include 'teachpanel.html' %} 
-  {% else %}
           <section class="bg-slate-900">
             <div class="flex flex-wrap h-screen">
               <div class="pt-7 lg:pt-16 pb-6 w-full lg:w-1/2" >
@@ -71,7 +68,6 @@
               </div>          
             </div>
           </section>
-          {% endif %}
 {% endblock %}
 
 {% block js %}

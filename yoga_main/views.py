@@ -13,17 +13,20 @@ def superpanel(request):
   return render(request, 'teachpanel.html')
 
 def loginUser(request):
-  if request.method == 'POST':
-    username = request.POST.get('username')
-    password = request.POST.get('password')
-    user = authenticate(request, username=username, password=password)
-    if user is not None:
-      login(request, user)
-      return redirect('superpanel')
-    else:
-      return redirect('home')
-  else: 
-    return render(request, 'login.html')
+  if request.user.is_authenticated:
+    return redirect('superpanel')
+  else:
+    if request.method == 'POST':
+      username = request.POST.get('username')
+      password = request.POST.get('password')
+      user = authenticate(request, username=username, password=password)
+      if user is not None:
+        login(request, user)
+        return redirect('superpanel')
+      else:
+        return redirect('home')
+    else: 
+      return render(request, 'login.html')
 
 def logoutUser(request):
   logout(request)
