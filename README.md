@@ -87,5 +87,5 @@ __________
 *list not in any specific order* 
 BTW - *more features to come, that's just the basic stuff*
 
-<span style="color:red; font-weight: bold;">MOST IMPORTANT: ASAP - COME UP WITH NAME & LOGO</span>.
+~~MOST IMPORTANT: ASAP - COME UP WITH NAME & LOGO~~
 
