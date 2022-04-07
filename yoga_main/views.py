@@ -12,6 +12,10 @@ def home(request):
 def superpanel(request):
   return render(request, 'teachpanel.html')
 
+def registerUser(request):
+  return render(request, 'register.html')
+
+
 def loginUser(request):
   if request.user.is_authenticated:
     return redirect('superpanel')
