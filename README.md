@@ -1,7 +1,5 @@
 # Saroga
 
-
-
 ![Screenshot_2022-04-03_140946-removebg-preview](https://user-images.githubusercontent.com/75226884/161442075-9813c1b1-d4a2-4b7a-a7d1-0b6ec23b3e72.png)
 
 
@@ -87,5 +85,5 @@ __________
 *list not in any specific order* 
 BTW - *more features to come, that's just the basic stuff*
 
-<span style="color:red; font-weight: bold;">MOST IMPORTANT: ASAP - COME UP WITH NAME & LOGO</span>.
+~~MOST IMPORTANT: ASAP - COME UP WITH NAME & LOGO~~
 
