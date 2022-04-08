@@ -1,0 +1,18 @@
+.resources div ul li a {
+    border-left: 2px solid lightgray; 
+    padding: 7px 10px; 
+  
+}
+
+.resources div ul li .current {
+    display: block;
+    border-left: #22c55e 2px solid;
+    color: white;
+}
+
+.right{
+    display:none;
+}
+.show {
+    display: block;
+}
