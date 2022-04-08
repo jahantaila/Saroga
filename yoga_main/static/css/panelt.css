@@ -9,8 +9,8 @@
 
 :root{
     /* ===== Colors ===== */
-    --body-color: #f7efe4;
-    --sidebar-color: #FFF;
+    --body-color: #2a3342;
+    --sidebar-color: #2a3342;
     --primary-color: #feaa5c;
     --primary-color-light: #fffbf5;
     --toggle-color: #DDD;
@@ -25,13 +25,13 @@
 
 body{
     min-height: 100vh;
-    background-color: var(--body-color);
+    background-color: #2a3342;
     transition: var(--tran-05);
 }
 
 ::selection{
     background-color: var(--primary-color);
-    color: #fff;
+    color: #000;
 }
 
 /* ===== Sidebar ===== */
