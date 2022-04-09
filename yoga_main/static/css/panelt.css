@@ -122,8 +122,7 @@ header .image-text .profession{
 }
 
 .sidebar header .image img{
-    width: 40px;
-    border-radius: 6px;
+    width: 200px;
 }
 
 .sidebar header .toggle{
@@ -146,10 +145,6 @@ header .image-text .profession{
 
 .sidebar.close .toggle{
     transform: translateY(-50%) rotate(0deg);
-}
-
-.sidebar .menu{
-    margin-top: 40px;
 }
 
 .sidebar li.search-box{
