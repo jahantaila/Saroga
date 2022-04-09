@@ -9,7 +9,7 @@ def home(request):
   return render(request, 'home.html')
 
 @login_required(login_url = ('/login/'))
-def superpanel(request):
+def dashboard(request):
   return render(request, 'teachpanel.html')
 
 def registerUser(request):
@@ -18,7 +18,7 @@ def registerUser(request):
 
 def loginUser(request):
   if request.user.is_authenticated:
-    return redirect('superpanel')
+    return redirect('dashboard')
   else:
     if request.method == 'POST':
       username = request.POST.get('username')
@@ -26,7 +26,7 @@ def loginUser(request):
       user = authenticate(request, username=username, password=password)
       if user is not None:
         login(request, user)
-        return redirect('superpanel')
+        return redirect('dashboard')
       else:
         return redirect('home')
     else: 
