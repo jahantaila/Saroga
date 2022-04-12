@@ -28,7 +28,7 @@ def loginUser(request):
         login(request, user)
         return redirect('dashboard')
       else:
-        return redirect('home')
+        return redirect('login')
     else: 
       return render(request, 'login.html')
 
