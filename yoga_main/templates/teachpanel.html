@@ -83,8 +83,14 @@
                 </li>
             </div>
         </div>
-
     </nav>
+
+    <div class="content">
+        <div class="text">
+            <h1>Hi {{request.user.get_full_name}}!</h1>
+            <h2>Welcome back</h2>
+        </div>
+    </div>
     
 </body>
 </html>
