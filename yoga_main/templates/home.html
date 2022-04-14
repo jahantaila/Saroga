@@ -13,7 +13,7 @@
   <style type="text/css" href="css2?family=Poppins:wght@400;500;600;700&display=swap"></style>
   <link rel="stylesheet" href="https://shuffle.dev/static/build/css/shuffle-preview.3a553ecf.css">
   <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" />
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://shuffle.dev/vendor/tailwind-flex/js/main.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -46,7 +46,7 @@
                     href="{% url 'resources' %}" data-config-id="auto-txt-3-2" style=" font-size: 18px">Resources</a>
                 </li>
                 <li><a class=" hover:text-white  font-medium text-slate-400 transition ease-in-out delay-150" href="#"
-                    data-config-id="auto-txt-4-2" style=" font-size: 18px" id="responsivehide">Upcoming</a></li>
+                    data-config-id="auto-txt-4-2" style=" font-size: 18px" id="responsivehide">References</a></li>               
               </ul>
             </div>
             <div class="w-1/2 xl:w-1/3">
@@ -177,7 +177,7 @@
               </div>
               <div class="max-w-sm mx-auto lg:mx-0">
                 <p class="mb-6 text-gray-400 text-md leading-loose">Here at Saroga, your health is our top priority.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quasi modi sit magnam laboriosam expedita?
+                  Our mission is to create a safe and nurturing environment to encourage mindfulness and a healthy lifestyle. 
                 </p>
                 <div></div>
               </div>
@@ -251,71 +251,111 @@
       </nav>
     </div>
   </section>
-  <section class="relative overflow-hidden">
-    <div class="relative  pt-12 lg:pt-20 pb-12 md:pb-24" style="">
-      <div class="container mx-auto px-4" style="margin-top: -1%">
-        <div class="flex flex-col -mx-4">
-          <div class="w-full lg:w-1/2 px-4 mb-12 md:mb-20 lg:mb-0 flex items-center">
-            <div class="w-full text-center lg:text-left">
-              <div class="max-w-md mx-auto lg:mx-0 mb-20">
-                <h2 class="mb-3 text-4xl lg:text-5xl font-bold font-heading ">
-                  <span class="leading-relaxed text-[#2A3342]">What we offer</span>
-                </h2>
-              </div>
 
+  <section>
+    
+    <div class="skew skew-top ml-for-radius">
+      <svg class="h-8 md:h-12 lg:h-20 w-full text-gray-900" viewBox="0 0 10 10" preserveAspectRatio="none">
+        <polygon fill="currentColor" points="0 10 10 0 10 10"></polygon>
+      </svg>
+    </div>
+    <div class="py-20 bg-gray-900 radius-for-skewed">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap items-center">
+          <div class="w-full lg:w-1/2 mb-12 lg:mb-0">
+            <div class="max-w-md lg:mx-auto">
+              <span class="text-green-600 font-bold">Key Features</span>
+              <h2 class=" my-2 text-4xl lg:text-5xl font-bold font-heading text-white ">Empowering Healthy Lifestyles</h2>
+              <p class="mb-6 text-gray-500 leading-loose">Saroga is more than just online yoga classes. We are a community of students who care about empowering healthy lifestyles and building strength, balance, &amp; flexability through energizing yoga practice.</p>
+              <ul class="text-gray-500 font-bold">
+                <li class="flex mb-4">
+                  <svg class="mr-2 w-6 h-6 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span>Learn yoga, no matter what your skill level!</span>
+                </li>
+                <li class="flex mb-4">
+                  <svg class="mr-2 w-6 h-6 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span>Join a community of dedicated learners!</span>
+                </li>
+                <li class="flex mb-4">
+                  <svg class="mr-2 w-6 h-6 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span>Lead a healthy &amp; balanced life!</span>
+                </li>
+              </ul>
             </div>
           </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-4 m-10 md:mt-10 md:ml-0 md:mr-0 gap-6">
-            <div
-              class="container bg-gray-100 rounded-xl hover:shadow-[0_15px_40px_-20px_rgba(0,0,0,0.2)]  p-3 w-80  h-60 text-center hover:shadow-emerald-400 transition ease-in-out delay-150 ">
-              <div class="profile flex justify-center mt-5">
-                <div class="left-profile flex justify-center">
-                  <div class="profile-image"><img style="width: 3.5em; height: 3.5em; border-radius: 50%;"
-                      src="../static/images/icons8-brain-50.png" alt="profile image">
-                  </div>
-
-                </div>
-
+          <div class="w-full lg:w-1/2 flex flex-wrap -mx-4">
+            <div class="mb-8 lg:mb-0 w-full md:w-1/2 px-4">
+              <div class="mb-8 py-6 pl-6 pr-4 shadow-md rounded bg-gray-800">
+                <span class="mb-4 inline-block p-3 rounded-lg bg-green-800" style = "transform: scale(1.3)">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" style = "transform: scale(1.3)">
+                    <path d="M.221 16.268a15.064 15.064 0 0 0 1.789 1.9C2.008 18.111 2 18.057 2 18a5.029 5.029 0 0 1 3.233-4.678 1 1 0 0 0 .175-1.784A2.968 2.968 0 0 1 4 9a2.988 2.988 0 0 1 5.022-2.2 5.951 5.951 0 0 1 2.022-.715 4.994 4.994 0 1 0-7.913 6.085 7.07 7.07 0 0 0-2.91 4.098zM23.779 16.268a7.07 7.07 0 0 0-2.91-4.1 4.994 4.994 0 1 0-7.913-6.086 5.949 5.949 0 0 1 2.022.715 2.993 2.993 0 1 1 3.614 4.74 1 1 0 0 0 .175 1.784A5.029 5.029 0 0 1 22 18c0 .057-.008.111-.01.167a15.065 15.065 0 0 0 1.789-1.899z" fill = "#22c55e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                    <path d="M18.954 20.284a7.051 7.051 0 0 0-3.085-5.114A4.956 4.956 0 0 0 17 12a5 5 0 1 0-8.869 3.17 7.051 7.051 0 0 0-3.085 5.114 14.923 14.923 0 0 0 1.968.849C7.012 21.088 7 21.046 7 21a5.031 5.031 0 0 1 3.233-4.678 1 1 0 0 0 .175-1.785A2.964 2.964 0 0 1 9 12a3 3 0 1 1 6 0 2.964 2.964 0 0 1-1.408 2.537 1 1 0 0 0 .175 1.785A5.031 5.031 0 0 1 17 21c0 .046-.012.088-.013.133a14.919 14.919 0 0 0 1.967-.849z" fill = "#22c55e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                  </svg>
+                </span>
+                <h4 class="mb-2 text-2xl font-bold font-heading text-white">Variety of Classes</h4>
+                <p class="text-gray-500 leading-loose">We offer a variety of classes - anyone can become a teacher and create one!</p>
               </div>
-              <h1 class="text-2xl mx-5 mt-5"><b>Attention</b></h1>
-              <p class="mt-5 mx-5 text-gray-400">Increased Focus and sustained ability to concentrate.</p>
+              <div class="py-6 pl-6 pr-4 shadow-md rounded bg-gray-800">
+                <span class="mb-4 inline-block p-3 rounded-lg bg-green-800" style = "transform: scale(1.3)">
+                  <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg" style = "transform: scale(1.4)"><g fill="none" fill-rule="evenodd" stroke="#22c55e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(3 3)"><path d="m.5.5v12c0 1.1045695.8954305 2 2 2h11.5"/><path d="m3.5 8.5v3"/><path d="m7.5 5.5v6"/><path d="m11.5 2.5v9"/></g></svg>
+                </span>
+                <h4 class="mb-2 text-2xl font-bold font-heading text-white">Detailed Analytics</h4>
+                <p class="text-gray-500 leading-loose">After each session, detailed analytics are generated, allowing users to assess their progress</p>
+              </div>
             </div>
-            <div
-              class="container bg-gray-100 rounded-xl hover:shadow-[0_15px_40px_-20px_rgba(0,0,0,0.2)]  p-3 w-80  h-60 text-center hover:shadow-emerald-400 transition ease-in-out delay-150 ">
-              <div class="profile flex justify-center mt-5">
-                <div class="left-profile flex justify-center">
-                  <div class="profile-image"><img style="width: 3.5em; height: 3.5em; border-radius: 50%;"
-                      src="../static/images/icons8-brain-50.png" alt="profile image">
-                  </div>
-
-                </div>
-
+            <div class="w-full md:w-1/2 lg:mt-20 px-4">
+              <div class="mb-8 py-6 pl-6 pr-4 shadow-md rounded-lg bg-gray-800">
+                <span class="mb-4 inline-block p-3 rounded bg-green-800" >
+                  <svg class="w-10 h-10 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                  </svg>
+                </span>
+                <h4 class="mb-2 text-2xl font-bold font-heading text-white">Comprehensive Recourses </h4>
+                <p class="text-gray-500 leading-loose">We created a diverse list of recourses, which helps newcomers learn the art of yoga</p>
               </div>
-              <h1 class="text-2xl mx-5 mt-5"><b>Attention</b></h1>
-              <p class="mt-5 mx-5 text-gray-400">Increased Focus and sustained ability to concentrate.</p>
+              <div class="py-6 pl-6 pr-4 shadow-md rounded-lg bg-gray-800">
+                <span class="mb-4 inline-block p-3 rounded bg-green-800" style = "transform: scale(1.3) ">
+                  <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg" style = "transform: scale(1.3)"><g fill="#22c55e" fill-rule="evenodd" stroke="#22c55e" stroke-linecap="round" stroke-linejoin="round" transform="translate(3 3)"><path d="m14 1c.8284271.82842712.8284271 2.17157288 0 3l-9.5 9.5-4 1 1-3.9436508 9.5038371-9.55252193c.7829896-.78700064 2.0312313-.82943964 2.864366-.12506788z"/><path d="m6.5 14.5h8"/><path d="m12.5 3.5 1 1"/></g></svg>
+                </span>
+                <h4 class="mb-2 text-2xl font-bold font-heading text-white">Custom Learning Tracks</h4>
+                <p class="text-gray-500 leading-loose">We offer custom learning tracks - based on your interests! </p>
+              </div>
             </div>
           </div>
-          <div
-            class="container bg-gray-100 rounded-xl hover:shadow-[0_15px_40px_-20px_rgba(0,0,0,0.2)]  p-3 w-80  h-60 text-center hover:shadow-emerald-400 transition ease-in-out delay-150 ">
-            <div class="profile flex justify-center mt-5">
-              <div class="left-profile flex justify-center">
-                <div class="profile-image"><img style="width: 3.5em; height: 3.5em; border-radius: 50%;"
-                    src="../static/images/icons8-brain-50.png" alt="profile image">
-                </div>
-
-              </div>
-
-            </div>
-            <h1 class="text-2xl mx-5 mt-5"><b>Attention</b></h1>
-            <p class="mt-5 mx-5 text-gray-400">Increased Focus and sustained ability to concentrate.</p>
-          </div>
-
         </div>
       </div>
     </div>
+    <div class="skew skew-bottom mr-for-radius">
+      <svg class="h-8 md:h-12 lg:h-20 w-full text-gray-900" viewBox="0 0 10 10" preserveAspectRatio="none">
+        <polygon fill="currentColor" points="0 0 10 0 0 10"></polygon>
+      </svg>
+    </div>
+    
   </section>
-  <img class="hidden md:block fixed bottom-0 left-0" src="../static/images/greentrans.png" style="pointer-events: none;" >
+
+  
+  <img id = "greentrans" class="hidden md:block fixed bottom-0 left-0" src="../static/images/greentrans.png" style="pointer-events: none;" style = "position: fixed;">
+
+  <!--Script for hiding the greentrans on scroll-->
+<script>
+  $(window).scroll(function () {
+    var scrollTop = $(window).scrollTop();
+    var height = $(window).height();
+    $('#greentrans, .slogan').css({
+        'opacity': ((height - scrollTop) / height)
+    });
+});
+  
+
+</script>
+
 </body>
+
 
 </html>
