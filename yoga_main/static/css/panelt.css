@@ -9,12 +9,12 @@
 
 :root{
     /* ===== Colors ===== */
-    --body-color: #f7efe4;
-    --sidebar-color: #FFF;
-    --primary-color: #feaa5c;
-    --primary-color-light: #fffbf5;
+    --body-color: #dde7fb;
+    --sidebar-color: #2a3342;
+    --primary-color: #22c55e;
+    --primary-color-light: #a5efc1;
     --toggle-color: #DDD;
-    --text-color: #707070;
+    --text-color: #fff;
 
     /* ====== Transition ====== */
     --tran-03: all 0.2s ease;
@@ -122,8 +122,7 @@ header .image-text .profession{
 }
 
 .sidebar header .image img{
-    width: 40px;
-    border-radius: 6px;
+    width: 200px;
 }
 
 .sidebar header .toggle{
@@ -146,10 +145,6 @@ header .image-text .profession{
 
 .sidebar.close .toggle{
     transform: translateY(-50%) rotate(0deg);
-}
-
-.sidebar .menu{
-    margin-top: 40px;
 }
 
 .sidebar li.search-box{
@@ -279,7 +274,11 @@ header .image-text .profession{
 
 .content{
     margin-left: 250px;
-    height: 200px;
-    width: 200px;
-    border: #000 solid 5px;
+    height: 100vh;
+    width: 100vw - 250px;
+}
+
+.content .text{
+    padding-top: 50px;
+    padding-left: 50px;
 }

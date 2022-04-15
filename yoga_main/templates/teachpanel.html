@@ -8,31 +8,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/panelt.css' %}">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <title>{% block title%}{% endblock %}</title>
-    <link rel="icon" type="image/x-icon" href="{% static 'images/yoga_PNG105.png' %}">
+    <title>Saroga | Dashboard</title>
 </head>
 <body>
     <nav class="sidebar">
         <header>
             <div class="image-text">
                 <span class="image">
-                    <img src="{% static 'images/yoga_PNG105.png' %}" alt="logo">
+                    <a href="{% url 'home' %}"><img src="https://user-images.githubusercontent.com/75226884/161442075-9813c1b1-d4a2-4b7a-a7d1-0b6ec23b3e72.png" alt="logo"></a>
                 </span>
-
-                <div class="text logo-text">
-                    <span class="name">VOGA</span>
-                </div>
             </div>
         </header>
 
         <div class="menu-bar">
             <div class="menu">
-
-                <li class="search-box">
-                    <i class='bx bx-search icon'></i>
-                    <input type="text" placeholder="Search...">
-                </li>
-
                 <ul class="menu-links">
                     <li class="nav-link">
                         <a href="#">
@@ -88,8 +77,13 @@
                 </li>
             </div>
         </div>
-
     </nav>
-    
+
+    <div class="content">
+        <div class="text">
+            <h1>Hi {{request.user.get_full_name}}!</h1>
+            <h2>Welcome back</h2>
+        </div>
+    </div>
 </body>
 </html>
