@@ -15,6 +15,7 @@
  <link rel="stylesheet" href="{% static 'css/resources.css' %}">
  <script src="https://shuffle.dev/vendor/tailwind-flex/js/main.js"></script>
  <script src="https://cdn.tailwindcss.com"></script>
+ <script src="{% static 'javascript/resources.js' %}"></script>
 
 {% endblock %}
 
@@ -39,7 +40,7 @@
             <li>                                      
               <a class="flex p-3 items-center font-medium bg-green-50 rounded text-green-500" href="#">     
                 <span class="mr-3">                                                                    
-                  <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg" style="transform: scale(1.8) "><g fill="none" fill-rule="evenodd" stroke="#22c55e" stroke-width = "2" stroke-linecap="round" stroke-linejoin="round" transform="translate(4 3)"><path d="m2.5.5h9c.5522847 0 1 .44771525 1 1v12c0 .5522847-.4477153 1-1 1h-9c-1.1045695 0-2-.8954305-2-2v-10c0-1.1045695.8954305-2 2-2z"/><path d="m2.5 10.5h10v3c0 .5522847-.4477153 1-1 1h-9c-1.1045695 0-2-.8954305-2-2s.8954305-2 2-2z"/></g></svg>
+                  <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg" style="transform: scale(1.4) "><g fill="none" fill-rule="evenodd" stroke="#22c55e" stroke-width = "2" stroke-linecap="round" stroke-linejoin="round" transform="translate(4 3)"><path d="m2.5.5h9c.5522847 0 1 .44771525 1 1v12c0 .5522847-.4477153 1-1 1h-9c-1.1045695 0-2-.8954305-2-2v-10c0-1.1045695.8954305-2 2-2z"/><path d="m2.5 10.5h10v3c0 .5522847-.4477153 1-1 1h-9c-1.1045695 0-2-.8954305-2-2s.8954305-2 2-2z"/></g></svg>
                 </span>
                 <span>Introduction</span>
               </a>
@@ -109,29 +110,32 @@
         </div>
         <ul>
           <li class="py-5 px-6 mb-3 bg-white shadow rounded">
-            <button class="w-full flex justify-between items-center" onclick="modalclick1()">
-              <h3 class="text-xl font-bold" >What exactly is yoga?</h3>
+            <button class="w-full flex justify-between items-center" onclick="modalclick1()" >
+              <h3 class="text-xl font-bold" >What Exactly Is Yoga?</h3>
               <span>
                 <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M9.08317 0.666657C8.74984 0.333323 8.24984 0.333323 7.91651 0.666657L4.99984 3.58332L2.08317 0.666657C1.74984 0.333323 1.24984 0.333323 0.916504 0.666657C0.583171 0.99999 0.583171 1.49999 0.916504 1.83332L4.41651 5.33332C4.58317 5.49999 4.74984 5.58332 4.99984 5.58332C5.24984 5.58332 5.4165 5.49999 5.58317 5.33332L9.08317 1.83332C9.41651 1.49999 9.41651 0.99999 9.08317 0.666657Z" fill="#8594A5"></path>
                 </svg>
               </span>
             </button>
-            <p class="hidden mt-3 pr-6 text-large text-gray-500" id = "element1">Yoga is essentially a spiritual discipline based on an extremely subtle science, which focuses on bringing harmony between mind and body. Yoga brings the opportunity to develop a physical relationship between one's inner-being and their abstract nature. Yoga breaks down into individual branches, all which focus on developing a different part of the body and contain different excersises. <a href="https://www.mea.gov.in/search-result.htm?25096/Yoga:_su_origen,_historia_y_desarrollo" target="_blank" class = "bg-gradient-to-r from-yellow-200 to-yellow-200 bg-no-repeat [background-position:0_88%] [background-size:100%_0.2em] motion-safe:transition-all motion-safe:duration-200
+            <p class=" mt-3 pr-6 text-large text-gray-500" id = "element1" style = "display: none;">Yoga is essentially a spiritual discipline based on an extremely subtle science, which focuses on bringing harmony between mind and body. Yoga brings the opportunity to develop a physical relationship between one's inner-being and their abstract nature. Yoga breaks down into individual branches, all which focus on developing a different part of the body and contain different excersises. <a href="https://www.mea.gov.in/search-result.htm?25096/Yoga:_su_origen,_historia_y_desarrollo" target="_blank" class = "bg-gradient-to-r from-yellow-200 to-yellow-200 bg-no-repeat [background-position:0_88%] [background-size:100%_0.2em] motion-safe:transition-all motion-safe:duration-200
               hover:[background-size:100%_100%]
               focus:[background-size:100%_100%]
         "> Learn more about yoga here </a>  </p>
           </li>
           <li class="py-5 px-6 mb-3 bg-white shadow rounded">
-            <button class="w-full flex justify-between items-center">
-              <h3 class="text-sm font-bold">What is the most frequently asked question?</h3>
+            <button class="w-full flex justify-between items-center" onclick="modalclick2()">
+              <h3 class="text-xl font-bold" >The Origion Of Yoga</h3>
               <span>
                 <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M9.08317 0.666657C8.74984 0.333323 8.24984 0.333323 7.91651 0.666657L4.99984 3.58332L2.08317 0.666657C1.74984 0.333323 1.24984 0.333323 0.916504 0.666657C0.583171 0.99999 0.583171 1.49999 0.916504 1.83332L4.41651 5.33332C4.58317 5.49999 4.74984 5.58332 4.99984 5.58332C5.24984 5.58332 5.4165 5.49999 5.58317 5.33332L9.08317 1.83332C9.41651 1.49999 9.41651 0.99999 9.08317 0.666657Z" fill="#8594A5"></path>
                 </svg>
               </span>
             </button>
-            <p class="hidden mt-3 pr-6 text-sm text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec urna lacus. Pellentesque in lacus eu est suscipit volutpat eu eget diam. Donec eget justo et diam condimentum bibendum. Donec convallis tellus sem, at lobortis nulla sagittis in. Proin facilisis a enim eget luctus. Sed et maximus libero. Nulla pellentesque imperdiet neque vitae fringilla.</p>
+            <p class="hidden mt-3 pr-6 text-large text-gray-500" id = "element2">yoga orrigionaing in modern. <a href="https://www.mea.gov.in/search-result.htm?25096/Yoga:_su_origen,_historia_y_desarrollo" target="_blank" class = "bg-gradient-to-r from-yellow-200 to-yellow-200 bg-no-repeat [background-position:0_88%] [background-size:100%_0.2em] motion-safe:transition-all motion-safe:duration-200
+              hover:[background-size:100%_100%]
+              focus:[background-size:100%_100%]
+        "> Learn more about yoga here </a>  </p>
           </li>
           <li class="py-5 px-6 mb-3 bg-white shadow rounded">
             <button class="w-full flex justify-between items-center">
