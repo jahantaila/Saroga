@@ -274,7 +274,13 @@ header .image-text .profession{
 
 .content{
     margin-left: 250px;
-    height: 200px;
-    width: 200px;
+    height: 100vh;
+    width: 100vw - 250px;
     border: #000 solid 5px;
+}
+
+@media screen and (max-width: 1028px) {
+    .content{
+        border: #fff solid 5px;
+    }
 }
