@@ -16,7 +16,7 @@
             <span class="text-lg text-green-400 font-bold">Log Into Your Account</span>
             <h2 class="mt-8 mb-12 text-5xl font-bold font-heading text-slate-100 leading-snug" data-aos="fade-up"
               data-aos-duration="2000">Lead a healthy lifestyle by joining a free session today!</h2>
-            <p class="text-lg text-slate-400" data-aos="fade-up-right" data-aos-duration="1500">
+            <p class="text-lg text-slate-400" data-aos="fade-up-right" data-aos-duration="1500" id = "responsivetext">
               <span>Here at Saroga, your health is our <mark class="bg-green-500"> <span
                     class="text-white font-bold">top priority.</span> </mark> Our mission is to create a <span
                   class="text-white font-bold">safe</span> and <span class="text-white font-bold">nurturing</span>
@@ -29,9 +29,9 @@
         </div>
         <div class="w-full lg:w-1/2 px-4">
           <div class=" text-center px-6 lg:px-20 py-12 lg:py-24 bg-[rgb(18,28,47)] shadow-xl rounded-lg"
-            data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
-            <form action="#">
-              <h3 class="mb-10 text-2xl text-green-500 font-bold font-heading">Login</h3>
+            data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" id = "responsiveformdiv" >
+            <form action="" id = "responsiveform">
+              <h3 class="mb-10 text-2xl text-green-500 font-bold font-heading" id = "responsivelogin">Login</h3>
 
               <div class="flex items-center pl-6 mb-3 bg-white rounded-full">
                 <span class="inline-block pr-3 py-2 border-r border-gray-150">
@@ -113,46 +113,131 @@
 {% endblock %}
 {% block css %}
 <style>
-  @media screen and (min-width: 0px) and (max-width: 1272px) {
-    .mr-12 {
-      display: none;
-    }
-
-    #responsivehide {
-      display: none;
-    }
-  }
-</style>
-<!--Media Query Styles-->
-<style>
-  @media screen and (min-width: 0px) and (max-width: 1086px) {
-    #responsivecontainer {
-      margin-top: 5% !important;
-    }
-  }
-
-  @media screen and (min-width: 0px) and (max-width: 1341px) {
+  @media screen and (min-width: 0px) and (max-width: 1028px) {
     #responsivecontainer {
       margin-top: 10% !important;
     }
+
   }
 
-  @media screen and (min-width: 1345px) and (max-width: 1535px) {
+  @media screen and (min-width: 1028px) and (max-width: 1600px ) {
     #responsivecontainer {
       margin-top: 10% !important;
     }
-  
-   @media screen and (min-width: 1700px) and (max-width: 1900px) {
+
+    body {
+      background-color: #0f172a !important;
+    }
+  }
+
+
+
+  @media screen and (min-width: 1600px) and (max-width: 1700px ) {
     #responsivecontainer {
-      margin-top: 20% !important;
-      transform: scale(1.2);
+      margin-top: 1% !important;
+    }
+
+    #responsiveformdiv {
+      margin-left: 20% !important;
+      width: 100% !important;
+    }
+
+    #responsivelogin {
+      font-size: 30px;
+    }
+
+    body {
+      background-color: #0f172a !important;
+    }
+
+    #responsivetext{
+      font-size: 20px !important;
+    }
+
+  }
+    @media screen and (min-width: 1700px) and (max-width: 1800px ) {
+      #responsivecontainer {
+        margin-top: 1% !important;
       }
+  
+      #responsiveformdiv {
+        margin-left: 20% !important;
+        width: 100% !important;
+        transform: scale(1.1) !important;
 
-    #full_login_screen{
-      transform: scale(1.3)
+      }
+  
+      body {
+        background-color: #0f172a !important;
+      }
+  
+     
+    }
+      
+
+
+    @media screen and (min-width: 1800px) and (max-width: 1850px ) {
+      #responsivecontainer {
+        margin-top: 5% !important;
+      }
+  
+      #responsiveformdiv {
+        margin-left: 20% !important;
+        width: 100% !important;
+        transform: scale(1.1) !important;
+
+      }
+  
+      body {
+        background-color: #0f172a !important;
+      }
+      
+      #responsivelogin {
+        font-size: 40px;
+      }
+     
+    #responsiveform{
+      transform: scale(1.1); 
     }
 
-  }
+    #responsivetext{
+      font-size: 25px !important; 
+    }
+    }
+
+
+    @media screen and (min-width: 1850px) and (max-width: 2000px ) {
+      #responsivecontainer {
+        margin-top: 10% !important;
+      }
+  
+      #responsiveformdiv {
+        margin-left: 20% !important;
+        width: 100% !important;
+        transform: scale(1.1) !important;
+
+      }
+  
+      body {
+        background-color: #0f172a !important;
+      }
+      
+      #responsivelogin {
+        font-size: 40px;
+      }
+     
+    #responsiveform{
+      transform: scale(1.1); 
+    }
+
+    #responsivetext{
+      font-size: 25px !important; 
+    }
+    }
+
+
+
+    
 </style>
 
 
