@@ -15,8 +15,7 @@
  <link rel="stylesheet" href="{% static 'css/resources.css' %}">
  <script src="https://shuffle.dev/vendor/tailwind-flex/js/main.js"></script>
  <script src="https://cdn.tailwindcss.com"></script>
- <!--Custom modal script -->
- <script src="{% static 'javascript/resources.js' %}"> 
+
 {% endblock %}
 
 {% block content %}
@@ -40,11 +39,9 @@
             <li>
               <a class="flex p-3 items-center font-medium bg-green-50 rounded text-green-500" href="#">
                 <span class="mr-3">
-                  <svg class="text-green-500" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16.6663 0.833338H3.33301C2.66997 0.833338 2.03408 1.09673 1.56524 1.56557C1.0964 2.03441 0.833008 2.6703 0.833008 3.33334V16.6667C0.833008 17.3297 1.0964 17.9656 1.56524 18.4344C2.03408 18.9033 2.66997 19.1667 3.33301 19.1667H16.6663C17.3294 19.1667 17.9653 18.9033 18.4341 18.4344C18.9029 17.9656 19.1663 17.3297 19.1663 16.6667V3.33334C19.1663 2.6703 18.9029 2.03441 18.4341 1.56557C17.9653 1.09673 17.3294 0.833338 16.6663 0.833338V0.833338ZM6.66634 17.5H3.33301C3.11199 17.5 2.90003 17.4122 2.74375 17.2559C2.58747 17.0996 2.49967 16.8877 2.49967 16.6667V15.6833C2.7669 15.7804 3.04872 15.8311 3.33301 15.8333H6.66634V17.5ZM6.66634 14.1667H3.33301C3.11199 14.1667 2.90003 14.0789 2.74375 13.9226C2.58747 13.7663 2.49967 13.5544 2.49967 13.3333V12.35C2.7669 12.447 3.04872 12.4977 3.33301 12.5H6.66634V14.1667ZM6.66634 10.8333H3.33301C3.11199 10.8333 2.90003 10.7455 2.74375 10.5893C2.58747 10.433 2.49967 10.221 2.49967 10V3.33334C2.49967 3.11232 2.58747 2.90036 2.74375 2.74408C2.90003 2.5878 3.11199 2.5 3.33301 2.5H6.66634V10.8333ZM11.6663 17.5H8.33301V12.5H11.6663V17.5ZM11.6663 10.8333H8.33301V2.5H11.6663V10.8333ZM17.4997 16.6667C17.4997 16.8877 17.4119 17.0996 17.2556 17.2559C17.0993 17.4122 16.8874 17.5 16.6663 17.5H13.333V15.8333H16.6663C16.9506 15.8311 17.2324 15.7804 17.4997 15.6833V16.6667ZM17.4997 13.3333C17.4997 13.5544 17.4119 13.7663 17.2556 13.9226C17.0993 14.0789 16.8874 14.1667 16.6663 14.1667H13.333V12.5H16.6663C16.9506 12.4977 17.2324 12.447 17.4997 12.35V13.3333ZM17.4997 10C17.4997 10.221 17.4119 10.433 17.2556 10.5893C17.0993 10.7455 16.8874 10.8333 16.6663 10.8333H13.333V2.5H16.6663C16.8874 2.5 17.0993 2.5878 17.2556 2.74408C17.4119 2.90036 17.4997 3.11232 17.4997 3.33334V10ZM14.9997 5.83334C14.8349 5.83334 14.6737 5.88221 14.5367 5.97378C14.3997 6.06535 14.2928 6.1955 14.2298 6.34777C14.1667 6.50004 14.1502 6.66759 14.1824 6.82925C14.2145 6.9909 14.2939 7.13938 14.4104 7.25593C14.527 7.37247 14.6754 7.45184 14.8371 7.48399C14.9987 7.51615 15.1663 7.49964 15.3186 7.43657C15.4708 7.3735 15.601 7.26669 15.6926 7.12965C15.7841 6.99261 15.833 6.83149 15.833 6.66667C15.833 6.44566 15.7452 6.2337 15.5889 6.07742C15.4326 5.92113 15.2207 5.83334 14.9997 5.83334ZM4.99967 7.5C5.16449 7.5 5.32561 7.45113 5.46265 7.35956C5.59969 7.26799 5.7065 7.13785 5.76957 6.98557C5.83265 6.8333 5.84915 6.66575 5.817 6.5041C5.78484 6.34244 5.70547 6.19396 5.58893 6.07742C5.47239 5.96087 5.3239 5.8815 5.16225 5.84935C5.0006 5.8172 4.83304 5.8337 4.68077 5.89677C4.5285 5.95984 4.39835 6.06665 4.30678 6.2037C4.21522 6.34074 4.16634 6.50185 4.16634 6.66667C4.16634 6.88768 4.25414 7.09965 4.41042 7.25593C4.5667 7.41221 4.77866 7.5 4.99967 7.5Z" fill="currentColor"></path>
-                  </svg>
+                  <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg" style="transform: scale(1.8) "><g fill="none" fill-rule="evenodd" stroke="#22c55e" stroke-width = "2" stroke-linecap="round" stroke-linejoin="round" transform="translate(4 3)"><path d="m2.5.5h9c.5522847 0 1 .44771525 1 1v12c0 .5522847-.4477153 1-1 1h-9c-1.1045695 0-2-.8954305-2-2v-10c0-1.1045695.8954305-2 2-2z"/><path d="m2.5 10.5h10v3c0 .5522847-.4477153 1-1 1h-9c-1.1045695 0-2-.8954305-2-2s.8954305-2 2-2z"/></g></svg>
                 </span>
-                <span>Payments</span>
+                <span>Introduction</span>
               </a>
             </li>
             <li>
@@ -112,15 +109,18 @@
         </div>
         <ul>
           <li class="py-5 px-6 mb-3 bg-white shadow rounded">
-            <button class="w-full flex justify-between items-center" class = "modalclick" onclick="modalclick1()">
-              <h3 class="text-sm font-bold" >What exactly is yoga?</h3>
+            <button class="w-full flex justify-between items-center" onclick="modalclick1()">
+              <h3 class="text-xl font-bold" >What exactly is yoga?</h3>
               <span>
                 <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M9.08317 0.666657C8.74984 0.333323 8.24984 0.333323 7.91651 0.666657L4.99984 3.58332L2.08317 0.666657C1.74984 0.333323 1.24984 0.333323 0.916504 0.666657C0.583171 0.99999 0.583171 1.49999 0.916504 1.83332L4.41651 5.33332C4.58317 5.49999 4.74984 5.58332 4.99984 5.58332C5.24984 5.58332 5.4165 5.49999 5.58317 5.33332L9.08317 1.83332C9.41651 1.49999 9.41651 0.99999 9.08317 0.666657Z" fill="#8594A5"></path>
                 </svg>
               </span>
             </button>
-            <p class="hidden mt-3 pr-6 text-sm text-gray-500" id = "element1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec urna lacus. Pellentesque in lacus eu est suscipit volutpat eu eget diam. Donec eget justo et diam condimentum bibendum. Donec convallis tellus sem, at lobortis nulla sagittis in. Proin facilisis a enim eget luctus. Sed et maximus libero. Nulla pellentesque imperdiet neque vitae fringilla.</p>
+            <p class="hidden mt-3 pr-6 text-large text-gray-500" id = "element1">Yoga is essentially a spiritual discipline based on an extremely subtle science, which focuses on bringing harmony between mind and body. Yoga brings the opportunity to develop a physical relationship between one's inner-being and their abstract nature. Yoga breaks down into individual branches, all which focus on developing a different part of the body and contain different excersises. <a href="https://www.mea.gov.in/search-result.htm?25096/Yoga:_su_origen,_historia_y_desarrollo" target="_blank" class = "bg-gradient-to-r from-yellow-200 to-yellow-200 bg-no-repeat [background-position:0_88%] [background-size:100%_0.2em] motion-safe:transition-all motion-safe:duration-200
+              hover:[background-size:100%_100%]
+              focus:[background-size:100%_100%]
+        "> Learn more about yoga here </a>  </p>
           </li>
           <li class="py-5 px-6 mb-3 bg-white shadow rounded">
             <button class="w-full flex justify-between items-center">
@@ -181,12 +181,10 @@
       </div>
     </div>
   </div>
+  
 </section>
 {% endblock %}
 
 {% block js %}
-
-
-
   
 {% endblock %}
