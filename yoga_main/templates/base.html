@@ -15,6 +15,8 @@
 
   <script src="https://shuffle.dev/vendor/tailwind-flex/js/main.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
+  <!--Scripts for scroll animations-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   {% block css %}
   {% endblock %}
@@ -51,7 +53,7 @@
                 class="inline-block py-2 px-4 mr-2 leading-5 text-slate-400 hover:text-white bg-transparent font-medium rounded-md transition ease-in-out delay-150"
                 href="{% url 'home' %}" data-config-id="auto-txt-5-2" style="font-size: 18px"></a><a
                 class="inline-block py-2 px-4 text-sm leading-5 text-green-50 border-2 border-solid border-green-500 hover:bg-green-500 transition ease-in-out delay-200 font-medium focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded-md"
-                href="{% url 'register' %}" data-config-id="auto-txt-6-2" style="font-size: 15px">Sign Up</a></div>
+                href="{% url 'register' %}" data-config-id="auto-txt-6-2" style="font-size: 15px">Home</a></div>
           </div>
         </div>
         <button class="navbar-burger self-center xl:hidden">

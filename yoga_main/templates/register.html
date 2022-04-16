@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 
 {% block title %}Saroga | Login {% endblock %}
+  <!--Scripts for scroll animations-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 {% block content %}
 <section class="relative py-20 2xl:py-40 bg-gray-800 overflow-hidden">
@@ -11,17 +13,19 @@
       <div class="flex flex-wrap items-center -mx-4" style = "margin-top: -10%">
         <div class="w-full lg:w-1/2 px-4 mb-16 lg:mb-0">
           <div class="max-w-md"style = "margin-top: -20%">
-            <span class="text-lg text-green-400 font-bold">Create An Account</span>
-            <h2 class="mt-8 mb-12 text-5xl font-bold font-heading text-green-100 leading-snug">Become a member of our growing community - for free!</h2> 
-            <p class="text-xl text-slate-200">
+            <span class="text-lg text-green-400 font-bold" >Create An Account</span>
+            <h2 class="mt-8 mb-12 text-5xl font-bold font-heading text-green-100 leading-snug" data-aos="fade-up"
+            data-aos-duration="2000">Become a member of our growing community - for free!</h2> 
+            <p class="text-xl text-slate-200" data-aos="fade-up-right" data-aos-duration="1500">
               <span>Here at Saroga, your health is our <mark class = "bg-green-500"> <span class="text-white font-bold">top priority.</span> </mark> Our mission is to create a <span class="text-white font-bold">safe</span> and <span class="text-white font-bold">nurturing</span> environment to encourage <span class="text-white font-bold">mindfulness</span> and a <span class="text-white font-bold">healthy lifestyle.</span>
               </span>
               
             </p>
           </div>
         </div>
-        <div class="w-full lg:w-1/2 px-4">
-          <div class="px-6 lg:px-20 py-12 lg:py-24 bg-gray-600 rounded-lg">
+        <div class="w-full lg:w-1/2 px-4"  >
+          <div class="px-6 lg:px-20 py-12 lg:py-24 bg-gray-600 rounded-lg" data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
             <form action="#">
               <h3 class="mb-10 text-2xl text-green-500 font-bold font-heading">Register Account</h3>
               <div class="flex items-center pl-6 mb-3 bg-white rounded-full">
@@ -66,15 +70,18 @@
               </div>
               <div class="inline-flex mb-10">
                 <input class="mr-4" type="checkbox">
-                <p class="-mt-2 text-sm text-gray-200">By signing up, you agree with our <a class="text-white font-bold underline" href="{% url 'privacyPolicy' %}">Privacy Policy</a> and <a class="text-white font-bold underline" href="{% url 'termsOfUse' %}">Terms Of Use.</a></p>
+                <p class="-mt-2 text-sm text-gray-200">By signing up, you agree with our <a class="text-white font-bold underline" href="{% url 'privacyPolicy' %}" target = "_blank">Privacy Policy</a> and <a class="text-white font-bold underline" href="{% url 'termsOfUse' %}" target = "_blank">Terms Of Use.</a></p>
               </div>
-               <button class="py-4 w-full bg-green-500 hover:bg-green-600 text-white font-bold rounded-full transition duration-200">Create Account!</button> 
+               <button class="py-4 w-full bg-green-500 hover:bg-green-600 text-white font-bold rounded-full transition duration-200">Create My Account!</button> 
             </form>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  <img id="greentrans" class="hidden md:block fixed bottom-0 left-0" src="../static/images/greentrans.png"
+  style="pointer-events: none;" style="position: fixed;">
 </section>
 {% endblock %}
 
@@ -93,6 +100,13 @@
           }, true);
         }
       </script>
+
+  <!--AOS Script-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
      {% endblock %}
      {% block css %} 
       <style> 
