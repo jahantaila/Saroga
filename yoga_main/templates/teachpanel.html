@@ -22,12 +22,6 @@
 
         <div class="menu-bar">
             <div class="menu">
-
-                <li class="search-box">
-                    <i class='bx bx-search icon'></i>
-                    <input type="text" placeholder="Search...">
-                </li>
-
                 <ul class="menu-links">
                     <li class="nav-link">
                         <a href="#">
@@ -83,11 +77,13 @@
                 </li>
             </div>
         </div>
-
     </nav>
-    
+
     <div class="content">
-        
+        <div class="text">
+            <h1>Hi {{request.user.get_full_name}}!</h1>
+            <h2>Welcome back</h2>
+        </div>
     </div>
 </body>
 </html>
