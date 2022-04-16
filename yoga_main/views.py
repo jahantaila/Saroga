@@ -17,6 +17,10 @@ def registerUser(request):
   return render(request, 'register.html')
 
 
+def nextScreen(request):
+  return render(request, 'nextscreen.html')
+
+
 def loginUser(request):
   if request.user.is_authenticated:
     return redirect('dashboard')
