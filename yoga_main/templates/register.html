@@ -26,7 +26,8 @@
         <div class="w-full lg:w-1/2 px-4"  >
           <div class="px-6 lg:px-20 py-12 lg:py-24 bg-gray-600 rounded-lg" data-aos="fade-up"
           data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
-            <form action="#">
+            <form method = "POST" action="">
+              {% csrf_token %} 
               <h3 class="mb-10 text-2xl text-green-500 font-bold font-heading">Register Account</h3>
               <div class="flex items-center pl-6 mb-3 bg-white rounded-full">
                 <span class="inline-block pr-3 py-2 border-r border-gray-50">
@@ -43,10 +44,8 @@
                     <rect x="15" y="15" width="5" height="1" rx="0.5" fill="black"></rect><rect x="17" y="18" width="5" height="1" rx="0.5" transform="rotate(-90 17 18)" fill="black"></rect>
                   </svg>
                 </span>
-                <input class="w-full pl-4 pr-6 py-4 font-bold placeholder-gray-900 rounded-r-full focus:outline-none" type="text" placeholder="Please Choose A Username">
+                <input class="w-full pl-4 pr-6 py-4 font-bold placeholder-gray-900 rounded-r-full focus:outline-none" id = "username" type="text" placeholder="Please Choose A Username">
               </div>
-
-
 
 
 
@@ -72,7 +71,7 @@
                 <input class="mr-4" type="checkbox">
                 <p class="-mt-2 text-sm text-gray-200">By signing up, you agree with our <a class="text-white font-bold underline" href="{% url 'privacyPolicy' %}" target = "_blank">Privacy Policy</a> and <a class="text-white font-bold underline" href="{% url 'termsOfUse' %}" target = "_blank">Terms Of Use.</a></p>
               </div>
-               <button class="py-4 w-full bg-green-500 hover:bg-green-600 text-white font-bold rounded-full transition duration-200">Create My Account!</button> 
+               <button class="py-4 w-full bg-green-500 hover:bg-green-600 text-white font-bold rounded-full transition duration-200" type = "submit">Create My Account!</button> 
             </form>
           </div>
         </div>

@@ -24,7 +24,6 @@ urlpatterns = [
     path('dashboard/', views.dashboard, name='dashboard'),
     path('register/', views.registerUser, name='register'),
     path('login/', views.loginUser, name='login'),
-    path('signup/', views.signup, name='signup'),
     path('classes/', views.classes, name='classes'),
     path('privacypolicy/', views.privacyPolicy, name='privacyPolicy'),
     path('termsofuse/', views.termsOfUse, name='termsOfUse'),
