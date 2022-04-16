@@ -10,7 +10,7 @@
   <img class="hidden lg:block absolute inset-y-0 right-0 -mr-40 -mt-32" src="zospace-assets/lines/line-right-long.svg" alt="">
   <div class="relative container px-4 mx-auto">
     <div class="max-w-5xl mx-auto">
-      <div class="flex flex-wrap items-center -mx-4" style = "margin-top: -10%">
+      <div class="flex flex-wrap items-center -mx-4" id = "responsivecontainer" style = "margin-top: -10%">
         <div class="w-full lg:w-1/2 px-4 mb-16 lg:mb-0">
           <div class="max-w-md"style = "margin-top: -20%">
             <span class="text-lg text-green-400 font-bold" >Create An Account</span>
@@ -115,4 +115,26 @@
           #responsivehide { display: none; }  
         }
       </style>
+
+      <!--Media Query Styles-->
+      <style>
+        @media screen and (min-width: 0px) and (max-width: 1086px) {
+          #responsivecontainer {
+            margin-top: 5% !important;
+          }
+        }
+        @media screen and (min-width: 0px) and (max-width: 1341px) {
+          #responsivecontainer {
+            margin-top: 10% !important;
+          }
+        }
+          @media screen and (min-width: 1345px) and (max-width: 1535px) {
+            #responsivecontainer {
+              margin-top: 10% !important;
+            }
+
+        }
+      </style>
+
+
       {% endblock %}
