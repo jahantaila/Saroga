@@ -71,7 +71,7 @@ __________
    - [ ] Video
    - [ ] Chat System
 
-- [ ] Recourses Screen
+- [ ] Resources Screen
   - [ ] Doc style
   - [ ] Users learn about history of yoga, origons, founder
   - [ ] Ppl learn about the benefits of yoga 

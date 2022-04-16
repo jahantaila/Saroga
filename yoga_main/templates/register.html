@@ -1,8 +1,9 @@
 {% extends "base.html" %}
 
-{% block title %}Saroga | Login {% endblock %}
+{% block title %}Saroga | Register {% endblock %}
 <!--Scripts for scroll animations-->
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 {% block content %}
 <section class="relative py-20 2xl:py-40 bg-[#0f172a] overflow-hidden">
   <img class="hidden lg:block absolute inset-0 mt-32" src="zospace-assets/lines/line-mountain.svg" alt="">
@@ -13,14 +14,14 @@
       <div class="flex flex-wrap items-center -mx-4" id="responsivecontainer" style="margin-top: -10%">
         <div class="w-full lg:w-1/2 px-4 mb-16 lg:mb-0">
           <div class="max-w-md" style="margin-top: -20%">
-            <span class="text-lg text-green-400 font-bold">Log Into Your Account</span>
+            <span class="text-lg text-green-400 font-bold">Create An Account</span>
             <h2 class="mt-8 mb-12 text-5xl font-bold font-heading text-slate-100 leading-snug" data-aos="fade-up"
-              data-aos-duration="2000">Lead a healthy lifestyle by joining a free session today!</h2>
+              data-aos-duration="2000">Become a member of our growing community - for free!</h2>
             <p class="text-lg text-slate-400" data-aos="fade-up-right" data-aos-duration="1500">
               <span>Here at Saroga, your health is our <mark class="bg-green-500"> <span
                     class="text-white font-bold">top priority.</span> </mark> Our mission is to create a <span
                   class="text-white font-bold">safe</span> and <span class="text-white font-bold">nurturing</span>
-                environment to encourage <span class="text-white font-bold">mindfulness</span> and a <span
+                environment to encourage <span class="text-slate-200 font-bold">mindfulness</span> and a <span
                   class="text-white font-bold">healthy lifestyle.</span>
               </span>
 
@@ -28,10 +29,26 @@
           </div>
         </div>
         <div class="w-full lg:w-1/2 px-4">
-          <div class=" text-center px-6 lg:px-20 py-12 lg:py-24 bg-[rgb(18,28,47)] shadow-xl rounded-lg"
+          <div class="px-6 text-center lg:px-20 py-12 lg:py-24 bg-[rgb(18,28,47)] shadow-xl rounded-lg"
             data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
-            <form action="#">
-              <h3 class="mb-10 text-2xl text-green-500 font-bold font-heading">Login</h3>
+            <form method="POST" action="">
+              {% csrf_token %}
+              <h3 class="mb-10 text-2xl text-green-500 font-bold font-heading">Sign Up</h3>
+              <div class="flex items-center pl-6 mb-3 bg-white rounded-full">
+                <span class="inline-block pr-3 py-2 border-r border-gray-150">
+                  <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"
+                    style="transform: scale(1.1)">
+                    <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round"
+                      stroke-linejoin="round" transform="translate(3.5 4.5)">
+                      <path
+                        d="m0 2v8c0 1.1045695.8954305 2 2 2h10c1.1045695 0 2-.8954305 2-2v-8c0-1.1045695-.8954305-2-2-2h-10c-1.1045695 0-2 .8954305-2 2z" />
+                      <path d="m2 3 5 3 5-3" />
+                    </g>
+                  </svg>
+                </span>
+                <input class="w-full pl-4 pr-6 py-4 font-bold placeholder-gray-900 rounded-r-full focus:outline-none"
+                  type="email" placeholder="Please Enter Your Email">
+              </div>
 
               <div class="flex items-center pl-6 mb-3 bg-white rounded-full">
                 <span class="inline-block pr-3 py-2 border-r border-gray-150">
@@ -48,8 +65,10 @@
                   </svg>
                 </span>
                 <input class="w-full pl-4 pr-6 py-4 font-bold placeholder-gray-900 rounded-r-full focus:outline-none"
-                  type="text" placeholder="Enter Your Username">
+                  id="username" type="text" placeholder="Please Choose A Username">
               </div>
+
+
 
               <div class="flex items-center pl-6 mb-3 bg-white rounded-full">
                 <span class="inline-block pr-3 py-2 border-r border-gray-150">
@@ -64,18 +83,33 @@
                   </svg>
                 </span>
                 <input class="w-full pl-4 pr-6 py-4 font-bold placeholder-gray-900 rounded-r-full focus:outline-none"
-                  type="password" placeholder="Enter Your Password">
+                  type="password" placeholder="Password">
               </div>
-              <div class="inline-flex mb-10 mt-4">
+              <div class="flex items-center pl-6 mb-6 bg-white rounded-full">
+                <span class="inline-block pr-3 py-2 border-r border-gray-150">
+                  <svg class="w-5 h-5" width="20" height="21" viewBox="0 0 20 21" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.6243 13.5625C15.3939 13.5625 15.2077 13.7581 15.2077 14V16.4517C15.2077 18.2573 14.0443 20.125 12.0973 20.125H5.42975C3.56848 20.125 1.87435 18.3741 1.87435 16.4517V10.5H15.6243C15.8547 10.5 16.041 10.3044 16.041 10.0625C16.041 9.82058 15.8547 9.625 15.6243 9.625H15.2077V5.95175C15.2077 2.39183 12.8635 0 9.37435 0H7.70768C4.21855 0 1.87435 2.39183 1.87435 5.95175V9.625H1.45768C1.22728 9.625 1.04102 9.82058 1.04102 10.0625V16.4517C1.04102 18.8322 3.13268 21 5.42975 21H12.0972C14.3089 21 16.0409 19.0023 16.0409 16.4517V14C16.041 13.7581 15.8547 13.5625 15.6243 13.5625ZM2.70768 5.95175C2.70768 2.86783 4.67022 0.875 7.70768 0.875H9.37435C12.4119 0.875 14.3743 2.86783 14.3743 5.95175V9.625H2.70768V5.95175Z"
+                      fill="black"></path>
+                    <path
+                      d="M18.8815 9.3711C18.7482 9.17377 18.4878 9.12827 18.3003 9.26701L8.58655 16.4919L6.75235 14.5655C6.58942 14.3944 6.32608 14.3944 6.16322 14.5655C6.00028 14.7366 6.00028 15.0131 6.16322 15.1842L8.24655 17.3717C8.32695 17.4561 8.43362 17.4999 8.54115 17.4999C8.62488 17.4999 8.70868 17.4732 8.78282 17.4194L18.7828 9.98185C18.9703 9.84143 19.0141 9.56843 18.8815 9.3711Z"
+                      fill="black"></path>
+                  </svg>
+                </span>
+                <input class="w-full pl-4 pr-6 py-4 font-bold placeholder-gray-900 rounded-r-full focus:outline-none"
+                  type="password" placeholder="Confirm Password">
+              </div>
+              <div class="inline-flex mb-10">
                 <input class="mr-4" type="checkbox">
-                <p class="-mt-2 text-sm text-gray-200 ">By using Saroga, you agree with our <a
+                <p class="-mt-2 text-sm text-gray-200">By signing up, you agree with our <a
                     class="text-white font-bold underline" href="{% url 'privacyPolicy' %}" target="_blank">Privacy
                     Policy</a> and <a class="text-white font-bold underline" href="{% url 'termsOfUse' %}"
                     target="_blank">Terms Of Use.</a></p>
               </div>
               <button
-                class="py-4 w-full bg-green-500 hover:bg-green-600 text-white font-bold rounded-full transition duration-200">Login
-                To My Account!</button>
+                class="py-4 w-full bg-green-500 hover:bg-green-600 text-white font-bold rounded-full transition duration-200"
+                type="submit">Create My Account!</button>
             </form>
           </div>
         </div>
@@ -123,6 +157,7 @@
     }
   }
 </style>
+
 <!--Media Query Styles-->
 <style>
   @media screen and (min-width: 0px) and (max-width: 1086px) {

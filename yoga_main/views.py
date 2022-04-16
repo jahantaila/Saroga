@@ -1,6 +1,12 @@
 from cmath import log
 from pyexpat.errors import messages
-
+from django.core.exceptions import ValidationError
+from django.forms import ModelForm, fields
+from django.contrib.auth.forms import UserCreationForm, UsernameField
+from django.contrib.auth.models import User
+from django import forms
+import time
+from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
@@ -14,7 +20,16 @@ def dashboard(request):
   return render(request, 'teachpanel.html')
 
 def registerUser(request):
-  return render(request, 'register.html')
+    if request.method == "POST":
+        email = request.POST.get('email')
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+    
+        newuser = User.objects.create_user(username = username, email = email, password = password)
+        newuser.save()
+
+        return redirect(request, 'loginUser')
+    return render(request, 'register.html')
 
 
 def loginUser(request):
@@ -36,23 +51,6 @@ def loginUser(request):
 def logoutUser(request):
   logout(request)
   return redirect('home')
-
-def signup(request):
-    if request.method == "POST":
-        firstname = request.POST.get('firstname')
-        lastname = request.POST.get('lastname')
-        email = request.POST.get('email')
-        username = request.POST.get('username')
-        password = request.POST.get('password')
-        
-        newuser = User.objects.create_user(username, email, password)
-        newuser.first_name = firstname
-        newuser.last_name = lastname
-
-        newuser.save()
-
-        return redirect(request, 'loginUser')
-    return render(request, 'signup.html')
   
 def classes(request):
    return render(request, 'classes.html')
