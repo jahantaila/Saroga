@@ -20,18 +20,18 @@ __________
 - [x] LOGO
 - [ ] Home Screen (**/home**)
    - [x] Basic Navbar
-   - [ ] Make Navbar responsive
+   - [x] Make Navbar responsive
    - [x] Landing Page
-   - [ ] About Section
-   - [ ] Talk about what the name means 
+   - [x] About Section
+   - [x] Talk about what the name means 
    - [ ] Footer
-   - [ ] Testimonials
-   - [ ] Our Mission
-   - [ ] Update picture on laptop landing to dashboard
+   - [x] Testimonials
+   - [x] Our Mission
+   - [x] Update picture on laptop landing to dashboard
   
 - [ ] Account System
    - [x] Login Frontend **/login**
-   - [ ] Register Frontend (similar to login)
+   - [x] Register Frontend (similar to login)
    - [ ] Login backend
    - [ ] Register Backend
 
@@ -72,10 +72,10 @@ __________
    - [ ] Chat System
 
 - [ ] Resources Screen
-  - [ ] Doc style
+  - [x] Doc style
   - [ ] Users learn about history of yoga, origons, founder
   - [ ] Ppl learn about the benefits of yoga 
-  - [ ] Yoga videos (created by us)
+  - [x] Yoga videos (created by us)
   - [ ] Doc style where they learn about new moves and poses
   - [ ] Learn about how to lead a healthy lifestyle
 
