@@ -13,7 +13,8 @@ class UserDetails(models.Model):
 class YogaClass(models.Model):
   name = models.CharField(max_length = 20)
   description = models.TextField(max_length = 50,)
-  user = models.CharField(unique = True, max_length = 5000)
-  date = models.DateTimeField(auto_now_add = True)
-  rating = models.IntegerField()
+  user = models.CharField( max_length = 5000)
+  date = models.DateTimeField()
+  rating = models.CharField(max_length = 50, default = "No Ratings Yet")
   tag = models.CharField(max_length = 10)
+  link = models.CharField(default = 'Please wait 24 hours for your link to generate', max_length =50000)

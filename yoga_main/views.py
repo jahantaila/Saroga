@@ -1,10 +1,12 @@
+from datetime import datetime
 from pyexpat.errors import messages
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.shortcuts import redirect, render
-from yoga_main.models import UserDetails
+from yoga_main.models import UserDetails, YogaClass
+from django.contrib import messages
 
 def home(request):
   return render(request, 'home.html')
@@ -56,7 +58,9 @@ def loginUser(request):
       user = authenticate(request, username=username, password=password)
       if user is not None:
         login(request, user)
+        messages.success(request, "Your Class has been successfully created" )
         return redirect('dashboard')
+
       else:
         return redirect('login')
     else: 
@@ -73,6 +77,16 @@ def classes(request):
 
 @login_required(login_url = ('/login/'))
 def create_class(request):
+  if request.method == "POST":
+    name = request.POST.get('name')
+    user = request.user
+    tag = request.POST.get('tag')
+    description = request.POST.get('description')
+    rating = 'No Ratings Yet'
+    date = datetime.today().strftime('%Y-%m-%d')
+    link = "Please wait 24 hours for your link to generate"
+    YogaClass.objects.create(name=name, user=user, tag = tag, description=description, rating=rating, date=date, link = link, )
+    return redirect('dashboard')
   return render(request, 'createclass.html')
 
 
