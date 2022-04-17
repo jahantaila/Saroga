@@ -6,3 +6,4 @@ class UserDetails(models.Model):
   total_yoga_time = models.IntegerField()
   sessions_joined = models.IntegerField()
   skill_level = models.CharField(max_length = 50,)
+  classes_created = models.IntegerField(default = 0)

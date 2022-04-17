@@ -35,6 +35,7 @@ def registerUser(request):
                     total_yoga_time = 0,
                     sessions_joined = 0,
                     skill_level = "beginner",
+                    classes_created = 0,
                 )
         if user is not None:
           login(request, user)
