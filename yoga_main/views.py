@@ -3,6 +3,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.shortcuts import redirect, render
+from yoga_main.models import UserDetails
 
 def home(request):
   return render(request, 'home.html')
@@ -17,11 +18,17 @@ def registerUser(request):
         email = request.POST.get('email')
         username = request.POST.get('username')
         password = request.POST.get('password')
-                                                       
-        newuser = User.objects.create_user(username = username, email = email, password = password)
-        newuser.save()
 
+        newuser = User.objects.create_user(username = username, email = email, password = password, 
+          )
+        newuser.save()
+        
         user = authenticate(request, username=username, password=password)
+        UserDetails.objects.create(
+                    user=user,
+                    total_yoga_time = 0,
+                    sessions_joined = 0,
+                )
         if user is not None:
           login(request, user)
           return redirect('dashboard')
