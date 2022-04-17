@@ -24,7 +24,7 @@ def registerUser(request):
         newuser.save()
         
         user = authenticate(request, username=username, password=password)
-        UserDetails.objects.create(
+        UserDetails.objects.create(   # creates a UserDetail object (another models.py model )          
                     username=username,
                     total_yoga_time = 0,
                     sessions_joined = 0,
