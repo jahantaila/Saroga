@@ -18,8 +18,10 @@ def dashboard(request):
   context = {
       "total_yoga_time": user_details.total_yoga_time,
       "sessions_joined": user_details.sessions_joined,
+      "classes_num": YogaClass.objects.filter().count()
+
     }
-  return render(request, 'dashboard.html', context)
+  return render(request, 'dashboard.html', context, )
 
 def registerUser(request):
     if request.method == "POST":
@@ -72,7 +74,11 @@ def logoutUser(request):
 
 @login_required(login_url = ('/login/'))
 def classes(request):
-   return render(request, 'classes.html')
+   yoga_classes = YogaClass.objects.all()
+   context = {
+     'yoga_classes': yoga_classes
+   }
+   return render(request, 'classes.html', context)
 
 
 @login_required(login_url = ('/login/'))
@@ -84,7 +90,7 @@ def create_class(request):
     description = request.POST.get('description')
     rating = 'No Ratings Yet'
     date = datetime.today().strftime('%Y-%m-%d')
-    link = "Please wait 24 hours for your link to generate"
+    link = "http://meet.google.com/new"
     YogaClass.objects.create(name=name, user=user, tag = tag, description=description, rating=rating, date=date, link = link, )
     return redirect('dashboard')
   return render(request, 'createclass.html')

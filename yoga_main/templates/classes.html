@@ -81,11 +81,12 @@
     </div>
 
     <!-- CARDS WITH CLASSES SECTION -->
+    {% for class in yoga_classes %}
+
     <div class="grid grid-cols-1 md:grid-cols-4 m-10 md:mt-10 md:ml-0 md:mr-0 gap-6 justify-self-center mt-10">
 
-
         <div class="rounded-xl transition-all ease-in-out delay-150 bg-white">
-
+            
             <img class="rounded-t-xl" src=" ../static/images/yoga-card-image1.avif" alt="Avatar" style="width:100%">
             <div class="container rounded-xl shadow-md static p-3">
                 <div class="profile flex justify-between">
@@ -117,71 +118,8 @@
 
         </div>
 
-
-
-        <div class="rounded-xl transition ease-in-out delay-150 bg-white ">
-            <img class="rounded-t-xl" src=" ../static/images/yoga-card-image1.avif" alt="Avatar" style="width:100%">
-            <div class="container rounded-xl shadow-md  p-3">
-                <div class="profile flex justify-between">
-                    <div class="left-profile flex">
-                        <div class="profile-image"><img style="width: 3.5em; height: 3.5em; border-radius: 50%;"
-                                src="../static/images/profile.png" alt="profile image">
-                        </div>
-                        <div class="flex flex-col ml-3">
-                            <h4 class=""><b>Prasit Jahan</b></h4>
-                            <div class="text-md rating text-amber-300">&#9733; <b>5.0 </b><span class="text-slate-400">
-                                    (133)</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="date flex mr-3 mt-3">
-                        <img src="../static/images/calendaricon.png" style="width: 1.5em; height: 1.5em;"
-                            alt="calendar">
-                        <span>Apr 5</span>
-                    </div>
-                </div>
-
-                <p class="mt-5 ml-5">Join us for a calming river side meditation session, focusing on mindfulness. </p>
-                <button
-                    class="block self-center hover:text-green-500 transition ease-in-out text-green-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
-                    type="button" data-modal-toggle="defaultModal">
-                    Learn More
-                </button>
-            </div>
-
         </div>
-        <div class="rounded-xl transition ease-in-out delay-150 bg-white  ">
-            <img class="rounded-t-xl" src=" ../static/images/yoga-card-image1.avif" alt="Avatar" style="width:100%">
-            <div class="container rounded-b-xl shadow-md  p-3">
-                <div class="profile flex justify-between">
-                    <div class="left-profile flex">
-                        <div class="profile-image"><img style="width: 3.5em; height: 3.5em; border-radius: 50%;"
-                                src="../static/images/profile.png" alt="profile image">
-                        </div>
-                        <div class="flex flex-col ml-3">
-                            <h4 class=""><b>Prasit Jahan</b></h4>
-                            <div class="text-md rating text-amber-300">&#9733; <b>5.0 </b><span class="text-slate-400">
-                                    (133)</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="date flex mr-3 mt-3">
-                        <img src="../static/images/calendaricon.png" style="width: 1.5em; height: 1.5em;"
-                            alt="calendar">
-                        <span>Apr 5</span>
-                    </div>
-                </div>
-
-
-                <p class="mt-5 ml-5">Join us for a calming river side meditation session, focusing on mindfulness. </p>
-                <button
-                    class="block self-center text-green-400 hover:text-green-500 transition ease-in-out font-medium rounded-lg text-sm px-5 py-2.5 text-center "
-                    type="button" data-modal-toggle="defaultModal">
-                    Learn More
-                </button>
-            </div>
-
-        </div>
+        {% endfor %}
 
     </div>
 </section>
