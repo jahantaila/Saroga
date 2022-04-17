@@ -65,9 +65,16 @@ def loginUser(request):
 def logoutUser(request):
   logout(request)
   return redirect('home')
-  
+
+@login_required(login_url = ('/login/'))
 def classes(request):
    return render(request, 'classes.html')
+
+
+@login_required(login_url = ('/login/'))
+def create_class(request):
+  return render(request, 'createclass.html')
+
 
 def resources(request):
    return render(request, 'resources.html')
@@ -77,3 +84,4 @@ def privacyPolicy(request):
 
 def termsOfUse(request):
   return render(request, 'termsofuse.html')
+

@@ -29,4 +29,5 @@ urlpatterns = [
     path('termsofuse/', views.termsOfUse, name='termsOfUse'),
     path('resources/', views.resources, name='resources'), # prasit is working on this 
     path('logout/', views.logoutUser, name='logout'),
+    path('createclass', views.create_class, name='create_class'),
 ]

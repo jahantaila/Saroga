@@ -1,0 +1,143 @@
+{% extends "base.html" %}
+
+{% block title %}Saroga | Create A Class {% endblock %}
+<!--Scripts for scroll animations-->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+{% block content %}
+<section class="relative py-20 2xl:py-40 bg-[#0f172a] overflow-hidden">
+  <img class="hidden lg:block absolute inset-0 mt-32" src="zospace-assets/lines/line-mountain.svg" alt="">
+  <img class="hidden lg:block absolute inset-y-0 right-0 -mr-40 -mt-32" src="zospace-assets/lines/line-right-long.svg"
+    alt="">
+  <div class="relative container px-4 mx-auto">
+    <div class="max-w-5xl mx-auto">
+      <div class="flex flex-wrap items-center -mx-4" id="responsivecontainer" style="margin-top: -10%">
+        <div class="w-full lg:w-1/2 px-4 mb-16 lg:mb-0">
+          <div class="max-w-md" style="margin-top: -20%">
+            <span class="text-lg text-green-400 font-bold">Create A Class</span>
+            <h2 class="mt-8 mb-12 text-5xl font-bold font-heading text-slate-100 leading-snug" data-aos="fade-up"
+              data-aos-duration="2000">Become a trusted teacher on Saroga today!</h2>
+            <p class="text-lg text-slate-400" data-aos="fade-up-right" data-aos-duration="1500">
+              <span>Creating a class on Saroga not only allows you to spread your love for yoga to the community, but it also allows you to become a trusted teacher and gain access to administrative incentives </span>
+              </span>
+
+            </p>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/2 px-4">
+          <div class="px-6 text-center lg:px-20 py-12 lg:py-24 bg-[rgb(18,28,47)] shadow-xl rounded-lg"
+            data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
+            <form method="POST" action="">
+              {% csrf_token %}
+              <h3 class="mb-10 text-2xl text-green-500 font-bold font-heading">Create A Class</h3>
+              <div class="flex items-center pl-6 mb-3 bg-white rounded-full">
+                <span class="inline-block pr-3 py-2 border-r border-gray-150">
+                  <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg" style = "transform: scale(1.2)"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" transform="translate(4 3)"><path d="m2.5.5h8c1.1045695 0 2 .8954305 2 2v10c0 1.1045695-.8954305 2-2 2h-8c-1.1045695 0-2-.8954305-2-2v-10c0-1.1045695.8954305-2 2-2z"/><path d="m3.5.5h4v5.012l-2-2.012-2 2.012z"/></g></svg>
+                </span>
+                <input class="w-full pl-4 pr-6 py-4 font-bold placeholder-gray-900 rounded-r-full focus:outline-none"
+                  type="email" placeholder="Type a name for your class" name="name">
+              </div>
+
+              <div class="flex items-center pl-6 mb-3 bg-white rounded-full">
+                <span class="inline-block pr-3 py-2 border-r border-gray-150">
+                  <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg" style = "transform: scale(1.5)"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m13.5 5.5-2 10"/><path d="m9.5 5.5-2 10"/><path d="m6.5 8.5h9"/><path d="m5.5 12.5h9"/></g></svg>
+                </span>
+                <input class="w-full pl-4 pr-6 py-4 font-bold placeholder-gray-900 rounded-r-full focus:outline-none"
+                   type="text" placeholder="Class tag (bellow 10 letters)" name="tag">
+              </div>
+
+
+
+              <div class="flex items-center pl-6 mb-3 bg-white rounded-full">
+                <span class="inline-block pr-3 py-2 border-r border-gray-150">
+                  <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg" style = "transform: scale(1.4)"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m4.5 6.5h12"/><path d="m4.498 10.5h5.997"/><path d="m4.5 14.5h9.995"/></g></svg>
+                </span>
+                <input class="w-full pl-4 pr-6 py-4 font-bold placeholder-gray-900 rounded-r-full focus:outline-none"
+                   type="text" placeholder="Brief Description" name="description" style = "height: 80px !important;">
+              </div>
+              <div class="flex items-center pl-6 mb-6 bg-white rounded-full">
+                </span>
+                
+              </div>
+              <div class="inline-flex mb-10">
+                <input class="mr-4" type="checkbox">
+                <p class="-mt-2 text-sm text-gray-200">By signing up, you agree with our <a
+                    class="text-white font-bold underline" href="{% url 'privacyPolicy' %}" target="_blank">Privacy
+                    Policy</a> and <a class="text-white font-bold underline" href="{% url 'termsOfUse' %}"
+                    target="_blank">Terms Of Use.</a></p>
+              </div>
+              <button
+                class="py-4 w-full bg-green-500 hover:bg-green-600 text-white font-bold rounded-full transition duration-200"
+                type="submit">Create My Account!</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <img id="greentrans" class="hidden md:block fixed bottom-0 left-0" src="../static/images/greentrans.png"
+    style="pointer-events: none;" style="position: fixed;">
+</section>
+{% endblock %}
+
+{% block js %}
+<script>
+  for (var i = 0; i < links.length; i += 1) {
+    links[i].addEventListener('click', function (e) {
+      e.preventDefault();
+    });
+  }
+
+  var forms = document.getElementsByTagName('form');
+  for (var i = 0; i < forms.length; i += 1) {
+    forms[i].addEventListener('submit', function (e) {
+      e.preventDefault();
+    }, true);
+  }
+</script>
+
+<!--AOS Script-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+{% endblock %}
+{% block css %}
+<style>
+  @media screen and (min-width: 0px) and (max-width: 1272px) {
+    .mr-12 {
+      display: none;
+    }
+
+    #responsivehide {
+      display: none;
+    }
+  }
+</style>
+
+<!--Media Query Styles-->
+<style>
+  @media screen and (min-width: 0px) and (max-width: 1086px) {
+    #responsivecontainer {
+      margin-top: 5% !important;
+    }
+  }
+
+  @media screen and (min-width: 0px) and (max-width: 1341px) {
+    #responsivecontainer {
+      margin-top: 10% !important;
+    }
+  }
+
+  @media screen and (min-width: 1345px) and (max-width: 1535px) {
+    #responsivecontainer {
+      margin-top: 10% !important;
+    }
+
+  }
+</style>
+
+
+{% endblock %}
