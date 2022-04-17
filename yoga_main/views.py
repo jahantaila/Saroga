@@ -11,7 +11,12 @@ def home(request):
 @login_required(login_url = ('/login/'))
 def dashboard(request):
   user = request.user 
-  return render(request, 'dashboard.html')
+  user_details = UserDetails.objects.get(username=user)  # or userdetails.objects.get(user=user)
+  context = {
+      "total_yoga_time": user_details.total_yoga_time,
+      "sessions_joined": user_details.sessions_joined,
+    }
+  return render(request, 'dashboard.html', context)
 
 def registerUser(request):
     if request.method == "POST":
