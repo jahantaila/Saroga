@@ -1,12 +1,4 @@
-from cmath import log
-from pyexpat.errors import messages
-from django.core.exceptions import ValidationError
-from django.forms import ModelForm, fields
-from django.contrib.auth.forms import UserCreationForm, UsernameField
 from django.contrib.auth.models import User
-from django import forms
-import time
-from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
@@ -24,12 +16,19 @@ def registerUser(request):
         email = request.POST.get('email')
         username = request.POST.get('username')
         password = request.POST.get('password')
+        
     
         newuser = User.objects.create_user(username = username, email = email, password = password)
         newuser.save()
 
-        return redirect(request, 'loginUser')
-    return render(request, 'register.html')
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
+          login(request, user)
+          return redirect('dashboard')
+        else:
+          return redirect('login')
+    else:
+      return render(request, 'register.html')
 
 
 def loginUser(request):

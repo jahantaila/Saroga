@@ -30,7 +30,8 @@
         <div class="w-full lg:w-1/2 px-4">
           <div class=" text-center px-6 lg:px-20 py-12 lg:py-24 bg-[rgb(18,28,47)] shadow-xl rounded-lg"
             data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
-            <form action="#">
+            <form action="" method="POST">
+              {% csrf_token %}
               <h3 class="mb-10 text-2xl text-green-500 font-bold font-heading">Login</h3>
 
               <div class="flex items-center pl-6 mb-3 bg-white rounded-full">
@@ -48,7 +49,7 @@
                   </svg>
                 </span>
                 <input class="w-full pl-4 pr-6 py-4 font-bold placeholder-gray-900 rounded-r-full focus:outline-none"
-                  type="text" placeholder="Enter Your Username">
+                  type="text" placeholder="Enter Your Username" name="username">
               </div>
 
               <div class="flex items-center pl-6 mb-3 bg-white rounded-full">
@@ -64,7 +65,7 @@
                   </svg>
                 </span>
                 <input class="w-full pl-4 pr-6 py-4 font-bold placeholder-gray-900 rounded-r-full focus:outline-none"
-                  type="password" placeholder="Enter Your Password">
+                  type="password" placeholder="Enter Your Password" name="password">
               </div>
               <div class="inline-flex mb-10 mt-4">
                 <input class="mr-4" type="checkbox">
