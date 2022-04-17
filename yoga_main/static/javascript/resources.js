@@ -58,33 +58,3 @@ function basicsButton() {
 
 }
 
-
-window.onload = function() {
-      document.getElementById('first').className = 'show';
-      document.getElementById('firsta').className = 'current';
-    };
-    let previous = document.getElementById("first");
-    function toggle(e){
-      
-      let elems = document.getElementsByClassName("current");
-      if (previous === document.getElementById("first")){
-        console.log("hello");
-        previous.classList.remove("show");
-        previous.classList.add("right");
-      } else {
-        let previousElem = document.querySelectorAll('[aria-label="'+previous+'"]')[1];
-        previousElem.classList.remove("show");
-      }
-      
-      let aria = document.querySelectorAll('[aria-label="'+e.target.getAttribute('aria-label')+'"]');
-      aria[1].classList.add("show");
-      
-      for (i=0;i<elems.length; i++){
-      
-          elems[i].classList.remove("current");
-
-        }
-        e.target.classList.add("current"); 
-        console.log(e.target.getAttribute('aria-label'));
-      previous=e.target.getAttribute('aria-label');
-};
