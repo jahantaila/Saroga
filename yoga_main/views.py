@@ -25,7 +25,7 @@ def registerUser(request):
         
         user = authenticate(request, username=username, password=password)
         UserDetails.objects.create(
-                    user=user,
+                    username=username,
                     total_yoga_time = 0,
                     sessions_joined = 0,
                 )
