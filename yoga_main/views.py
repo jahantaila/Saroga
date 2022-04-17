@@ -9,7 +9,7 @@ def home(request):
 
 @login_required(login_url = ('/login/'))
 def dashboard(request):
-  return render(request, 'teachpanel.html')
+  return render(request, 'dashboard.html')
 
 def registerUser(request):
     if request.method == "POST":
