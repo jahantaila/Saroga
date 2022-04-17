@@ -150,7 +150,7 @@
 
     <div class="py-8 px-6">
         <div class="container px-4 mx-auto">
-          <h2 class="text-2xl font-bold pl-[20%]">Welcome, {{user.username}} 👋</h2>
+          <h2 class="text-2xl font-bold pl-[20%]" id = "welcometext">Welcome, {{user.username}} 👋</h2>
         </div>
       </div>
 
@@ -158,7 +158,7 @@
       <!--Stats section-->
       <section class="py-8" >
         <div class="container px-4 mx-auto">
-          <div class="flex flex-wrap -m-4">
+          <div class="flex flex-wrap -m-4" id = "responsivecontent">
             <di<div class="w-full lg:w-1/2 p-4" style="padding-left: 20% !important;">
               <div class="p-6 mb-8 bg-white shadow rounded ">
                 <div class="flex mb-3 items-center justify-between">
@@ -213,8 +213,8 @@
             </div>
             
         </div>
-        <div class="flex flex-wrap -m-4">
-          <div class="w-full lg:w-1/2 p-4" style="margin-left: 50% !important; width: 100% !important; margin-top: -39%">
+        <div class="flex flex-wrap -m-4" id = "responsivecontent">
+          <div class="w-full lg:w-1/2 p-4" style="margin-left: 50% !important; width: 100% !important; margin-top: -39%" id = "skillcontent">
             <div class="p-6 mb-8 bg-white shadow rounded ">
               <div class="flex mb-3 items-center justify-between">
                 <h3 class="text-black-500 text-lg font-bold">Your Skill Level</h3>
@@ -319,9 +319,51 @@
         
 
       </section>
+{% block css%}
+<style> 
 
+  @media screen and (min-width: 700px) and (max-width: 1100px) {
+    #responsivecontent{
+      margin-left: 20% !important;
+      width: 100% !important;
+    }
 
+    #welcometext{
+      margin-left: 20% !important;
+      width: 100% !important;
+    }
+ 
+    #skillcontent{
+      margin-top: -90% !important;
+    }
     
+  }
+
+
+
+  @media screen and (min-width: 1100px) and (max-width: 1500px) {
+    #responsivecontent{
+      margin-left: 20% !important;
+      width: 100% !important;
+    }
+
+    #welcometext{
+      margin-left: 20% !important;
+      width: 100% !important;
+    }
+ 
+    #skillcontent{
+      margin-top: -60% !important;
+    }
+    
+  }
+
+
+
+
+</style> 
+
+{% endblock%}
 
 </html>
 
