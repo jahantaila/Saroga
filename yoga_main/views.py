@@ -16,8 +16,7 @@ def registerUser(request):
         email = request.POST.get('email')
         username = request.POST.get('username')
         password = request.POST.get('password')
-        
-    
+                                                       
         newuser = User.objects.create_user(username = username, email = email, password = password)
         newuser.save()
 
