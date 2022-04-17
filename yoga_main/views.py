@@ -9,6 +9,7 @@ def home(request):
 
 @login_required(login_url = ('/login/'))
 def dashboard(request):
+  user = request.user 
   return render(request, 'dashboard.html')
 
 def registerUser(request):
