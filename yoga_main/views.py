@@ -7,6 +7,7 @@ from django.contrib.auth.models import User
 from django.shortcuts import redirect, render
 from yoga_main.models import UserDetails, YogaClass
 from django.contrib import messages
+from django.http import HttpResponseRedirect
 
 def home(request):
   return render(request, 'home.html')
@@ -51,22 +52,26 @@ def registerUser(request):
 
 
 def loginUser(request):
-  if request.user.is_authenticated:
-    return redirect('dashboard')
-  else:
-    if request.method == 'POST':
-      username = request.POST.get('username')
-      password = request.POST.get('password')
-      user = authenticate(request, username=username, password=password)
-      if user is not None:
-        login(request, user)
-        messages.success(request, "Your Class has been successfully created" )
-        return redirect('dashboard')
+	if request.user.is_authenticated:
+		return redirect('/dashboard/')
+	else:
+		if request.method == 'POST':
+			username = request.POST.get('username')
+			password =request.POST.get('password')
 
-      else:
-        return redirect('login')
-    else: 
-      return render(request, 'login.html')
+			user = authenticate(username=username, password=password)
+
+			if user is not None:
+				login(request, user)
+				return redirect('/dashboard')
+			else:
+        
+				messages.error(request, 'Username OR password is incorrect')
+
+		context = {}
+		return render(request, 'login.html', context)
+
+
 
 def logoutUser(request):
   logout(request)
