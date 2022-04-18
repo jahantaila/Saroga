@@ -28,10 +28,12 @@
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="HandheldFriendly" content="true">
+        
       </head>
 
       
       <body id="page" class="antialiased font-body bg-body text-body" data-new-gr-c-s-check-loaded="14.1056.0" data-gr-ext-installed="">       
+       <div class="flex flex-row w-full">
         <div class="" id="content">
     
           <div data-section-id="1" data-category="ta-menus" data-component-id="10070f9f_01_awz" data-container="1">
@@ -48,7 +50,7 @@
                 </button>
               </div>
             </nav>
-            <div class="hidden lg:block navbar-menu relative z-50">
+            <div class="hidden lg:block navbar-menu relative z-5">
               <div class="navbar-backdrop fixed lg:hidden inset-0 bg-gray-800 opacity-10"></div>
               <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-3/4 lg:w-80 sm:max-w-xs pt-6 pb-8 bg-gray-800 overflow-y-auto">
                 <div class="flex w-full items-center px-6 pb-6 mb-6 lg:border-b border-gray-700">
@@ -148,213 +150,219 @@
       
     
     <!--Dont mess w stuff bellow-->
-    <svg id="SvgjsSvg1013" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;"><defs id="SvgjsDefs1014"></defs><polyline id="SvgjsPolyline1015" points="0,0"></polyline><path id="SvgjsPath1016" d="M0 0 "></path></svg></body>
+    <svg class="" id="SvgjsSvg1013" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;"><defs id="SvgjsDefs1014"></defs><polyline id="SvgjsPolyline1015" points="0,0"></polyline><path id="SvgjsPath1016" d="M0 0 "></path></svg></body>
 
-    <div class="py-8 px-6">
+    <div class="py-8 ml-[10em] w-3/4 welcome">
         <div class="container px-4 mx-auto">
           <h2 class="text-2xl font-bold pl-[20%]" id = "welcometext">Welcome, {{user}} 👋</h2>
         </div>
       </div>
       
         <!--Stats section-->
-      <section class="py-8" >
-        <div class="container px-4 mx-auto">
-          <div class="flex flex-wrap -m-4" id = "responsivecontent">
-            <di<div class="w-full lg:w-1/2 p-4" style="padding-left: 20% !important;">
-              <div class="p-6 mb-8 bg-white shadow rounded ">
-                <div class="flex mb-3 items-center justify-between">
-                  <h3 class="text-gray-500 text-medium font-bold">Total Learning Time</h3>
-                </div>
-                <div class="flex items-center mb-3">
-                  <span class="text-4xl font-bold">{{total_yoga_time}} <span> Hours </span></span>
-                  <span class="inline-block ml-2 py-1 px-2 bg-green-500 text-white text-xs rounded-full">Your Goal: 10 Hours!</span>
-                </div>
-                <div class="relative w-full h-1 mb-2 bg-gray-50 rounded">
-                  <div class="absolute top-0 left-0 w-4/6 h-full bg-green-500 rounded"></div>
-                </div>
-                <p class="text-s text-slate-400 font-bold" >Yearly Goal</p>
-              </div>
-              <div class="p-6 bg-white shadow rounded">
-                <div class="flex mb-3 items-center justify-between">
-                  <h3 class="text-gray-500 text-medium font-bold">Sessions Joined</h3>
-                 
-                </div>
-                <div class="flex items-center mb-3">
-                  <span class="text-4xl font-bold">{{sessions_joined}} <span> Sessions </span></span>
-                </div>
-               
-                <div class="py-8 px-6">
-                  <div class="p-6 bg-white border-4 border-orange-500 shadow-md rounded-r-lg">
-                    <div class="flex">
-                      <div class="w-auto">
-                        <span class="w-auto inline-block mr-2">
-                          <svg class="text-orange-500" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 0C4.5 0 0 4.5 0 10C0 15.5 4.5 20 10 20C15.5 20 20 15.5 20 10C20 4.5 15.5 0 10 0ZM11 14C11 14.6 10.6 15 10 15C9.4 15 9 14.6 9 14V10C9 9.4 9.4 9 10 9C10.6 9 11 9.4 11 10V14ZM10 7C9.4 7 9 6.6 9 6C9 5.4 9.4 5 10 5C10.6 5 11 5.4 11 6C11 6.6 10.6 7 10 7Z" fill="currentColor"></path>
-                          </svg>
-                        </span>
-                      </div>
-                      <div class="w-full">
-                        <div class="flex mb-2">
-                          <h3 class="text-orange-800 font-medium">Analytics Generation</h3>
-                          <button class="ml-auto">
-                            <svg class="text-orange-800" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" data-removed="true">
-                              <path d="M6.93341 6.00008L11.1334 1.80008C11.4001 1.53341 11.4001 1.13341 11.1334 0.866748C10.8667 0.600081 10.4667 0.600081 10.2001 0.866748L6.00008 5.06675L1.80008 0.866748C1.53341 0.600081 1.13341 0.600081 0.866748 0.866748C0.600082 1.13341 0.600082 1.53341 0.866748 1.80008L5.06675 6.00008L0.866748 10.2001C0.733415 10.3334 0.666748 10.4667 0.666748 10.6667C0.666748 11.0667 0.933415 11.3334 1.33341 11.3334C1.53341 11.3334 1.66675 11.2667 1.80008 11.1334L6.00008 6.93341L10.2001 11.1334C10.3334 11.2667 10.4667 11.3334 10.6667 11.3334C10.8667 11.3334 11.0001 11.2667 11.1334 11.1334C11.4001 10.8667 11.4001 10.4667 11.1334 10.2001L6.93341 6.00008Z" fill="currentColor"></path>
-                            </svg>
-                          </button>
-                        </div>
-                        <div class="pr-6">
-                          <p class="text-sm text-orange-600">Join a session first to see detailed graphs regarding your performance! Please note that it takes about 24-48 hours for the graphs to generate</p>
-                        </div>
-                      </div>                        
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-            </div>
-
-            <!--Bottom Section with date-->
-            <div class="p-6 bg-white shadow rounded">
+      
+        <div class="stats flex flex-row w-3/4 lg:ml-[20em]">
+          <div class="w-1/2">
+        
+            <div class="p-6 md:p-3 mb-8 bg-white shadow rounded w-4/5 m-auto">
               <div class="flex mb-3 items-center justify-between">
-                <h3 class="text-gray-500 text-medium font-bold">Date Joined</h3>
-               
+                <h3 class="text-gray-500 text-medium font-bold">Total Learning Time</h3>
               </div>
               <div class="flex items-center mb-3">
-                <span class="text-4xl font-bold">{{user.date_joined}}</span>
+                <span class="text-4xl font-bold">0<span> Hours </span></span>
+                <span class="inline-block ml-2 py-1 px-2 bg-green-500 text-white text-xs rounded-full">Your Goal: 10 Hours!</span>
               </div>
-             
+              
+                <p class="text-s text-slate-400 font-bold" >Yearly Goal</p>
+            </div>
+            <!-- div -->
+            <div class="p-6 md:p-3 bg-white shadow rounded w-4/5 m-auto mb-8">
+                          <div class="flex mb-3 items-center justify-between">
+                              <h3 class="text-gray-500 text-medium font-bold">Sessions Joined</h3>
+                            
+                            </div>
+                            <div class="flex items-center mb-3">
+                              <span class="text-4xl font-bold">0<span> Sessions </span></span>
+                            </div>
+                          
+                            <div class="py-8 px-6">
+                              <div class="p-6 sm:p-6 bg-white border-4 border-orange-500 shadow-md rounded-r-lg">
+                                <div class="flex">
+                                  <div class="w-auto">
+                                    <span class="w-auto inline-block mr-2">
+                                      <svg class="text-orange-500" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 0C4.5 0 0 4.5 0 10C0 15.5 4.5 20 10 20C15.5 20 20 15.5 20 10C20 4.5 15.5 0 10 0ZM11 14C11 14.6 10.6 15 10 15C9.4 15 9 14.6 9 14V10C9 9.4 9.4 9 10 9C10.6 9 11 9.4 11 10V14ZM10 7C9.4 7 9 6.6 9 6C9 5.4 9.4 5 10 5C10.6 5 11 5.4 11 6C11 6.6 10.6 7 10 7Z" fill="currentColor"></path>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                  <div class="w-full">
+                                    <div class="flex mb-2">
+                                      <h3 class="text-orange-800 font-medium">Analytics Generation</h3>
+                                      <button class="ml-auto">
+                                        <svg class="text-orange-800" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" data-removed="true">
+                                          <path d="M6.93341 6.00008L11.1334 1.80008C11.4001 1.53341 11.4001 1.13341 11.1334 0.866748C10.8667 0.600081 10.4667 0.600081 10.2001 0.866748L6.00008 5.06675L1.80008 0.866748C1.53341 0.600081 1.13341 0.600081 0.866748 0.866748C0.600082 1.13341 0.600082 1.53341 0.866748 1.80008L5.06675 6.00008L0.866748 10.2001C0.733415 10.3334 0.666748 10.4667 0.666748 10.6667C0.666748 11.0667 0.933415 11.3334 1.33341 11.3334C1.53341 11.3334 1.66675 11.2667 1.80008 11.1334L6.00008 6.93341L10.2001 11.1334C10.3334 11.2667 10.4667 11.3334 10.6667 11.3334C10.8667 11.3334 11.0001 11.2667 11.1334 11.1334C11.4001 10.8667 11.4001 10.4667 11.1334 10.2001L6.93341 6.00008Z" fill="currentColor"></path>
+                                        </svg>
+                                      </button>
+                                    </div>
+                                    <div class="pr-6">
+                                      <p class="text-sm text-orange-600">Join a session first to see detailed graphs regarding your performance! Please note that it takes about 24-48 hours for the graphs to generate</p>
+                                    </div>
+                                  </div>                        
+                                  
+                                </div>
+                                
+                              </div>
+                  </div>
+                </div>
+            <!-- div -->
+        
+            <div class="p-6 bg-white shadow rounded w-4/5 m-auto">
+              <div class="flex mb-3 items-center justify-between">
+                <h3 class="text-gray-500 text-medium font-bold">Date Joined</h3>
+              </div>
+                          
+              <div class="flex items-center mb-3">
+                <span class="text-4xl font-bold">April 17, 2022, 10:19 p.m.</span>
+              </div>
+                        
               <div class="py-8 px-6">
                 <div class="p-6 bg-red-50 border-l-4 border-red-500 rounded-r-lg">
                   <div class="flex items-center mb-2">
+                    
                     <h3 class="text-red-800 font-medium">Cannot Generate Community Graph</h3>
+                    
                     <button class="ml-auto">
                       <svg class="text-red-800" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" data-removed="true">
                         <path d="M6.93341 6.00008L11.1334 1.80008C11.4001 1.53341 11.4001 1.13341 11.1334 0.866748C10.8667 0.600081 10.4667 0.600081 10.2001 0.866748L6.00008 5.06675L1.80008 0.866748C1.53341 0.600081 1.13341 0.600081 0.866748 0.866748C0.600082 1.13341 0.600082 1.53341 0.866748 1.80008L5.06675 6.00008L0.866748 10.2001C0.733415 10.3334 0.666748 10.4667 0.666748 10.6667C0.666748 11.0667 0.933415 11.3334 1.33341 11.3334C1.53341 11.3334 1.66675 11.2667 1.80008 11.1334L6.00008 6.93341L10.2001 11.1334C10.3334 11.2667 10.4667 11.3334 10.6667 11.3334C10.8667 11.3334 11.0001 11.2667 11.1334 11.1334C11.4001 10.8667 11.4001 10.4667 11.1334 10.2001L6.93341 6.00008Z" fill="currentColor"></path>
                       </svg>
                     </button>
+        
                   </div>
+        
                   <div class="pr-6">
                     <p class="text-sm text-red-700">Please join a session &amp; interact with the community for this graph to load. Please note that it can take anywhere from 24 - 48 hours to load</p>
                   </div>
+        
                 </div>
               </div>
+            </div>
+          </div>    
+        
+            <!-- right div -->
+            <div class="w-1/2 p-6 bg-white shadow rounded mr-10">
+              <div style="border-bottom:1px solid gray;">
+                <h2 class="text-black-500 text-lg font-bold mb-3">Your Skill Level</h2>
+                <span class="text-4xl font-bold border-4 border-green-500" style="">Beginner</span>
+                <p class="text-s text-slate-400 font-bold mt-3" >Join yoga sessions to increase your skill level!</p>
+                <div class="px-6 py-8">
+                <div class=" m-auto p-6 bg-green-50 border-l-4 border-green-500 rounded-r-lg mb-" style="">
+                  <h3 class="text-green-800 font-medium">Session links will show up on your dashboard 3 days before event  starts</h3>
                   
+                  
+                  
+                  </div>  
+        
                 </div>
+                
+        
               </div>
-          
-      </div>
-
+              
+              <div>
+                <div class="px-4 py-6">
+                  <h2 class="text-4xl font-semibold text-black text-center">Reccomended Yoga Sessions</h2>
+                  <p class=" text-center text-lg leading-relaxed mt-4 mb-4 text-gray-500">
+                                  A list of sessions to increase your skill level 
+                                </p>
+                </div>
+        
+                <div class="flex flex-column">
+                    <div class="flex flex-row mb-5" style="column-gap:1.2em;">
+                      <img alt="intro 2 yoga"
+                                  src="https://media.istockphoto.com/photos/asian-yoga-students-observing-and-practicing-during-class-picture-id1324181858?b=1&k=20&m=1324181858&s=170667a&w=0&h=HDyD7lT-s8rNKE9eUuGHkJYWrVHxraLylgFSqkWBeF0="
+                                  class="h-24 w-24 rounded"/>
+                      <div>
+                        <h3 class="font-semibold text-black" >Basic Yoga Moves (for beginners)</h3>
+                                <p>
+                                An interactive demonstration of basic yoga moves and how you can do them easily 
+                                </p>
+                      </div>
+                      <div class="italic">
+                        Starts on <span class = "font-bold"> 4/25/22 </span>
+                      </div>
+                    </div>
+                    
+                </div>
+                <div class="flex flex-row mb-5" style="column-gap:1.2em;">
+                      <img alt="intro 2 yoga"
+                                  src="https://media.istockphoto.com/photos/young-african-curvy-woman-doing-pilates-virtual-fitness-class-with-picture-id1315837826?b=1&k=20&m=1315837826&s=170667a&w=0&h=AcqeKz-rB1gb7WBqGkdvZDSHn8LzqrUdIJcLJc_W854="
+                                  class="h-24 w-24 rounded "/>
+                      <div>
+                        <h3 class="font-semibold text-black" >Mediation & Mindfulness</h3>
+                                <p class="md:text-sm">
+                                An introducion to meditation and mindfulness, and how you can live a mindfull life
+                                </p>
+                      </div>
+                      <div class="italic">
+                        Starts on <span class = "font-bold"> 4/25/22 </span>
+                      </div>
+                    </div>
+              </div>
+              
+              <div class="flex flex-row mb-5" style="column-gap:1.2em;">
+                      <img alt="intro 2 yoga"
+                                  src="https://media.istockphoto.com/photos/asian-yoga-students-observing-and-practicing-during-class-picture-id1324181858?b=1&k=20&m=1324181858&s=170667a&w=0&h=HDyD7lT-s8rNKE9eUuGHkJYWrVHxraLylgFSqkWBeF0="
+                                  class="h-24 w-24 rounded "/>
+                      <div>
+                        <h3 class="font-semibold text-black" >Leading a healthy life</h3>
+                                <p>
+                                Tips on how you can lead a healty life by doing yoga persistently
+                                </p>
+                      </div>
+                      <div class="italic">
+                        Starts on <span class = "font-bold"> 4/25/22 </span>
+                      </div>
+                    </div>
+                    <div class="py-8 px-6">
+                            <div class="p-6 bg-white border-l-4 border-gray-500 rounded-r-lg">
+                              <div class="flex items-center">
+                                <h3 class="text-gray-800 font-medium">View more yoga sessions by clicking <a href = "{% url 'classes' %}" class = "bg-gradient-to-r from-blue-200 to-blue-200 bg-no-repeat [background-position:0_88%] [background-size:100%_0.2em] motion-safe:transition-all motion-safe:duration-200
+                                  hover:[background-size:100%_100%]
+                                  focus:[background-size:100%_100%]">here</a> </h3>
+                                
+                              </div>
+                            </div>
+                    </div>
+              </div>
+        
+            </div>
         </div>
         
-        <div class="flex flex-wrap -m-4" id = "responsivecontent" style = "position: absolute;">
-          <div class="w-full lg:w-1/2 p-4" style="margin-left: 50% !important; width: 100% !important;" id = "skillcontent">
-            <div class="p-6 mb-8 bg-white shadow rounded ">
-              <div class="flex mb-3 items-center justify-between">
-                <h3 class="text-black-500 text-lg font-bold">Your Skill Level</h3>
-              </div>
-              <div class="flex items-center mb-3">
-                <span class="text-4xl font-bold border-4 border-green-500 ">Beginner</span>
-                
-              </div>
-              
-              <p class="text-s text-slate-400 font-bold" >Join yoga sessions to increase your skill level!</p>
-
-              <div class="py-8 px-6">
-                <div class="p-6 bg-green-50 border-l-4 border-green-500 rounded-r-lg">
-                  <div class="flex items-center">
-                    <h3 class="text-green-800 font-medium">Session links will show up on your dashboard 3 days before event  starts</h3>
-                    
-                  </div>
-                </div>
-              </div>
-
-              <hr class = "mt-4" style = "display: block; margin-before: 0.5em; margin-after: 0.5em; margin-start: auto; margin-end: auto; overflow: hidden; border-style: inset; border-width: 1px;"> </hr>
-              <div id="menu" class="container mx-auto px-4 lg:pt-24 lg:pb-32">
-                <div class="flex flex-wrap text-center justify-center">
-                  <div class="w-full lg:w-6/12 px-4">
-                    <h2 class="text-4xl font-semibold text-black" style = "margin-top: -25%">Reccomended Yoga Sessions</h2>
-                    <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
-                      A list of sessions to increase your skill level 
-                    </p>
-                  </div>
-                </div>
-                <div class="flex flex-wrap mt-12 justify-center" style = "margin-top: -0.1%">
-                <div class="grid grid-cols-1 sm:grid-cols-6 md:grid-cols-6 lg:grid-cols-6 xl:grid-cols-6 gap-4">
-                  <div class="col-span-2 sm:col-span-1 xl:col-span-1">
-                    <img
-                      alt="intro 2 yoga"
-                      src="https://media.istockphoto.com/photos/asian-yoga-students-observing-and-practicing-during-class-picture-id1324181858?b=1&k=20&m=1324181858&s=170667a&w=0&h=HDyD7lT-s8rNKE9eUuGHkJYWrVHxraLylgFSqkWBeF0="
-                      class="h-24 w-24 rounded  mx-auto"
-                    />
-                  </div>
-                  <div class="col-span-2 sm:col-span-4 xl:col-span-4" >
-                    <h3 class="font-semibold text-black" >Basic Yoga Moves (for beginners)</h3>
-                    <p>
-                    An interactive demonstration of basic yoga moves and how you can do them easily 
-                    </p>
-                  </div>
-                  <div class="col-span-2 sm:col-span-1 xl:col-span-1 italic ">Starts on <span class = "font-bold"> 4/25/22 </span></div>
-           
-                  <div class="col-span-2 sm:col-span-1 xl:col-span-1 pt-2">
-                    <img
-                      alt="mindfulness"
-                      src="https://media.istockphoto.com/photos/my-presence-is-my-power-picture-id1303002202?b=1&k=20&m=1303002202&s=170667a&w=0&h=6PUzkKo1cPve67XL4urz9x56RAS4DRgNfxqx-vKMdz0="
-                      class="h-24 w-24 rounded  mx-auto"
-                    />
-                  </div>
-                  <div class="col-span-2 sm:col-span-4 xl:col-span-4">
-                    <h3 class="font-semibold text-black">Mediation & Mindfulness</h3>
-                    <p>
-                    An introducion to meditation and mindfulness, and how you can live a mindfull life
-                    </p>
-                  </div>
-                  <div class="col-span-2 sm:col-span-1 xl:col-span-1 italic ">Starts on <span class = "font-bold"> 4/26/22 </span></div>
-                  <div class="col-span-2 sm:col-span-1 xl:col-span-1">
-                    <img
-                      alt="health benefits"
-                      src="https://media.istockphoto.com/photos/young-african-curvy-woman-doing-pilates-virtual-fitness-class-with-picture-id1315837826?b=1&k=20&m=1315837826&s=170667a&w=0&h=AcqeKz-rB1gb7WBqGkdvZDSHn8LzqrUdIJcLJc_W854="
-                      class="h-24 w-24 rounded  mx-auto"
-                    />
-                  </div>
-                  <div class="col-span-2 sm:col-span-4 xl:col-span-4 pt-2">
-                    <h3 class="font-semibold text-black">Leading a healthy life</h3>
-                    <p>
-                     Tips on how you can lead a healty life by doing yoga persistently
-                    </p>
-                  </div>
-                  <div class="col-span-2 sm:col-span-1 xl:col-span-1 italic ">Starts on <span class = "font-bold"> 4/27/22 </span></div>
-                </div>
-                </div>
-              </div>
-              
-              <div class="py-8 px-6" style = "margin-top: -15%">
-                <div class="p-6 bg-white border-l-4 border-gray-500 rounded-r-lg">
-                  <div class="flex items-center">
-                    <h3 class="text-gray-800 font-medium">View more yoga sessions by clicking <a href = "{% url 'classes' %}" class = "bg-gradient-to-r from-blue-200 to-blue-200 bg-no-repeat [background-position:0_88%] [background-size:100%_0.2em] motion-safe:transition-all motion-safe:duration-200
-                      hover:[background-size:100%_100%]
-                      focus:[background-size:100%_100%]
-                ">here</a> </h3>
-                    <button class="ml-auto">
-                      <svg class="text-gray-800" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" data-removed="true">
-                        <path d="M6.93341 6.00008L11.1334 1.80008C11.4001 1.53341 11.4001 1.13341 11.1334 0.866748C10.8667 0.600081 10.4667 0.600081 10.2001 0.866748L6.00008 5.06675L1.80008 0.866748C1.53341 0.600081 1.13341 0.600081 0.866748 0.866748C0.600082 1.13341 0.600082 1.53341 0.866748 1.80008L5.06675 6.00008L0.866748 10.2001C0.733415 10.3334 0.666748 10.4667 0.666748 10.6667C0.666748 11.0667 0.933415 11.3334 1.33341 11.3334C1.53341 11.3334 1.66675 11.2667 1.80008 11.1334L6.00008 6.93341L10.2001 11.1334C10.3334 11.2667 10.4667 11.3334 10.6667 11.3334C10.8667 11.3334 11.0001 11.2667 11.1334 11.1334C11.4001 10.8667 11.4001 10.4667 11.1334 10.2001L6.93341 6.00008Z" fill="currentColor" data-removed="true"></path>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              
-
-
-            </div>
-          
+      </div>    
 
         
-
-      </section>
+      
     </body>
 {% block css%}
- 
+ <style>
+   @media screen and (max-width: 1024px){
+    .stats {
+      justify-content: center;
+      width: 100%;
+      margin: auto;
+    }
+   }
+     
+   @media screen and (max-width: 750px){
+     .stats{
+      flex-wrap: wrap;
+     }
+     .stats div {
+       width: 90%;
+       margin: auto;
+     }
+   
+   }
+   
+ </style>
 
 {% endblock%}
 
