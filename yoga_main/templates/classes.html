@@ -75,13 +75,13 @@
     <!-- Header -->
     <div class="md:max-w-5xl mx-auto mt-10 mb-8 md:mb-16 text-center">
 
-        <h3 class="mb-4 text-3xl md:text-5xl leading-tight text-[#0f172a] font-bold ">Our Sessions</h3>
+        <h3 class="mb-4 text-3xl md:text-5xl leading-tight text-gray-100 font-bold ">Our Sessions</h3>
         <p class="mb-10 text-lg md:text-xl text-slate-400 font-medium">Verified Instructors, Engaging routines, Amazing
             Results.</p>
         <div class="relative mx-auto md:w-80">
             <img class="absolute top-1/2 left-4 transform -translate-y-1/2" src="../static/images/search.svg" alt="">
             <input
-                class="w-full py-3 pl-12 pr-4 text-coolGray-900 leading-tight placeholder-coolGray-500 border border-coolGray-200 rounded-lg shadow-xsm focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
+                class="w-full bg-slate-800 py-3 pl-12 pr-4 text-coolGray-900 leading-tight placeholder-coolGray-500 border border-coolGray-700 rounded-lg shadow-xsm focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
                 type="text" placeholder="Search">
         </div>
     </div>
@@ -90,7 +90,7 @@
     <div class="grid grid-cols-1 md:grid-cols-4 m-10 md:mt-10 md:ml-0 md:mr-0 gap-6 justify-self-center mt-10">
 
         {% for class in yoga_classes %}
-        <div class="rounded-xl transition-all ease-in-out delay-150 bg-white">
+        <div class="rounded-xl transition-all ease-in-out delay-150 bg-slate-800 text-gray-200">
             <img class="rounded-t-xl" src=" ../static/images/saroga_logo.png" alt="Logo" style="width:100%">
             <div class="container rounded-xl shadow-md static p-3">
                 <div class="profile flex justify-between">
@@ -114,7 +114,7 @@
 
                 <p class="mt-5 ml-5">{{class.description}}</p>
                 <button
-                    class="block self-center hover:text-green-500 transition ease-in-out text-green-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
+                    class="block self-center hover:text-teal-500 transition ease-in-out text-teal-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
                     type="button" data-modal-toggle="defaultModal">
                     Learn More
                 </button>
