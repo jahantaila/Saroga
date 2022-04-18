@@ -43,9 +43,9 @@ def generateToken():
 # create json data for post requests
 meetingdetails = {"topic": "The title of your zoom meeting",
 				"type": 2,
-				"start_time": "2019-06-14T10: 21: 57",
+				"start_time": "2022-04-17T10: 00:00",
 				"duration": "45",
-				"timezone": "Europe/Madrid",
+				"timezone": "America/New_York",
 				"agenda": "test",
 
 				"recurrence": {"type": 1,
