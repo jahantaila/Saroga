@@ -66,22 +66,14 @@ meetingdetails = {"topic": "The title of your zoom meeting",
 
 
 def createMeeting():
-	headers = {'authorization': 'Bearer ' + generateToken(),
-			'content-type': 'application/json'}
-	r = requests.post(
-		f'https://api.zoom.us/v2/users/me/meetings',
-		headers=headers, data=json.dumps(meetingdetails))
+  headers = {'authorization': 'Bearer ' + generateToken(), 'content-type': 'application/json'}
+  r = requests.post(
+  f'https://api.zoom.us/v2/users/me/meetings', headers=headers, data=json.dumps(meetingdetails))
+  y = json.loads(r.text)
+  join_URL = y['join_url']
+  meetingPassword = y['password']
+  return join_URL, meetingPassword
 
-	print("\n creating zoom meeting ... \n")
-	# print(r.text)
-	# converting the output into json and extracting the details
-	y = json.loads(r.text)
-	join_URL = y['join_url']
-	meetingPassword = y['password']
-
-	print(
-		f'\n here is your zoom meeting link {join_URL} and your \
-		password: "{meetingPassword}"\n')
 
 
 # run the create meeting function
@@ -169,8 +161,8 @@ def create_class(request):
     description = request.POST.get('description')
     rating = 'No Ratings Yet'
     date = datetime.today().strftime('%m-%d-%y') 
-    link = "http://meet.google.com/new"
-    YogaClass.objects.create(name=name, user=user, tag = tag, description=description, rating=rating, date=date, link = link, )
+    link, password = createMeeting()
+    YogaClass.objects.create(name=name, user=user, tag = tag, description=description, rating=rating, date=date, link = link, password = password)
     return redirect('dashboard')
   return render(request, 'createclass.html')
 
