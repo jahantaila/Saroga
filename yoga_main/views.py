@@ -171,7 +171,7 @@ def create_class(request):
     tag = request.POST.get('tag')
     description = request.POST.get('description')
     rating = 'No Ratings Yet'
-    date = datetime.today().strftime('%Y-%m-%d')
+    date = datetime.today().strftime('%m-%d-%y') 
     link = "http://meet.google.com/new"
     YogaClass.objects.create(name=name, user=user, tag = tag, description=description, rating=rating, date=date, link = link, )
     return redirect('dashboard')

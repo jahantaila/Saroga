@@ -14,7 +14,7 @@ class YogaClass(models.Model):
   name = models.CharField(max_length = 20)
   description = models.TextField(max_length = 50,)
   user = models.CharField( max_length = 5000)
-  date = models.DateTimeField()
+  date = models.CharField( max_length = 5000)
   rating = models.CharField(max_length = 50, default = "No Ratings Yet")
   tag = models.CharField(max_length = 10)
   link = models.CharField(default = 'http://meet.google.com/new', max_length =50000)
