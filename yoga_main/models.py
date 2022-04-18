@@ -5,7 +5,7 @@ class UserDetails(models.Model):
   username = models.CharField(max_length = 25, unique = True)
   total_yoga_time = models.IntegerField()
   sessions_joined = models.IntegerField()
-  skill_level = models.CharField(max_length = 50,)
+  skill_level = models.CharField(max_length = 50)
   classes_created = models.IntegerField(default = 0)
 
 
