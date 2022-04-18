@@ -4,7 +4,6 @@
 {% block title %}Saroga | Classes {% endblock %}
 
 {% block content %}
-<!-- top-50 right-50 translate-y-1/2 translate-x-1/2 -->
 <!--   MODAL     -->
 <div id="defaultModal" tabindex="-1" aria-hidden="true"
     class="hidden overflow-y-auto overflow-x-hidden absolute top-100 left-100 z-50 w-full md:inset-0 h-modal md:h-full">
@@ -14,7 +13,7 @@
             <!-- Modal header -->
             <div class="flex justify-between items-start p-5 rounded-t">
                 <h3 class="text-xl font-semibold text-gray-900 lg:text-2xl ">
-                    Terms of Service
+                    Title of the class
                 </h3>
                 <button type="button"
                     class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center"
@@ -29,14 +28,10 @@
             <!-- Modal body -->
             <div class="p-6 space-y-6">
                 <p class="text-base leading-relaxed text-gray-500 ">
-                    With less than a month to go before the European Union enacts new consumer privacy laws for its
-                    citizens, companies around the world are updating their terms of service agreements to comply.
+                    Who the instructor is - Tags - Time - date -
                 </p>
                 <p class="text-base leading-relaxed text-gray-500 ">
-                    The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25
-                    and is meant to ensure a common set of data rights in the European Union. It requires
-                    organizations to notify users as soon as possible of high-risk data breaches that could
-                    personally affect them.
+                    description of the class - what theyll learn
                 </p>
             </div>
             <!-- Modal footer -->
@@ -53,13 +48,11 @@
     <!-- Header -->
     <div class="md:max-w-5xl mx-auto mt-10 mb-8 md:mb-16 text-center">
 
-        <h3 class="mb-4 text-3xl md:text-5xl leading-tight text-darkCoolGray-900 font-bold ">Our mission
-            is to make knowledge and news accessible for everyone.</h3>
-        <p class="mb-10 text-lg md:text-xl text-coolGray-500 font-medium">With our integrated CRM, project management,
-            collaboration and invoicing capabilities, you can manage your business in one secure platform.</p>
+        <h3 class="mb-4 text-3xl md:text-5xl leading-tight text-[#0f172a] font-bold ">Our Sessions</h3>
+        <p class="mb-10 text-lg md:text-xl text-slate-400 font-medium">Verified Instructors, Engaging routines, Amazing
+            Results.</p>
         <div class="relative mx-auto md:w-80">
-            <img class="absolute top-1/2 left-4 transform -translate-y-1/2"
-                src="flex-ui-assets/elements/blog/search.svg" alt="">
+            <img class="absolute top-1/2 left-4 transform -translate-y-1/2" src="../static/images/search.svg" alt="">
             <input
                 class="w-full py-3 pl-12 pr-4 text-coolGray-900 leading-tight placeholder-coolGray-500 border border-coolGray-200 rounded-lg shadow-xsm focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
                 type="text" placeholder="Search">
@@ -88,14 +81,19 @@
                     <div class="date flex mr-3 mt-3">
                         <img src="../static/images/calendaricon.png" style="width: 1.5em; height: 1.5em;"
                             alt="calendar">
+<<<<<<< HEAD
                         <span>{{class.date}}</span>
+=======
+                        <span>{{class.date}}
+                        </span>
+>>>>>>> 72108260d6a46bfa91ee6cba177344b4cca193b0
                     </div>
                 </div>
 
                 <p class="mt-5 ml-5">Join us for a calming river side meditation session, focusing on mindfulness. </p>
                 <button
                     class="block self-center hover:text-green-500 transition ease-in-out text-green-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
-                    type="button" data-modal-toggle="defaultModal">
+                    type="button" onclick="learnMore()" data-modal-toggle="defaultModal">
                     Learn More
                 </button>
             </div>
@@ -129,6 +127,7 @@
     function buttonPressed() {
         targetEl.classList.toggle("hidden");
     }
+
 </script>
 <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
 {% endblock %}

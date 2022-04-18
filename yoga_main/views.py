@@ -66,7 +66,7 @@ def loginUser(request):
 			password =request.POST.get('password')
 
 			user = authenticate(username=username, password=password)
-
+      
 			if user is not None:
 				login(request, user)
 				return redirect('/dashboard')
@@ -116,3 +116,5 @@ def privacyPolicy(request):
 def termsOfUse(request):
   return render(request, 'termsofuse.html')
 
+def about(request):
+  return render(request, 'about.html')
