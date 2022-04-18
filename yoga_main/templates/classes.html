@@ -5,8 +5,9 @@
 
 {% block content %}
 <!--   MODAL     -->
+{% if yoga_classes %}
 {% for class in yoga_classes %}
-<div id="defaultModal" tabindex="-1" aria-hidden="true"
+<div id="{{forloop.counter}}" tabindex="-1" aria-hidden="true"
     class="hidden overflow-y-auto overflow-x-hidden absolute top-100 left-100 z-50 w-full md:inset-0 h-modal md:h-full">
     <div class="p-4 w-full max-w-2xl h-full md:h-auto" style="margin-left: 30%; margin-top: 10%">
         <!-- Modal content -->
@@ -18,7 +19,7 @@
                 </h3>
                 <button type="button"
                     class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center"
-                    data-modal-toggle="defaultModal">
+                    data-modal-toggle="{{ forloop.counter }}">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
                             d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
@@ -62,7 +63,7 @@
             </div>
             <!-- Modal footer -->
             <div class="flex items-center p-6 space-x-2 rounded-b  border-gray-200 ">
-                <button data-modal-toggle="defaultModal" type="button"
+                <button data-modal-toggle="{{ forloop.counter }}" type="button"
                     class="text-white bg-green-500  font-medium rounded-lg text-sm px-5 py-2.5 text-center ">
                     Got it</button>
 
@@ -114,8 +115,8 @@
 
                 <p class="mt-5 ml-5">{{class.description}}</p>
                 <button
-                    class="block self-center hover:text-teal-500 transition ease-in-out text-teal-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
-                    type="button" data-modal-toggle="defaultModal">
+                    class="block self-center hover:text-teal-500 transition ease-in-out text-teal-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center modal-btn"
+                    type="button" data-modal-toggle="{{ forloop.counter }}">
                     Learn More
                 </button>
             </div>
@@ -124,13 +125,15 @@
 
 
         {% endfor %}
-
+       
     </div>
+     {% endif %}
 </section>
 {% endblock %}
 
 {% block js %}
 <script>
+    
     for (var i = 0; i < links.length; i += 1) {
         links[i].addEventListener('click', function (e) {
             e.preventDefault();
@@ -151,6 +154,10 @@
     }
     var dateText = document.getElementById('date');
     console.log(dateText);
+
+
+
+
 </script>
 <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
 {% endblock %}
