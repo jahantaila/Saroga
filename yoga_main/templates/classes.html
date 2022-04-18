@@ -6,7 +6,7 @@
 {% block content %}
 <!--   MODAL     -->
 {% for class in yoga_classes %}
-<div id="defaultModal" tabindex="-1" aria-hidden="true" 
+<div id="defaultModal" tabindex="-1" aria-hidden="true"
     class="hidden overflow-y-auto overflow-x-hidden absolute top-100 left-100 z-50 w-full md:inset-0 h-modal md:h-full">
     <div class="p-4 w-full max-w-2xl h-full md:h-auto" style="margin-left: 30%; margin-top: 10%">
         <!-- Modal content -->
@@ -28,12 +28,37 @@
             </div>
             <!-- Modal body -->
             <div class="p-6 space-y-6">
-                <p class="text-base leading-relaxed text-gray-500 ">
-                    Who the instructor is - Tags - Time - date -
-                </p>
-                <p class="text-base leading-relaxed text-gray-500 ">
-                    description of the class - what theyll learn
-                </p>
+                <div>
+                    <h3 class="mb-4 text-lg leading-tight text-[#0f172a] font-bold ">What you will learn</h3>
+                    <p class="text-base leading-relaxed text-gray-500 ">
+                        {{class.description}}
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="mb-4 text-lg leading-tight text-[#0f172a] font-bold ">Details</h3>
+                    <p class="text-base leading-relaxed text-gray-500 ">
+                    <div class="date flex flex-row mb-5">
+                        <img src="../static/images/calendaricon.png"
+                            style="margin-right:0.5em;width: 1.5em; height: 1.5em;" alt="calendar">
+                        <span id="date">{{class.date}}
+                        </span>
+                    </div>
+                    <div class="date flex flex-row">
+                        <img src="../static/images/clock.png" style="margin-right:0.5em;width: 1.5em; height: 1.5em;"
+                            alt="calendar">
+                        <span id="date">{{class.date}}
+                        </span>
+                    </div>
+                    </p>
+                </div>
+                <div>
+                    <h3 class="mb-4 text-lg leading-tight text-[#0f172a] font-bold ">About the Instructor</h3>
+                    <p class="text-base leading-relaxed text-gray-500 ">
+                        profile image, description, rating, amount of reviews, total courses,
+                        total students
+                    </p>
+                </div>
             </div>
             <!-- Modal footer -->
             <div class="flex items-center p-6 space-x-2 rounded-b  border-gray-200 ">
@@ -75,22 +100,22 @@
                         </div>
                         <div class="flex flex-col ml-3">
                             <h4 class=""><b>{{class.name}}</b></h4>
-                            <div class="text-md rating text-amber-300">&#9733; <b>No Ratings Yet</b>
+                            <div class="text-md rating text-amber-300">&#9733; <b> none</b>
                             </div>
                         </div>
                     </div>
-                    <div class="date flex mr-3 mt-3">
+                    <!-- <div class="date flex mr-3 mt-3">
                         <img src="../static/images/calendaricon.png" style="width: 1.5em; height: 1.5em;"
                             alt="calendar">
                         <span>{{class.date}}
                         </span>
-                    </div>
+                    </div> -->
                 </div>
 
                 <p class="mt-5 ml-5">{{class.description}}</p>
                 <button
                     class="block self-center hover:text-green-500 transition ease-in-out text-green-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
-                    type="button" onclick="learnMore()" data-modal-toggle="defaultModal">
+                    type="button" data-modal-toggle="defaultModal">
                     Learn More
                 </button>
             </div>
@@ -124,7 +149,8 @@
     function buttonPressed() {
         targetEl.classList.toggle("hidden");
     }
-
+    var dateText = document.getElementById('date');
+    console.log(dateText);
 </script>
 <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
 {% endblock %}
