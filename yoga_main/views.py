@@ -8,6 +8,12 @@ from django.shortcuts import redirect, render
 from yoga_main.models import UserDetails, YogaClass
 from django.contrib import messages
 from django.http import HttpResponseRedirect
+import jwt
+import requests 
+import json
+from time import time
+
+API_KEY = 'AHt18e6vT5CZu33gAmWfMQ'
 
 def home(request):
   return render(request, 'home.html')
