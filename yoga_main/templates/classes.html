@@ -6,7 +6,7 @@
 {% block content %}
 <!--   MODAL     -->
 {% for class in yoga_classes %}
-<div id="defaultModal" tabindex="-1" aria-hidden="true" 
+<div id="defaultModal" tabindex="-1" aria-hidden="true"
     class="hidden overflow-y-auto overflow-x-hidden absolute top-100 left-100 z-50 w-full md:inset-0 h-modal md:h-full">
     <div class="p-4 w-full max-w-2xl h-full md:h-auto" style="margin-left: 30%; margin-top: 10%">
         <!-- Modal content -->
@@ -28,9 +28,12 @@
             </div>
             <!-- Modal body -->
             <div class="p-6 space-y-6">
-                <p class="text-base leading-relaxed text-gray-500 ">
-                    Who the instructor is - Tags - Time - date -
-                </p>
+                <div>
+                    <p class="text-base leading-relaxed text-gray-500 ">
+                        Who the instructor is - Tags - Time - date -
+                    </p>
+                </div>
+
                 <p class="text-base leading-relaxed text-gray-500 ">
                     description of the class - what theyll learn
                 </p>
@@ -75,16 +78,16 @@
                         </div>
                         <div class="flex flex-col ml-3">
                             <h4 class=""><b>{{class.name}}</b></h4>
-                            <div class="text-md rating text-amber-300">&#9733; <b>No Ratings Yet</b>
+                            <div class="text-md rating text-amber-300">&#9733; <b> none</b>
                             </div>
                         </div>
                     </div>
-                    <div class="date flex mr-3 mt-3">
+                    <!-- <div class="date flex mr-3 mt-3">
                         <img src="../static/images/calendaricon.png" style="width: 1.5em; height: 1.5em;"
                             alt="calendar">
                         <span>{{class.date}}
                         </span>
-                    </div>
+                    </div> -->
                 </div>
 
                 <p class="mt-5 ml-5">{{class.description}}</p>
