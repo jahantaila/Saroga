@@ -110,3 +110,5 @@ def privacyPolicy(request):
 def termsOfUse(request):
   return render(request, 'termsofuse.html')
 
+def about(request):
+  return render(request, 'about.html')
