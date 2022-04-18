@@ -8,7 +8,6 @@ from django.shortcuts import redirect, render
 from yoga_main.models import UserDetails, YogaClass
 from django.contrib import messages
 from django.http import HttpResponseRedirect
-import jwt
 import requests 
 import json
 from time import time
