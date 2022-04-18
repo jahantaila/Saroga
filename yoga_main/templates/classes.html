@@ -5,6 +5,7 @@
 
 {% block content %}
 <!--   MODAL     -->
+{% for class in yoga_classes %}
 <div id="defaultModal" tabindex="-1" aria-hidden="true" 
     class="hidden overflow-y-auto overflow-x-hidden absolute top-100 left-100 z-50 w-full md:inset-0 h-modal md:h-full">
     <div class="p-4 w-full max-w-2xl h-full md:h-auto" style="margin-left: 30%; margin-top: 10%">
@@ -13,9 +14,7 @@
             <!-- Modal header -->
             <div class="flex justify-between items-start p-5 rounded-t">
                 <h3 class="text-xl font-semibold text-gray-900 lg:text-2xl ">
-                    {% for class in yoga_classes %}
                     {{class.name}}
-                    {% endfor %}
                 </h3>
                 <button type="button"
                     class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center"
@@ -46,6 +45,7 @@
         </div>
     </div>
 </div>
+{% endfor %}
 <section class="md:container md:mx-auto relative py-10 antialiased">
     <!-- Header -->
     <div class="md:max-w-5xl mx-auto mt-10 mb-8 md:mb-16 text-center">
