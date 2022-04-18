@@ -9,6 +9,84 @@ from yoga_main.models import UserDetails, YogaClass
 from django.contrib import messages
 from django.http import HttpResponseRedirect
 
+import jwt
+import requests 
+import json
+from time import time
+
+
+
+
+# Enter your API key and your API secret
+API_KEY = 'AHt18e6vT5CZu33gAmWfMQ'
+API_SEC = 'I6D8Y85GN1IplXu7V0SIg4I6AlGYRfuXnlo7'
+
+# create a function to generate a token
+# using the pyjwt library
+
+
+def generateToken():
+	token = jwt.encode(
+
+		# Create a payload of the token containing
+		# API Key & expiration time
+		{'iss': API_KEY, 'exp': time() + 5000},
+
+		# Secret used to generate token signature
+		API_SEC,
+
+		# Specify the hashing alg
+		algorithm='HS256'
+	)
+	return token
+
+# create json data for post requests
+meetingdetails = {"topic": "The title of your zoom meeting",
+				"type": 2,
+				"start_time": "2019-06-14T10: 21: 57",
+				"duration": "45",
+				"timezone": "Europe/Madrid",
+				"agenda": "test",
+
+				"recurrence": {"type": 1,
+								"repeat_interval": 1
+								},
+				"settings": {"host_video": "true",
+							"participant_video": "true",
+							"join_before_host": "False",
+							"mute_upon_entry": "False",
+							"watermark": "true",
+							"audio": "voip",
+							"auto_recording": "cloud"
+							}
+				}
+
+# send a request with headers including
+# a token and meeting details
+
+
+def createMeeting():
+	headers = {'authorization': 'Bearer ' + generateToken(),
+			'content-type': 'application/json'}
+	r = requests.post(
+		f'https://api.zoom.us/v2/users/me/meetings',
+		headers=headers, data=json.dumps(meetingdetails))
+
+	print("\n creating zoom meeting ... \n")
+	# print(r.text)
+	# converting the output into json and extracting the details
+	y = json.loads(r.text)
+	join_URL = y['join_url']
+	meetingPassword = y['password']
+
+	print(
+		f'\n here is your zoom meeting link {join_URL} and your \
+		password: "{meetingPassword}"\n')
+
+
+# run the create meeting function
+createMeeting()
+
 def home(request):
   return render(request, 'home.html')
 
@@ -50,7 +128,6 @@ def registerUser(request):
     else:
       return render(request, 'register.html')
 
-
 def loginUser(request):
 	if request.user.is_authenticated:
 		return redirect('/dashboard/')
@@ -60,7 +137,7 @@ def loginUser(request):
 			password =request.POST.get('password')
 
 			user = authenticate(username=username, password=password)
-
+      
 			if user is not None:
 				login(request, user)
 				return redirect('/dashboard')
@@ -70,8 +147,6 @@ def loginUser(request):
 
 		context = {}
 		return render(request, 'login.html', context)
-
-
 
 def logoutUser(request):
   logout(request)
@@ -85,7 +160,6 @@ def classes(request):
    }
    return render(request, 'classes.html', context)
 
-
 @login_required(login_url = ('/login/'))
 def create_class(request):
   if request.method == "POST":
@@ -94,12 +168,11 @@ def create_class(request):
     tag = request.POST.get('tag')
     description = request.POST.get('description')
     rating = 'No Ratings Yet'
-    date = datetime.today().strftime('%Y-%m-%d')
+    date = datetime.today().strftime('%m-%d-%y') 
     link = "http://meet.google.com/new"
     YogaClass.objects.create(name=name, user=user, tag = tag, description=description, rating=rating, date=date, link = link, )
     return redirect('dashboard')
   return render(request, 'createclass.html')
-
 
 def resources(request):
    return render(request, 'resources.html')
