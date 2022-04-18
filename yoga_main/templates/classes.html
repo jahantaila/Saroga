@@ -4,7 +4,6 @@
 {% block title %}Saroga | Classes {% endblock %}
 
 {% block content %}
-<!-- top-50 right-50 translate-y-1/2 translate-x-1/2 -->
 <!--   MODAL     -->
 <div id="defaultModal" tabindex="-1" aria-hidden="true"
     class="hidden overflow-y-auto overflow-x-hidden absolute top-100 left-100 z-50 w-full md:inset-0 h-modal md:h-full">
@@ -14,7 +13,7 @@
             <!-- Modal header -->
             <div class="flex justify-between items-start p-5 rounded-t">
                 <h3 class="text-xl font-semibold text-gray-900 lg:text-2xl ">
-                    Terms of Service
+                    Title of the class
                 </h3>
                 <button type="button"
                     class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center"
@@ -29,14 +28,10 @@
             <!-- Modal body -->
             <div class="p-6 space-y-6">
                 <p class="text-base leading-relaxed text-gray-500 ">
-                    With less than a month to go before the European Union enacts new consumer privacy laws for its
-                    citizens, companies around the world are updating their terms of service agreements to comply.
+                    Who the instructor is - Tags - Time - date -
                 </p>
                 <p class="text-base leading-relaxed text-gray-500 ">
-                    The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25
-                    and is meant to ensure a common set of data rights in the European Union. It requires
-                    organizations to notify users as soon as possible of high-risk data breaches that could
-                    personally affect them.
+                    description of the class - what theyll learn
                 </p>
             </div>
             <!-- Modal footer -->
@@ -94,7 +89,7 @@
                 <p class="mt-5 ml-5">Join us for a calming river side meditation session, focusing on mindfulness. </p>
                 <button
                     class="block self-center hover:text-green-500 transition ease-in-out text-green-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
-                    type="button" data-modal-toggle="defaultModal">
+                    type="button" onclick="learnMore()" data-modal-toggle="defaultModal">
                     Learn More
                 </button>
             </div>
@@ -128,6 +123,7 @@
     function buttonPressed() {
         targetEl.classList.toggle("hidden");
     }
+
 </script>
 <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
 {% endblock %}
