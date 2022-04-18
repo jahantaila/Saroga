@@ -17,4 +17,5 @@ class YogaClass(models.Model):
   date = models.CharField( max_length = 5000)
   rating = models.CharField(max_length = 50, default = "No Ratings Yet")
   tag = models.CharField(max_length = 10)
-  link = models.CharField(default = 'http://meet.google.com/new', max_length =50000)
+  link = models.CharField(max_length =50000)
+  password = models.CharField(max_length =559999)
