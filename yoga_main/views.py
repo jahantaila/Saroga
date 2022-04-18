@@ -21,8 +21,8 @@ from time import time
 
 
 # Enter your API key and your API secret
-API_KEY = 'Your API key'
-API_SEC = 'Your API secret'
+API_KEY = 'AHt18e6vT5CZu33gAmWfMQ'
+API_SEC = 'I6D8Y85GN1IplXu7V0SIg4I6AlGYRfuXnlo7'
 
 # create a function to generate a token
 # using the pyjwt library
@@ -79,8 +79,8 @@ def createMeeting():
 	# print(r.text)
 	# converting the output into json and extracting the details
 	y = json.loads(r.text)
-	join_URL = y["join_url"]
-	meetingPassword = y["password"]
+	join_URL = y['join_url']
+	meetingPassword = y['password']
 
 	print(
 		f'\n here is your zoom meeting link {join_URL} and your \
