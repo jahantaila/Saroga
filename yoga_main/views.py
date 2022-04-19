@@ -177,3 +177,6 @@ def termsOfUse(request):
 
 def about(request):
   return render(request, 'about.html')
+
+def references(request):
+  return render(request, 'references.html')

@@ -31,5 +31,6 @@ urlpatterns = [
     path('logout/', views.logoutUser, name='logout'),
     path('createclass/', views.create_class, name='create_class'),
     path('about/', views.about, name='about'),
+    path('references/', views.references, name='references'),
 
 ]
