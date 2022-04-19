@@ -11,10 +11,10 @@
     class="hidden overflow-y-auto overflow-x-hidden absolute top-100 left-100 z-50 w-full md:inset-0 h-modal md:h-full">
     <div class="p-4 w-full max-w-2xl h-full md:h-auto" style="margin-left: 30%; margin-top: 10%">
         <!-- Modal content -->
-        <div class="relative bg-white rounded-lg shadow">
+        <div class="relative bg-slate-700 rounded-lg shadow">
             <!-- Modal header -->
             <div class="flex justify-between items-start p-5 rounded-t">
-                <h3 class="text-xl font-semibold text-gray-900 lg:text-2xl ">
+                <h3 class="text-xl font-semibold text-white lg:text-2xl ">
                     {{class.name}}
                 </h3>
                 <button type="button"
@@ -30,32 +30,32 @@
             <!-- Modal body -->
             <div class="p-6 space-y-6">
                 <div>
-                    <h3 class="mb-4 text-lg leading-tight text-[#0f172a] font-bold ">What you will learn</h3>
-                    <p class="text-base leading-relaxed text-gray-500 ">
+                    <h3 class="mb-4 text-lg leading-tight text-white font-bold ">What you will learn</h3>
+                    <p class="text-base leading-relaxed text-gray-200 ">
                         {{class.description}}
                     </p>
                 </div>
 
                 <div>
-                    <h3 class="mb-4 text-lg leading-tight text-[#0f172a] font-bold ">Details</h3>
-                    <p class="text-base leading-relaxed text-gray-500 ">
+                    <h3 class="mb-4 text-lg leading-tight text-white font-bold ">Details</h3>
+                    <p class="text-base leading-relaxed text-gray-100 ">
                     <div class="date flex flex-row mb-5">
                         <img src="../static/images/calendaricon.png"
-                            style="margin-right:0.5em;width: 1.5em; height: 1.5em;" alt="calendar">
-                        <span id="date">{{class.date}}
+                            style="margin-right:0.5em;width: 1.5em; height: 1.5em; color: white;" alt="calendar">
+                        <span id="date" class="text-gray-100">{{class.date}}
                         </span>
                     </div>
                     <div class="date flex flex-row">
                         <img src="../static/images/clock.png" style="margin-right:0.5em;width: 1.5em; height: 1.5em;"
                             alt="calendar">
-                        <span id="date">{{class.date}}
+                        <span id="date" class="text-gray-100">{{class.date}}
                         </span>
                     </div>
                     </p>
                 </div>
                 <div>
-                    <h3 class="mb-4 text-lg leading-tight text-[#0f172a] font-bold ">About the Instructor</h3>
-                    <p class="text-base leading-relaxed text-gray-500 ">
+                    <h3 class="mb-4 text-lg leading-tight text-white font-bold ">About the Instructor</h3>
+                    <p class="text-base leading-relaxed text-gray-100 ">
                         profile image, description, rating, amount of reviews, total courses,
                         total students
                     </p>
