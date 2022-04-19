@@ -1,0 +1,241 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html class="screen-top">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Saroga | Home</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://shuffle.dev/vendor/icons/css/fontello.css?v=h7b" id="bs-base-css">
+  <style type="text/css" href="https://shuffle.dev/vendor/tailwind-flex/css/tailwind.min.css?v=bd4"></style>
+  <style type="text/css" href="https://shuffle.dev/vendor/tailwind-flex/css/tailwind.min.css?v=bd4"></style>
+  <style type="text/css" href="css2?family=Poppins:wght@400;500;600;700&display=swap"></style>
+  <link rel="stylesheet" href="https://shuffle.dev/static/build/css/shuffle-preview.3a553ecf.css">
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://shuffle.dev/vendor/tailwind-flex/js/main.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!--Scripts for scroll animations-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!--FAVICON-->
+  <link rel="icon" type="image/x-icon" href="../static/images/saroga_favicon.ico">
+</head>
+
+
+<body id="page" class="antialiased font-['Poppins'] bg-body text-body bg-slate-200 ">
+  <div class="" id="content">
+    <section class="relative bg-slate-800 overflow-hidden">
+      <div class=>
+        <nav class="flex justify-between p-6 px-4" data-config-id="toggle-mobile" data-config-target=".navbar-menu"
+          data-config-class="hidden" style="background-color: #0f172a !important;">
+          <div class="flex justify-between items-center w-full">
+            <div class="w-1/2 xl:w-1/3">
+              <a class="block max-w-max" href="{% url 'home' %}">
+                <img class="h-8" src="../static/images/saroga_logo.png" alt="LOGO" data-config-id="auto-img-1-2"
+                  style="transform: scale(2); padding-left: 30px"> </a>
+            </div>
+            <div class="w-1/2 xl:w-1/3">
+              <ul class="text-slate-400hidden xl:flex xl:justify-center">
+                <li class="mr-12"><a
+                    class="text-slate-400 font-medium hover:text-white transition ease-in-out delay-150"
+                    href="{% url 'about' %}" data-config-id="auto-txt-1-2" style=" font-size: 18px">About</a></li>
+                <li class="mr-12"><a
+                    class=" text-slate-400   font-medium hover:text-white transition ease-in-out delay-150"
+                    href="{% url 'classes' %}" data-config-id="auto-txt-2-2" style=" font-size: 18px">Classes</a></li>
+                <li class="mr-12"><a
+                    class=" hover:text-white font-medium text-slate-400 transition ease-in-out delay-150"
+                    href="{% url 'resources' %}" data-config-id="auto-txt-3-2" style=" font-size: 18px">Resources</a>
+                </li>
+                <li><a class=" hover:text-white  font-medium text-slate-400 transition ease-in-out delay-150" href="{% url 'references' %}"
+                    data-config-id="auto-txt-4-2" style=" font-size: 18px" id="responsivehide">References</a></li>
+              </ul>
+            </div>
+            <div class="w-1/2 xl:w-1/3">
+              <div class="hidden xl:flex items-center justify-end"><a
+                  class="inline-block py-2 px-4 text-sm leading-5 text-green-50 border-2 border-solid border-green-500 hover:bg-green-500 transition ease-in-out delay-200 font-medium focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded-md mr-3"
+                  href="#" data-config-id="auto-txt-5-2" style="font-size: 18px">Copyright Checklist</a><a
+                  class="inline-block py-2 px-4 text-sm leading-5 text-green-50 border-2 border-solid border-green-500 hover:bg-green-500 transition ease-in-out delay-200 font-medium focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded-md"
+                  href="{% url 'register' %}" data-config-id="auto-txt-6-2" style="font-size: 15px">Plan Of Work Log</a></div>
+            </div>
+          </div>
+          <button class="navbar-burger self-center xl:hidden">
+            <svg width="35" height="35" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+              data-config-id="auto-svg-1-2">
+              <rect class="text-slate-400" width="32" height="32" rx="6" fill="currentColor"></rect>
+              <path class="text-coolGray-400"
+                d="M7 12H25C25.2652 12 25.5196 11.8946 25.7071 11.7071C25.8946 11.5196 26 11.2652 26 11C26 10.7348 25.8946 10.4804 25.7071 10.2929C25.5196 10.1054 25.2652 10 25 10H7C6.73478 10 6.48043 10.1054 6.29289 10.2929C6.10536 10.4804 6 10.7348 6 11C6 11.2652 6.10536 11.5196 6.29289 11.7071C6.48043 11.8946 6.73478 12 7 12ZM25 15H7C6.73478 15 6.48043 15.1054 6.29289 15.2929C6.10536 15.4804 6 15.7348 6 16C6 16.2652 6.10536 16.5196 6.29289 16.7071C6.48043 16.8946 6.73478 17 7 17H25C25.2652 17 25.5196 16.8946 25.7071 16.7071C25.8946 16.5196 26 16.2652 26 16C26 15.7348 25.8946 15.4804 25.7071 15.2929C25.5196 15.1054 25.2652 15 25 15ZM25 20H7C6.73478 20 6.48043 20.1054 6.29289 20.2929C6.10536 20.4804 6 20.7348 6 21C6 21.2652 6.10536 21.5196 6.29289 21.7071C6.48043 21.8946 6.73478 22 7 22H25C25.2652 22 25.5196 21.8946 25.7071 21.7071C25.8946 21.5196 26 21.2652 26 21C26 20.7348 25.8946 20.4804 25.7071 20.2929C25.5196 20.1054 25.2652 20 25 20Z"
+                fill="currentColor"></path>
+            </svg></button>
+
+        </nav>
+        <!--NAVBAR ENDING-->
+
+        <!--Navbar script & styles-->
+        <script>
+          for (var i = 0; i < links.length; i += 1) {
+            links[i].addEventListener('click', function (e) {
+              e.preventDefault();
+            });
+          }
+
+          var forms = document.getElementsByTagName('form');
+          for (var i = 0; i < forms.length; i += 1) {
+            forms[i].addEventListener('submit', function (e) {
+              e.preventDefault();
+            }, true);
+          }
+        </script>
+
+        <style>
+          @media screen and (min-width: 0px) and (max-width: 1272px) {
+            .mr-12 {
+              display: none;
+            }
+
+            #responsivehide {
+              display: none;
+            }
+          }
+        </style>
+
+        
+    <!--Hidden navbar-->
+    <div class="hidden navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50">
+      <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+      <nav class="relative flex flex-col py-6 px-6 h-full w-full bg-slate-800 border-r overflow-y-auto"
+        style="background-color: #2A3342;">
+        <div class="flex items-center mb-8 ">
+          <img class="h-8" src="../static/images/saroga_logo.png" alt="LOGO" data-config-id="auto-img-1-2"
+            style="transform: scale(2); padding-left: 30px"> </a>
+          <a class="mr-auto text-3xl font-bold leading-none" href="#">
+            <img class="h-10" src="atis-assets/logo/atis/atis-mono-black.svg" alt="" width="auto">
+          </a>
+          <button class="navbar-close">
+            <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        <div>
+          <ul>
+            <li class="mb-1"><a
+                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
+                href="{% url 'about' %}">About</a></li>
+            <li class="mb-1"><a
+                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
+                href="{% url 'classes' %}">Classes</a></li>
+            <li class="mb-1"><a
+                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
+                href="{% url 'resources' %}">Resources</a></li>
+            <li class="mb-1"><a
+                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
+                href="{% url 'references' %}">References</a></li>
+
+          </ul>
+        </div>
+        <div class="mt-auto">
+          <div class="pt-6"><a
+              class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-slate-800 hover:bg-gray-100 rounded-l-xl rounded-t-xl transition ease-in-out delay-150 text-white bg-slate-700 hover:bg-slate-800 focus:ring-4 focus:outline-none focus:ring-slate-300 font-medium rounded-lg text-base px-6 py-3.5 text-center dark:bg-slate-600 dark:hover:bg-slate-700 dark:focus:ring-slate-800"
+              href="#">Copyright Checklist</a><a
+              class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-green-400 hover:bg-green-100 rounded-l-xl rounded-t-xl transition ease-in-out delay-150 text-white bg-green-700 hover:bg-green-400 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-base px-6 py-3.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+              href="#">Plan Of Work Log</a></div>
+          <p class="my-4 text-xs text-center text-gray-400">
+            <span>© 2022 All rights reserved.</span>
+          </p>
+
+        </div>
+      </nav>
+    </div>
+  </section>
+
+
+  <!--Section class, talk about sources-->
+  <section>
+    
+    
+    <div class="py-20 bg-gray-900 radius-for-skewed">
+      <div class="container mx-auto px-4">
+        <div class="mb-16 mx-auto max-w-md text-center">
+          <span class="text-green-600 font-bold ">References</span>
+          <h2 class="text-4xl lg:text-5xl font-bold font-heading text-white pt-5">References &amp; Sources</h2>
+        </div>
+        <div class="flex flex-wrap -mx-4">
+          <div class="mb-8 lg:mb-0 w-full md:w-1/2 lg:w-1/3 px-4">
+            <div class="py-10 px-6 bg-slate-800 shadow rounded text-center">
+              <span class="mb-6 w-16 h-16 inline-flex justify-center items-center bg-green-100 rounded text-2xl text-green-600 font-bold" data-removed="true">1</span>
+              <a href = "https://unsplash.com" target="_blank"> <h3 class="mb-4 text-2xl font-bold font-heading text-white hover:underline">unsplash.com</h3> </a> 
+              <p class="text-gray-500 leading-loose">All yoga images were taken from unsplash.com, and are royalty &amp; copyright free. This images are held under the Creative Commons License</p>
+            </div>
+          </div>
+          <div class="mb-8 lg:mb-0 w-full md:w-1/2 lg:w-1/3 px-4">
+            <div class="py-10 px-6 bg-slate-800 shadow rounded text-center">
+              <span class="mb-6 w-16 h-16 inline-flex justify-center items-center bg-green-100 rounded text-2xl text-green-600 font-bold" data-removed="true">2</span>
+              <a href="http://systemuicons.com" target="_blank"> <h3 class="mb-4 text-2xl font-bold font-heading text-white hover:underline" >systemuicons.com</h3> </a> 
+              <p class="text-gray-500 leading-loose">All SVG graphics and vectors were taken from systemuicons.com. This images are held under the Creative Commons License and can be used without attribution</p>
+            </div>
+          </div>
+          <div class="w-full md:w-full lg:w-1/3 px-4">
+            <div class="py-10 px-6 bg-slate-800 shadow rounded text-center">
+              <span class="mb-6 w-16 h-16 inline-flex justify-center items-center bg-green-100 rounded text-2xl text-green-600 font-bold" data-removed="true">3</span>
+              <a href = "http://flaticon.com " target="_blank"> <h3 class="mb-4 text-2xl font-bold font-heading text-white hover:underline">flaticon.com</h3> </a> 
+              <p class="text-gray-500 leading-loose">Vector images and graphics were taken from flaticon.com. These images are held under the CC license and require attribution in order to use</p>
+            </div>
+          </div>
+
+          <div class="w-full md:w-full lg:w-1/3 px-4">
+            <div class="py-10 px-6 bg-slate-800 shadow rounded text-center">
+              <span class="mb-6 w-16 h-16 inline-flex justify-center items-center bg-green-100 rounded text-2xl text-green-600 font-bold" data-removed="true">3</span>
+              <a href = "http://istockphoto.com/ " target="_blank"> <h3 class="mb-4 text-2xl font-bold font-heading text-white hover:underline">istockphoto.com</h3> </a> 
+              <p class="text-gray-500 leading-loose">The images included on the home screen came from istockphoto.com. These images are royalty free and can be used without attribution</p> 
+        </div>
+          </div>
+          <div class="w-full md:w-full lg:w-1/3 px-4 pt-4">
+            <div class="py-10 px-6 bg-slate-800 shadow rounded text-center">
+              <span class="mb-6 w-16 h-16 inline-flex justify-center items-center bg-green-100 rounded text-2xl text-green-600 font-bold" data-removed="true">3</span>
+              <a href = "https://pixabay.com" target="_blank"> <h3 class="mb-4 text-2xl font-bold font-heading text-white hover:underline">pixabay.com</h3> </a> 
+              <p class="text-gray-500 leading-loose">We used pixabay.com as a minor source for yoga images, which were included on the about page. These images are royalty free but require attribution</p> 
+        </div>
+        
+        
+
+        
+      </div>
+      <div class="w-full md:w-full lg:w-1/3 px-4">
+        <div class="py-10 px-6 bg-slate-800 shadow rounded text-center">
+          <span class="mb-6 w-16 h-16 inline-flex justify-center items-center bg-green-100 rounded text-2xl text-green-600 font-bold" data-removed="true">3</span>
+          <a href = "https://www.pexels.com/ " target="_blank"> <h3 class="mb-4 text-2xl font-bold font-heading text-white hover:underline">pexels.com</h3> </a> 
+          <p class="text-gray-500 leading-loose">We used pexels.com as a source for our classes and dashboard images. These images are royalty free but creator attribution is required. </p>
+        </div>
+      </div>
+      
+  
+      <div class="w-full md:w-full lg:w-1/3 px-4">
+        <div class="py-10 px-6 bg-slate-800 shadow rounded text-center">
+          <span class="mb-6 w-16 h-16 inline-flex justify-center items-center bg-green-100 rounded text-2xl text-green-600 font-bold" data-removed="true">3</span>
+          <a href = "https://www.mea.gov.in/ " target="_blank"> <h3 class="mb-4 text-2xl font-bold font-heading text-white hover:underline">mea.gov.in</h3> </a> 
+          <p class="text-gray-500 leading-loose">We used pexels.com as a source for our classes and dashboard images. These images are royalty free but creator attribution is required. </p>
+        </div>
+      </div>
+    
+         
+  
+    </div>
+  
+  </section>                               
+                                                                                                                       
+
+  <!--AOS Script-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+
+</html>
