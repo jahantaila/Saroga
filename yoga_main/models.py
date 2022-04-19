@@ -15,6 +15,7 @@ class YogaClass(models.Model):
   description = models.TextField(max_length = 50,)
   user = models.CharField( max_length = 5000)
   date = models.CharField( max_length = 5000)
+  time = models.CharField( max_length = 5000)
   rating = models.CharField(max_length = 50, default = "No Ratings Yet")
   tag = models.CharField(max_length = 10)
   link = models.CharField(max_length =50000)

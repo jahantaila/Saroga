@@ -161,8 +161,9 @@ def create_class(request):
     description = request.POST.get('description')
     rating = 'No Ratings Yet'
     date = datetime.today().strftime('%m-%d-%y') 
+    time = datetime.now().strftime("%I:%M %p")
     link, password = createMeeting()
-    YogaClass.objects.create(name=name, user=user, tag = tag, description=description, rating=rating, date=date, link = link, password = password)
+    YogaClass.objects.create(name=name, user=user, tag = tag, description=description, rating=rating, date=date, time = time, link = link, password = password)
     return redirect('dashboard')
   return render(request, 'createclass.html')
 
