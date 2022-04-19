@@ -53,12 +53,23 @@
                     </div>
                     </p>
                 </div>
+
+                <div>
+                    <p class="text-base leading-relaxed text-gray-100 ">
+                        <span >Hosted By:  </span>
+                       <a class = "font-bold text-blue-400  pl-1"  >{{class.user}}</a>
+                    </p>
+                </div>
+
                 <div>
                     <h3 class="mb-4 text-lg leading-tight text-white font-bold ">About Session:</h3>
                     <p class="text-base leading-relaxed text-gray-100 ">
                         <span >View Class Link: </span>
                        <a class = "font-bold text-blue-400 hover:underline pl-1" href = "{{class.link}}" target="_blank">Session Link</a>
                     </p>
+                    <span >Class Password: </span>
+                    <a class = "font-bold text-blue-400  pl-1" > {{class.password}}</a>
+
                 </div>
             </div>
             <!-- Modal footer -->
@@ -109,7 +120,7 @@
                     </div> -->
                 </div>
 
-                <p class="mt-5 ml-5">{{class.description}}</p>
+                <p class="mt-5 ml-5">{{class.tag}}</p>
                 <button
                     class="block self-center hover:text-green-500 transition ease-in-out text-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center modal-btn"
                     type="button" data-modal-toggle="{{ forloop.counter }}">
